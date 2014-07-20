@@ -1,0 +1,110 @@
+.btn-event{
+  background-color: #B64747;
+  color : #FFF;
+}
+
+#contents{
+  background-color : rgba(245, 245, 245, 1);
+  width: 100%;
+  position: absolute;
+  min-height: 100%;
+  padding-top : 40px;
+  .categorie{
+    background-color: #F1BF26;
+    color: #FFF;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 900;
+    padding: 4px 5px;
+    vertical-align: middle;
+    margin-bottom: 14px;
+    margin-right: 10px;
+  }
+  #listContent{
+    padding-left:  10px;
+    article{
+      background-color :#FFF;
+      padding : 30px;
+      margin-bottom : 50px;
+      img{
+        max-width : 80%;
+        margin : 30px 0px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        opacity : 0.7;
+        &:hover{
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%);
+          -ms-filter: grayscale(0%);
+          -o-filter: grayscale(0%);
+          opacity : 1;
+        }
+      }
+      .title, .categorie{display:inline-block;}
+      .title{
+        margin-bottom : 0px;
+      }
+      .info{
+        .author{
+          font-weight : bolder;
+        }
+        .date{
+          font-style : italic;
+        }
+      }
+      .desc{
+        margin : 30px 0px;
+      }
+      .tag{
+        border : 1px solid #A6A6A6;
+        color : #A6A6A6;
+        border-radius : 4px;
+        padding : 4px 12px;
+        margin-right : 10px;
+        &:hover{
+          text-decoration : none;
+          background-color : $red;
+          color :#FFF;
+          border-color : transparent;
+        }
+      }
+    }
+  }
+  #option{
+    padding-left : 20px;
+    .search{
+      border : none;
+    }
+    .categorie{
+      line-height : 30px;
+    }
+    .tag{
+      &:after{
+        content : '-';
+      }
+      &:last-child{
+        &:after{
+          content : '';
+        }
+      }
+    }
+    #authors{
+      ul{
+        list-style : none;
+        padding : 0px;
+        li{
+          margin-bottom : 10px;
+          img{
+            display : inline-block;
+            width : 30px;
+            margin-right : 10px;
+          }
+        }
+      }
+    }
+  }
+}

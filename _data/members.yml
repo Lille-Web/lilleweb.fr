@@ -1,0 +1,12 @@
+john:
+  name: Johnathan MEUNIER
+  image: "/src/img/john.png"
+  poste: fondateur
+  site: johnathan.fr
+  description: bla bla bla
+dck:
+  name: Thomas DECONINCK
+  image: "/src/img/dck.png"
+  poste: fondateur
+  site: thomasdeconinck.fr
+  description: bla bla bla

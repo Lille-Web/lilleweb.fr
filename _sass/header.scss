@@ -1,0 +1,69 @@
+header.hd-index{
+  color : #FFF;
+  background-image: url(../../src/img/lille-grand-place.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .navbar-default{
+    background: none;
+    border: none;
+    box-shadow: none;
+    h1{
+      margin : 0px;
+    }
+    .navbar-toggle .icon-bar{
+      background-color : #FFF;
+    }
+    a{
+      color : #FFF !important;
+    }
+  }
+  .header-content{
+    margin: 90px 0px;
+    h2{
+      font-size: 50px;
+      font-family: Roboto;
+    }
+    button{
+      background : none;
+      border : 1px solid #FFF !important;
+      margin-top : 40px;
+      &:hover{
+        background-color : #FFF;
+      }
+    }
+  }
+}
+
+header.side{
+  z-index: 5;
+  width: 70px;
+  position: fixed;
+  height: 100%;
+  nav{
+    background : $red;
+    height: 100%;
+    width : 70px;
+    position : absolute;
+    ul{
+      list-style:none;
+      padding : 0px;
+      li{
+        text-align: center;
+        margin-top: 20px;
+        &:first-child{
+          margin-top: 10px;
+        }
+        img{
+
+        }
+      }
+    }
+    >a{
+      position: absolute;
+      bottom: 0px;
+      margin: 50%;
+      left: -17px;
+    }
+  }
+}
