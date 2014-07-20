@@ -25,9 +25,14 @@ a {
   color : $red;
 }
 
-.btn-event{
+.btn.btn-event{
   background-color: #B64747;
   color : #FFF;
+
+  &:hover {
+    color: #FFF !important;
+    background-color: #E47F7F !important;
+  }
 }
 
 

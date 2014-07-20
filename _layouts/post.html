@@ -10,9 +10,15 @@ layout: default
     <div id="listContent" class="col-md-8 col-md-offset-1">
       <input type="button" class="btn btn-event" value="&larr; Articles" onclick="window.history.back()"style="margin-top : -50px;" />
       <article>
-        <h2 class="title">
-          {{ page.title }}
-        </h2>
+        <div class="page-header">
+            <h2 class="title">
+                {{ page.title }}
+                <small>
+                    <span class="date"> ajouté le {{ page.date | date: "%d/%m/%Y" }} </span>
+                </small>
+            </h2>
+        </div>
+
         {{ content }}
       </article>
         <div id="disqus_thread"></div>
