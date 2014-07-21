@@ -27,6 +27,10 @@ body,
   }
 }
 
+button:focus{
+  outline : none !important;
+}
+
 a{
   color : $grey;
 }
