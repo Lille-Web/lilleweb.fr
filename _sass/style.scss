@@ -1,4 +1,6 @@
 $red: #B64747;
+$black : #2d3339;
+$white : #FFF;
 
 @import "bootstrap";
 @import "header";
@@ -11,7 +13,7 @@ body,
 .wrap {
   height: 100%;
   width: 100%;
-  background-color : red;
+  background-color : $red;
 }
 
 
