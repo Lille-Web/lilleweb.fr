@@ -13,7 +13,7 @@ Je pense pouvoir dire sans me tromper que tout le monde parmis vous connait la f
 
 En effet lorsque vous souhaitez afficher la valeur d'un tableau dans la console le résultat est souvent inutilisable.
 
-{% highlight js %}
+{% highlight js lineos %}
 console.log(yourArray);
 {% endhighlight %}
 
