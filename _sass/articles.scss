@@ -33,7 +33,7 @@
       margin-bottom : 50px;
       font-size: 16px;
       line-height: 25px;
-      
+
       img{
         max-width : 80%;
         margin : 30px 0px;
@@ -125,6 +125,27 @@
             margin-right : 10px;
           }
         }
+      }
+    }
+  }
+}
+
+body.zen{
+  header{
+    display : none;
+  }
+  #contents{
+    background-color : transparent;
+    #listContent{
+      input.btn-event{
+        background : transparent;
+        color: $grey;
+      }
+    }
+    #option{
+      opacity : 0.1;
+      &:hover{
+        opacity : 1;
       }
     }
   }
