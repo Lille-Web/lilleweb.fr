@@ -1,5 +1,5 @@
 header.hd-index{
-  color : #FFF;
+  color : $white;
   background-image: url(../../src/img/lille-grand-place.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,11 +11,16 @@ header.hd-index{
     h1{
       margin : 0px;
     }
+    .navbar-brand{
+      img{
+        width : 250px;
+      }
+    }
     .navbar-toggle .icon-bar{
-      background-color : #FFF;
+      background-color : $white;
     }
     a{
-      color : #FFF !important;
+      color : $white !important;
     }
   }
   .header-content{
@@ -26,10 +31,10 @@ header.hd-index{
     }
     button{
       background : none;
-      border : 1px solid #FFF !important;
+      border : 1px solid $white !important;
       margin-top : 40px;
       &:hover{
-        background-color : #FFF;
+        background-color : $white;
       }
     }
   }
@@ -41,7 +46,7 @@ header.side{
   position: fixed;
   height: 100%;
   nav{
-    background : $red;
+    background : $black;
     height: 100%;
     width : 70px;
     position : absolute;
@@ -56,6 +61,9 @@ header.side{
         }
         img{
 
+        }
+        &.index{
+          img{width : 40px;}
         }
       }
     }
