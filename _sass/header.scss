@@ -40,30 +40,34 @@ header.hd-index{
   }
 }
 
-header.side{
+header.side {
   z-index: 5;
   width: 70px;
   position: fixed;
   height: 100%;
+
   nav{
     background : $black;
     height: 100%;
     width : 70px;
     position : absolute;
+
     ul{
       list-style:none;
       padding : 0px;
-      li{
+
+      li {
         text-align: center;
         margin-top: 20px;
+        opacity: 0.5;
+
         &:first-child{
           margin-top: 10px;
         }
-        img{
 
-        }
         &.index{
           img{width : 40px;}
+          opacity: 1;
         }
       }
     }

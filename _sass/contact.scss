@@ -9,13 +9,21 @@
   top : 0px;
   left : 0px;
 
+  .page-header {
+    margin-top: 5px;
+
+    h1 {
+      margin-bottom: 0px;
+    }
+  }
   .content{
     background-color : #FFF;
-    margin-top : 100px;
+    margin-top : 60px;
     padding : 0px;
+
     .contact-left{
       background-color : $red;
-      height : 400px;
+      min-height : 400px;
       color : #FFF;
       h1, h1 a{
         font-size : 50px;
@@ -25,11 +33,10 @@
         line-height : 22px;
       }
     }
-    input, textarea, button{
-      margin : 20px 0px;
-    }
+
     button{
       float : right;
+      margin: 20px 0;
     }
   }
 }
