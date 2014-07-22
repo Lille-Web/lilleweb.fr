@@ -11,6 +11,7 @@ $white : #FFF;
 @import "articles";
 @import "contact";
 @import "highlight";
+@import "footer";
 
 html,
 body,
@@ -25,6 +26,10 @@ body,
   img{
     width : 100%;
   }
+}
+
+button:focus{
+  outline : none !important;
 }
 
 a{
