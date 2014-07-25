@@ -10,14 +10,26 @@
 		margin-bottom: 20px;
 
 		.member {
-			margin-top: 35px;
-			padding-bottom: 15px;
+			h3{
+				margin-top : 0px;
+			}
 			p {
 				margin-top: 20px;
 			}
-		}
-		.border {
-			border-bottom: 1px solid #ccc;
+			&:nth-child(2n){
+				img{
+					float : right;
+				}
+			}
+			&:last-child{
+				.memberContent{
+					border:none;
+				}
+			}
+			.memberContent{
+				padding : 50px 0px;
+				border-bottom : 2px solid #F5F5F5;
+			}
 		}
 	}
 }
