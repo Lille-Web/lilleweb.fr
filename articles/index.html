@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="contents">
-  <div id="listContent" class="col-md-8 col-md-offset-1 col-xs-offset-1">
+  <div id="listContent" class="col-md-8 col-md-offset-1 col-xs-8 col-xs-offset-2">
     <h1> Articles </h1>
     {% for post in paginator.posts %}
       <article>
@@ -42,7 +42,7 @@ layout: default
     {% endif %}
 
   </div>
-  <div id="option" class="col-md-2 hidden-xs-block">
+  <div id="option" class="col-md-2 hidden-xs hidden-sm">
     <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
     <!-- <h3> Recherche </h3>
     <input type="text" class="form-control search" placeholder="Recherche">
