@@ -69,3 +69,5 @@ public/uploads/*
 
 # Compilation
 _site/
+
+_serve/*
