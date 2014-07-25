@@ -158,3 +158,9 @@ a button{
     text-align : center;
   }
 }
+
+.btn.btn-white {
+  &:hover {
+    color: #343434 !important;
+  }
+}

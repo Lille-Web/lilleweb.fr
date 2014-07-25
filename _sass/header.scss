@@ -21,6 +21,10 @@ header.hd-index{
     }
     a{
       color : $white !important;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .header-content{
@@ -45,29 +49,76 @@ header.side {
   width: 70px;
   position: fixed;
   height: 100%;
-
+  
   nav{
     background : $black;
     height: 100%;
     width : 70px;
     position : absolute;
-
+    
     ul{
       list-style:none;
       padding : 0px;
 
       li {
         text-align: center;
-        margin-top: 20px;
-        opacity: 0.5;
+        margin-top: 30px;
+        
+        position: relative;
 
         &:first-child{
           margin-top: 10px;
         }
+        img {
+          width: 35px;
+          opacity: 0.5;
+        }
 
         &.index{
-          img{width : 40px;}
+          img{width : 40px; opacity: 1;}
+          
+          margin-bottom: 50px;
+        }
+
+        &:not(.index):hover {
           opacity: 1;
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -11px;
+            top: 5px;
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent; 
+            
+            border-right:10px solid $black; 
+            z-index: 0;
+            animation: slideArrow .4s ease;
+            -webkit-animation: slideArrow .4s ease; 
+          }
+          &:after {
+            content: attr(title);
+            display: block;
+            position: absolute;
+            right: -110px;
+            top: -10px;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background: $black;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: "Roboto";
+            z-index: 3;
+            padding-left: 5px;
+            padding-right: 5px;
+            animation: slide .4s ease;
+            -webkit-animation: slide .4s ease; 
+          }
         }
       }
     }
@@ -77,5 +128,48 @@ header.side {
       margin: 50%;
       left: -17px;
     }
+  }
+}
+
+@keyframes slide {
+  from {
+    right: -70px;
+    opacity: 0;
+  }
+  to {
+    right: -110px;
+    opacity: 1
+  }
+;}
+@-webkit-keyframes slide {
+  from {
+    right: -70px;
+    opacity: 0;
+  }
+  to {
+    right: -110px;
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideArrow {
+  from {
+    right: 10px;
+    opacity: 0;
+  }
+  to {
+    right: -11px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes  slideArrow{
+  from {
+    right: 10px;
+    opacity: 0;
+  }
+  to {
+    right: -11px;
+    opacity: 1;
   }
 }
