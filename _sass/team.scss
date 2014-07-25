@@ -10,14 +10,8 @@
 		margin-bottom: 20px;
 
 		.member {
-			h3{
-				margin-top : 0px;
-			}
-			p {
-				margin-top: 20px;
-			}
 			&:nth-child(2n){
-				img{
+				img.photo{
 					float : right;
 				}
 			}
@@ -29,6 +23,21 @@
 			.memberContent{
 				padding : 50px 0px;
 				border-bottom : 2px solid #F5F5F5;
+				h3{
+					margin-top : 0px;
+				}
+				p {
+					margin-top: 20px;
+				}
+				h4{
+					display : inline-block;
+				}
+				.twitter, .github{
+					img{
+						width : 20px;
+						margin-right : 10px;
+					}
+				}
 			}
 		}
 	}
