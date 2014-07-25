@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
     <title>L'équipe - Lille-Web</title>
-    <script src="../js/send-mail.js"></script>
   </head>
   <body>
     <header class="side">
@@ -27,37 +26,41 @@
 
     <div id="team-list">
 			<div class="members col-md-8 col-md-offset-2 col-xs-9 col-xs-offset-2">
-				<div class="member col-md-10 col-md-offset-1 col-xs-12">
-          {% assign team = site.data.members['john'] %}
-          <div class="row">
-            <img src="{{team.image}}" class="col-md-3 img-circle col-xs-5">
-            <div class="caption col-md-6 col-xs-5">
-              <h3>{{team.name}}</h3>
-              <h4>{{team.poste}}</h4>
-              <h4> <a href="http://{{team.site}}"> {{team.site}} </a>  </h4>
-            </div>
-          </div>
-          <div class="row">
-              <p> {{team.description}}</p>
-          </div>
-        </div>
 
-				<hr>
+				<div class="row">
+					<div class="member border col-md-10 col-md-offset-1 col-xs-12">
+	          {% assign team = site.data.members['john'] %}
+	          <div class="row">
+	            <img src="{{team.image}}" class="col-md-4 img-circle col-xs-5">
+	            <div class="caption col-md-6 col-xs-5">
+	              <h3>{{team.name}} <small>{{team.poste}}</small></h3>
+	              <p> {{team.description}}</p>
+	              <h4> <a href="http://{{team.site}}"> {{team.site}} </a>  </h4>
+	            </div>
+	          </div>
+	          <div class="row">
+	              
+	          </div>
+	        </div>
+	      </div>
 
-        <div class="member col-md-10 col-md-offset-1 col-xs-12 pull-right">
-          {% assign team = site.data.members['dck'] %}
-          <div class="row">
-            <img src="{{team.image}}" class="col-md-3 img-circle col-xs-5 pull-right">
-            <div class="caption col-md-6 col-xs-5">
-              <h3>{{team.name}}</h3>
-              <h4>{{team.poste}}</h4>
-              <h4> <a href="http://{{team.site}}"> {{team.site}} </a>  </h4>
-            </div>
-          </div>
-          <div class="row">
-              <p> {{team.description}}</p>
-          </div>
-        </div>
+				<div class="row">
+					<div class="member col-md-10 col-md-offset-1 col-xs-12">
+	          {% assign team = site.data.members['dck'] %}
+	          <div class="row">
+	            <img src="{{team.image}}" class="col-md-4 img-circle col-xs-5 pull-right">
+	            <div class="caption col-md-6 col-xs-5">
+	              <h3>{{team.name}} <small>{{team.poste}}</small></h3>
+	              <p> {{team.description}}</p>
+	              <h4> <a href="http://{{team.site}}"> {{team.site}} </a>  </h4>
+	            </div>
+	          </div>
+	          <div class="row">
+	              
+	          </div>
+	        </div>
+				</div>
+        
 			</div>
     </div>
   </body>
