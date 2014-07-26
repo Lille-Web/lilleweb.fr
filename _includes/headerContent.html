@@ -1,12 +1,14 @@
- <nav>
-   <ul>
-     <li class="index"> <a href="/"> <img src="/src/img/Logo/Solo/solo-sans-fond.png"> </a> </li>
-     <li title="Articles"> <a href="/articles"><img src="/src/img/pictos/articles.png" alt="Articles" > </a> </li>
-     <li title="Ressources"> <a href="/ressources"><img src="/src/img/pictos/ressources.png" alt="Ressources" >  </a> </li>
-     <div class="bottom">
-       <li title="Team"> <a href="/team"> <img src="/src/img/pictos/team.png"> </a> </li>
-       <li title="Contact"> <a href="/contact"><img src="/src/img/pictos/contact.png" alt="Contact" > </a> </li>
-     </div>
-   </ul>
-   <!--<a href="#login" > <img src="/src/img/pictos/logout.png"> </a>-->
- </nav>
+<nav>
+ <ul>
+   <li class="index"> <a href="/"> <img src="/src/img/Logo/Solo/solo-sans-fond.png"> </a> </li>
+   <li title="Articles"> <a href="/articles"><img src="/src/img/pictos/articles.png" alt="Articles" > </a> </li>
+   <li title="Ressources"> <a href="/ressources"><img src="/src/img/pictos/ressources.png" alt="Ressources" >  </a> </li>
+   <div class="bottom">
+     <li title="Team"> <a href="/team"> <img src="/src/img/pictos/team.png"> </a> </li>
+     <li title="Contact" class="toggleContact"><img src="/src/img/pictos/contact.png" alt="Contact" ></li>
+   </div>
+ </ul>
+</nav>
+
+
+{% include contact.html %}  
