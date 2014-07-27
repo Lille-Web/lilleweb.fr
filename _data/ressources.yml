@@ -1,10 +1,19 @@
 font:
   name : Police
   content :
+    googleFont :
+      name : Des centaines de police libre et gratuite, par Google.
+      link : https://www.google.com/fonts
+    dafont :
+      name : Plateforme populaire de police avec versions freeware, shareware, ...
+      link : http://www.dafont.com/fr/
 
 icone:
   name : Icône
   content :
+    iconFinder :
+      name : Référence dans la recherche d'icône, nombreux choix gratuits et payants.
+      link : https://www.iconfinder.com/
 
 link:
   name: Lien
@@ -19,7 +28,13 @@ link:
 livre:
   name: Livre
   content :
+    javascriptTheGoodParts:
+      name : "Javascript: The Good Parts"
+      link: "http://www.amazon.fr/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=0596517742&linkCode=as2&tag=johnathan-21"
+    javascriptTheDefinitiveGuide:
+      name : "JavaScript: The Definitive Guide 6e"
+      link: "http://www.amazon.fr/gp/product/0596805527/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=0596805527&linkCode=as2&tag=johnathan-21"
 
 cours:
-  name: cours
+  name: Cours
   content :
