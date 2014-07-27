@@ -5,18 +5,18 @@
     <p>
       N'hésitez pas si vous avez une questions, une idée ou tout à autres choses à nous dire ! Vous pouvez également directement nous envoyer un mail à <a href="mailto:contact@lille-web.fr">contact@lille-web.fr</a>.
     </p>
-    <form role="form" id="contact-form">
+    <form method="POST" action="/mail.php?source=contact" role="form" id="contact-form">
       <div class="form-group">
-        <input type="text" placeholder="Nom" id="name" class="form-control">
+        <input type="text" placeholder="Nom" id="name" name="name" class="form-control">
       </div>
       <div class="form-group">
-        <input type="mail" placeholder="Email" id="mail" class="form-control">
+        <input type="mail" placeholder="Email" id="mail" name="mail" class="form-control">
       </div>
       <div class="form-group">
-        <input type="text" placeholder="Objet" id="object" class="form-control">
+        <input type="text" placeholder="Objet" id="object" name="object" class="form-control">
       </div>
       <div class="form-group">
-        <textarea rows="9" class="form-control" id="message" placeholder="Message"></textarea>
+        <textarea rows="9" class="form-control" id="message" name="content" placeholder="Message"></textarea>
       </div>
 
       <button type="submit" class="btn btn-event btn-lg">Envoyer</button>
