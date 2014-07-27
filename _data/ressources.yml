@@ -1,12 +1,25 @@
 font:
+  name : Police
+  content :
 
 icone:
+  name : Icône
+  content :
 
 link:
-  goodui:
-    name: GoodUi
-    link:
+  name: Lien
+  content :
+    goodui:
+      name: Découvrir en quelques points les bonne pratiques d'UX.
+      link: https://goodui.org/
+    pressBrand :
+      name : Récupérer les logos officiels des réseaux sociaux
+      link :
 
 livre:
+  name: Livre
+  content :
 
-framework:
+cours:
+  name: cours
+  content :

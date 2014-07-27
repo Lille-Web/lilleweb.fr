@@ -5,25 +5,24 @@ layout: default
 <div id="contents">
   <div id="listContent" class="col-md-8 col-md-offset-1 col-xs-offset-1">
     <h1> Ressources </h1>
-    <article>
-      <h2> Lien </h2>
-      <ul>
-        {% for ressource in site.data.ressources['link'] %}
-        <li><a href="{{ressource[1].link}}">{{ressource[1].name}}</a></li>
-        {% endfor %}
-      </ul>
-    </articles>
+    {% for ressourceType in site.data.ressources %}
+      <article id="{{ressourceType[1].name}}">
+        <h2>{{ressourceType[1].name}}</h2>
+        <ul>
+          {% for ressource in ressourceType.[1].content %}
+            <li><a href="{{ressource[1].link}}">{{ressource[1].name}}</a></li>
+          {% endfor %}
+        </ul>
 
-
+      </article>
+    {% endfor %}
   </div>
   <div id="option" class="col-md-2 hidden-xs">
     <h3> Types de ressources </h3>
     <ul>
-      <li>Liens</li>
-      <li>ressourceType 2</li>
-      <li>ressourceType 3</li>
-      <li>ressourceType 4</li>
-      <li>ressourceType 5</li>
+      {% for ressourceType in site.data.ressources %}
+        <li> <a href="#{{ressourceType[1].name}}">{{ressourceType[1].name }}</a> </li>
+      {% endfor %}
     </ul>
   </div>
 </div>

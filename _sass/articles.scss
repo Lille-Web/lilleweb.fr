@@ -33,7 +33,9 @@
       margin-bottom : 50px;
       font-size: 16px;
       line-height: 25px;
-
+      h2{
+        margin-top : 0px;
+      }
       img{
         max-width : 80%;
         margin : 30px 0px;
@@ -68,6 +70,13 @@
       .title, .categorie{display:inline-block;}
       .title{
         margin-bottom : 0px;
+        a{
+          color : $grey;
+          &:hover{
+            color : $red;
+            font-style:normal;
+          }
+        }
       }
       .info{
         .author{
@@ -119,10 +128,17 @@
         padding : 0px;
         li{
           margin-bottom : 10px;
-          img{
-            display : inline-block;
-            width : 30px;
-            margin-right : 10px;
+          a{
+            color : $grey;
+            &:hover{
+              color : $red;
+              font-style:normal;
+            }
+            img{
+              display : inline-block;
+              width : 30px;
+              margin-right : 10px;
+            }
           }
         }
       }

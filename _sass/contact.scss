@@ -43,6 +43,10 @@
   left: 0px;
   background: rgba(0,0,0,0.7);
   display : none;
+  z-index : 1;
+  h3{
+    margin-top : 0px;
+  }
   .overlay{
     position: fixed;
     width: 100%;
