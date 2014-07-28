@@ -34,12 +34,13 @@ button:focus{
 }
 
 a{
-  color : $grey;
+  color : $red;
 }
 
 a:hover {
   color : $red;
-  text-decoration : none;
+  font-style : italic;
+  text-decoration : none !important;
 }
 
 .btn.btn-event{

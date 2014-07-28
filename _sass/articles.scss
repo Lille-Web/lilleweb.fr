@@ -27,72 +27,86 @@
   }
   #listContent{
     padding-left:  10px;
-    article{
-      background-color :#FFF;
-      padding : 35px;
-      margin-bottom : 50px;
-      font-size: 16px;
-      line-height: 25px;
-
-      img{
-        max-width : 80%;
-        margin : 30px 0px;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        opacity : 0.7;
-
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-
-        &:hover{
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%);
-          -moz-filter: grayscale(0%);
-          -ms-filter: grayscale(0%);
-          -o-filter: grayscale(0%);
-          opacity : 1;
+    #articles{
+      article{
+        background-color :#FFF;
+        padding : 35px;
+        margin-bottom : 50px;
+        font-size: 16px;
+        line-height: 25px;
+        h2{
+          margin-top : 0px;
+        }
+        img{
+          max-width : 80%;
+          margin : 30px 0px;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          opacity : 0.7;
 
           -webkit-transition: all 0.5s ease;
           -moz-transition: all 0.5s ease;
           -ms-transition: all 0.5s ease;
           -o-transition: all 0.5s ease;
           transition: all 0.5s ease;
+
+          &:hover{
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            opacity : 1;
+
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+          }
+        }
+        .title, .categorie{display:inline-block;}
+        .title{
+          margin-bottom : 0px;
+          a{
+            color : $grey;
+            &:hover{
+              color : $red;
+              font-style:normal;
+            }
+          }
+        }
+        .info{
+          .author{
+            font-weight : bolder;
+          }
+          .date{
+            font-style : italic;
+          }
+        }
+        .desc{
+          margin : 30px 0px;
+        }
+        .tag{
+          border : 1px solid #A6A6A6;
+          color : #A6A6A6;
+          border-radius : 4px;
+          padding : 4px 12px;
+          margin-right : 10px;
+          &:hover{
+            text-decoration : none;
+            background-color : $red;
+            color :#FFF;
+            border-color : transparent;
+          }
         }
       }
-      .title, .categorie{display:inline-block;}
-      .title{
-        margin-bottom : 0px;
-      }
-      .info{
-        .author{
-          font-weight : bolder;
-        }
-        .date{
-          font-style : italic;
-        }
-      }
-      .desc{
-        margin : 30px 0px;
-      }
-      .tag{
-        border : 1px solid #A6A6A6;
-        color : #A6A6A6;
-        border-radius : 4px;
-        padding : 4px 12px;
-        margin-right : 10px;
-        &:hover{
-          text-decoration : none;
-          background-color : $red;
-          color :#FFF;
-          border-color : transparent;
-        }
-      }
+    }
+    #searchResults{
+      display : none;
     }
   }
   #option{
@@ -119,10 +133,17 @@
         padding : 0px;
         li{
           margin-bottom : 10px;
-          img{
-            display : inline-block;
-            width : 30px;
-            margin-right : 10px;
+          a{
+            color : $grey;
+            &:hover{
+              color : $red;
+              font-style:normal;
+            }
+            img{
+              display : inline-block;
+              width : 30px;
+              margin-right : 10px;
+            }
           }
         }
       }

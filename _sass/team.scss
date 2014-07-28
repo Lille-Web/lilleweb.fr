@@ -10,14 +10,35 @@
 		margin-bottom: 20px;
 
 		.member {
-			margin-top: 35px;
-			padding-bottom: 15px;
-			p {
-				margin-top: 20px;
+			&:nth-child(2n){
+				img.photo{
+					float : right;
+				}
 			}
-		}
-		.border {
-			border-bottom: 1px solid #ccc;
+			&:last-child{
+				.memberContent{
+					border:none;
+				}
+			}
+			.memberContent{
+				padding : 50px 0px;
+				border-bottom : 2px solid #F5F5F5;
+				h3{
+					margin-top : 0px;
+				}
+				p {
+					margin-top: 20px;
+				}
+				h4{
+					display : inline-block;
+				}
+				.twitter, .github{
+					img{
+						width : 20px;
+						margin-right : 10px;
+					}
+				}
+			}
 		}
 	}
 }
