@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Console.table();"
+title:  "Logger vos tableaux dans les dev tools."
 date:   2014-07-13
 category: JS
 tags : JS devTools astuces

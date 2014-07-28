@@ -2,27 +2,32 @@
 layout: default
 ---
 
-<div id="contents">
+<div id="contents" ng-app>
   <div id="listContent" class="col-md-8 col-md-offset-1 col-xs-8 col-xs-offset-2">
-    <h1> Articles </h1>
-    {% for post in paginator.posts %}
-      <article>
-        <span class="categorie">{{post.category}}</span>
-        <h2 class="title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <div class="info">
-          par <span class="author"> {{ site.data.members[post.author].name }} </span> -
-          <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
-        </div>
-        <p class="desc">{{post.description}}</p>
-        {% for tag in post.tags %}
-          <a class="tag">
-            {{ tag }}
-          </a>
-        {% endfor %}
-      </article>
-    {% endfor %}
+    <div id="articles">
+      <h1> Articles </h1>
+      {% for post in paginator.posts %}
+        <article>
+          <span class="categorie">{{post.category}}</span>
+          <h2 class="title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <div class="info">
+            par <span class="author"> {{ site.data.members[post.author].name }} </span> -
+            <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
+          </div>
+          <p class="desc">{{post.description}}</p>
+          {% for tag in post.tags %}
+            <a class="tag">
+              {{ tag }}
+            </a>
+          {% endfor %}
+        </article>
+      {% endfor %}
+    </div>
+    <div id="searchResults">
+      <h1> Recherche </h1>
+    </div>
 
 
     {% if paginator.total_pages > 1 %}
@@ -42,11 +47,11 @@ layout: default
     {% endif %}
 
   </div>
-  <div id="option" class="col-md-2 hidden-xs hidden-sm">
+  <div id="option" class="col-md-2 hidden-xs hidden-sm" ng-controller="optionsController">
     <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
-    <!-- <h3> Recherche </h3>
-    <input type="text" class="form-control search" placeholder="Recherche">
-    <div id="categories">
+    <h3> Recherche </h3>
+    <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
+    <!-- <<div id="categories">
       <h3> Catégories </h3>
       <span class="categorie"> JS </span> <span class="categorie"> CSS </span> <span class="categorie"> HTML </span> <span class="categorie"> DESIGN </span> <span class="categorie"> UX </span> <span class="categorie"> UI </span> <span class="categorie"> OPTIM </span>
     </div>
@@ -59,7 +64,7 @@ layout: default
       <ul>
       {% for member in site.data.members %}
         <li>
-          <img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}
+          <a href="/team"><img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}</a>
         </li>
       {% endfor %}
       </ul>
