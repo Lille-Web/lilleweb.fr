@@ -27,7 +27,6 @@ layout: default
     </div>
     <div id="searchResults">
       <h1> Recherche </h1>
-
     </div>
 
 
@@ -51,7 +50,7 @@ layout: default
   <div id="option" class="col-md-2 hidden-xs hidden-sm" ng-controller="optionsController">
     <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
     <h3> Recherche </h3>
-    <input id="searchBox" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
+    <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
     <!-- <<div id="categories">
       <h3> Catégories </h3>
       <span class="categorie"> JS </span> <span class="categorie"> CSS </span> <span class="categorie"> HTML </span> <span class="categorie"> DESIGN </span> <span class="categorie"> UX </span> <span class="categorie"> UI </span> <span class="categorie"> OPTIM </span>
