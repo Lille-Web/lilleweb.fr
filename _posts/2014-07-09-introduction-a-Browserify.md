@@ -6,6 +6,7 @@ category: JS
 tags : JS Node.js npm
 author: dck
 description : Créer ou récupérer vos packages NPM depuis votre navigateur très facilement avec Browserify.
+icon: /src/articles/browserify-logo.png
 ---
 
 <img src="/src/articles/browserify-logo.png" class="pull-left" alt="Browserify logo" />

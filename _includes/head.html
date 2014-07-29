@@ -8,6 +8,11 @@
         Lille Web</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+    {% if page.icon %}
+        <link rel="icon" type="image/png" href="{{ page.icon | prepend: site.baseurl }}">
+    {% else %}
+        <link rel="icon" type="image/png"  href="{{ "/src/img/logo.png" | prepend: site.baseurl }}">
+    {% endif %}
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
