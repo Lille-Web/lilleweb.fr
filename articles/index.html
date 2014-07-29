@@ -28,7 +28,13 @@ title: "Articles"
     </div>
     <div id="searchResults" ng-controller="searchController">
       <h1> Recherche </h1>
-      [[ phones.length ]] phones
+      <article>
+        <ul>
+          <li ng-repeat="result in results | filter: searchValue">
+            <a href="[[result.url]]">[[result.title]]</a>
+          </li>
+        </ul>
+      </articles>
     </div>
 
 
