@@ -18,7 +18,16 @@ contentsApp.config(['$interpolateProvider', function ($interpolateProvider) {
 }]);
 
 contentsApp.controller('searchController', function ($scope, $http) {
-  $http.get('/data.json').success(function(data) {
+  var xhr = new XMLHttpRequest();
 
-  });
+  xhr.open('GET', '/data.json');
+
+  xhr.onreadystatechange = function() {
+    console.log(xhr.responseText)
+    console.log(JSON.parse(xhr.responseText));
+  }
+  xhr.send();
+  // $http.get('/data.json').success(function(data) {
+
+  // });
 });
