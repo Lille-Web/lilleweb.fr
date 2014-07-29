@@ -39,8 +39,6 @@ a{
 
 a:hover {
   color : $red;
-  font-style : italic;
-  text-decoration : none !important;
 }
 
 .btn.btn-event{
@@ -181,5 +179,24 @@ a:hover {
 .btn.btn-white {
   &:hover {
     color: #343434 !important;
+  }
+}
+
+.post-link {
+  color: $black;
+  &:hover {
+    color: $red;
+  }
+}
+
+#articles {
+  h2.title {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-top: 0px;
+  }
+  .info {
+    margin-bottom: 10px;
   }
 }
