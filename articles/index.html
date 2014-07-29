@@ -29,9 +29,22 @@ title: "Articles"
     <div id="searchResults" ng-controller="searchController">
       <h1> Recherche </h1>
       <article>
+        <h4> Articles </h4>
         <ul>
-          <li ng-repeat="result in results | filter: searchValue">
+          <li ng-repeat="result in results.articles | filter: searchValue">
             <a href="[[result.url]]">[[result.title]]</a>
+          </li>
+        </ul>
+        <h4> Ressources </h4>
+        <ul>
+          <li ng-repeat="result in results.ressources | filter: searchValue">
+            <a href="[[result.url]]">[[result.name]]</a>
+          </li>
+        </ul>
+        <h4> Membres </h4>
+        <ul>
+          <li ng-repeat="result in results.members | filter: searchValue">
+            <a href="#">[[result.name]]</a>
           </li>
         </ul>
       </articles>

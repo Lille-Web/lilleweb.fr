@@ -19,6 +19,6 @@ contentsApp.config(['$interpolateProvider', function ($interpolateProvider) {
 
 contentsApp.controller('searchController', function ($scope, $http) {
   $http.get('/data.json').success(function(data) {
-    $scope.results = data.articles;
+    $scope.results = data;
   });
 });
