@@ -3,7 +3,7 @@ layout: default
 title: "Articles"
 ---
 
-<div id="contents" ng-app>
+<div id="contents" ng-app="contentsApp">
   <div id="listContent" class="col-md-8 col-md-offset-1 col-xs-8 col-xs-offset-2">
     <div id="articles">
       <h1> Articles </h1>
@@ -26,8 +26,9 @@ title: "Articles"
         </article>
       {% endfor %}
     </div>
-    <div id="searchResults">
+    <div id="searchResults" ng-controller="searchController">
       <h1> Recherche </h1>
+      [[ phones.length ]] phones
     </div>
 
 
@@ -48,7 +49,7 @@ title: "Articles"
     {% endif %}
 
   </div>
-  <div id="option" class="col-md-2 hidden-xs hidden-sm" ng-controller="optionsController">
+  <div id="option" class="col-md-2 hidden-xs hidden-sm">
     <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
     <h3> Recherche </h3>
     <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">

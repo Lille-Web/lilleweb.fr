@@ -2,8 +2,8 @@
 
 ---
 [
-  {"articles" :
-    [
+  {
+    "articles" : [
       {% for post in site.posts %}
         {
           "title" : "{{ post.title | escape }}",
@@ -12,23 +12,20 @@
           "date" : "{{ post.date }}",
           "tags" : "{{ post.tags | escape }}",
           "author" : "{{ post.author }}",
-          "description" : "{{ post.description }}",
-          "content" : "{{ post.content }}"
-        } {% if forloop.last %}{% else %},{% endif %}
+        }{% if forloop.last %}{% else %},{% endif %}
       {% endfor %}
     ]
   },
   {
-    "members" :
-    [
+    "members" : [
       {% for member in site.data.members %}
         {
           "name" : "{{ member[1].name | escape }}",
           "image" : "{{ member[1].image }}",
           "poste" : "{{ member[1].poste }}",
           "site" : "{{ member[1].site }}",
-          "description" : "{{ member[1].description }}",
-        } {% if forloop.last %}{% else %},{% endif %}
+        }{% if forloop.last %}{% else %},
+        {% endif %}
       {% endfor %}
     ]
   }

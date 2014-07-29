@@ -9,3 +9,16 @@ function inputChange(){
   }
 
 }
+
+
+var contentsApp = angular.module('contentsApp', []);
+contentsApp.config(['$interpolateProvider', function ($interpolateProvider) {
+  $interpolateProvider.startSymbol('[[');
+  $interpolateProvider.endSymbol(']]');
+}]);
+
+contentsApp.controller('searchController', function ($scope, $http) {
+  $http.get('/data.json').success(function(data) {
+
+  });
+});
