@@ -3,7 +3,7 @@ layout: post
 title:  "Logger vos tableaux dans les dev tools."
 date:   2014-07-13
 category: JS
-tags : JS devTools astuces
+tags : devTools astuces
 author: john
 description : Qui ne s'est jamais arraché les cheveux en voulant afficher un tableau dans la console ?
 ---

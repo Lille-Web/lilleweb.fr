@@ -3,7 +3,7 @@ layout: post
 title:  "Générer un fichier JSON pour Jekyll"
 date:   2014-07-30
 category: Ruby
-tags : Ruby Jekyll JSON
+tags : Jekyll JSON
 author: john
 description : "Stocker les données de votre site dans un fichier JSON afin de les exploiter dynamiquement."
 ---

@@ -17,7 +17,7 @@
               {% for post in site.posts limit:3 %}
               <article>
                 <div class="col-md-1 col-xs-1">
-                  <div class="categorie">
+                  <div class="categorie {{post.category}}">
                     {{post.category}}
                   </div>
                 </div>

@@ -10,7 +10,7 @@ title: "Articles"
       <h1> Articles </h1>
       {% for post in paginator.posts %}
         <article>
-          <span class="categorie">{{post.category}}</span>
+          <span class="categorie {{post.category}}">{{post.category}}</span>
           <h2 class="title">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>

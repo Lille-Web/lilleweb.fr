@@ -15,7 +15,6 @@
   }
 
   .categorie{
-    background-color: #F1BF26;
     color: #FFF;
     text-align: center;
     border-radius: 4px;
@@ -24,6 +23,13 @@
     vertical-align: middle;
     margin-bottom: 14px;
     margin-right: 10px;
+    float: left;
+    &.Ruby {
+      background: #e74c3c;
+    }
+    &.JS {
+      background-color: #F1BF26;
+    }
   }
   #listContent{
     padding-left:  10px;
@@ -185,6 +191,33 @@ body.zen{
       &:hover{
         opacity : 1;
       }
+    }
+  }
+}
+
+#articles {
+  h2.title {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-top: 0px;
+    width: 90%;
+  }
+  .info {
+    margin-bottom: 10px;
+    clear: both;
+    font-style: italic;
+  }
+
+  article.post {
+    .page-header small { font-size: 16px;}
+    h3 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    h3, h4, h5 {
+      margin-top: 30px;
+      font-weight: bold;
     }
   }
 }

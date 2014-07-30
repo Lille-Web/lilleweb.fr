@@ -3,7 +3,7 @@ layout: post
 title:  "Introduction à Browserify"
 date:   2014-07-19
 category: JS
-tags : JS Node.js npm
+tags : Node.js npm
 author: dck
 description : Créer ou récupérer vos packages NPM depuis votre navigateur très facilement avec Browserify.
 icon: /src/articles/browserify-logo.png
