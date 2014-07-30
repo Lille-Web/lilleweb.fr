@@ -13,6 +13,8 @@ Dans ces choix, on distingue en top 3 les indémodables PHP, Java ou encore .NET
 
 Etant moi même développeur front-end, il me serait inintéressant de perdre mon temps à apprendre un nouveau langage alors que l'on peut très bien utiliser [Node.js](http://nodejs.org) et le framework web Express.
 
+Dans cet article, nous allons voir comment fonctionne Express et mettre en place une API pour un blog. Nous verrons plus tard comment exploiter cette API avec différents frameworks JavaScript.
+
 ### Un framework
 
 Un framework se traduit généralement en français "boite à outils", qui selon moi, défini bien Express. En effet, il dispose d'une API bien fourni mais possède également des "plugins" nommés __middleware__.
@@ -36,3 +38,15 @@ L'installation d'Express est très rapide ! Vous avez besoin de [Node.js](http:/
 {% highlight js %}
 npm install express 
 {% endhighlight %}
+
+### Fonctionnement
+
+Comme vous avez pu le constater dans le code précedent, Express possède une API verbeuse qui permet de créer facilement une API RESTful. 
+REST pour **RE**presentational **S**tate **T**ransfer est une architecture assez conventioniste qui repose sur les verbes HTTP qui sont principalement :
+
+- GET 
+- POST
+- PUT
+- DELETE
+
+Chacun de ces verbes est utilisé dans un but précis, par exemple un **POST** est généralement utilisé pour la création ou encore **PUT** qui lui est utilisé pour de la mise à jour de donnée.
