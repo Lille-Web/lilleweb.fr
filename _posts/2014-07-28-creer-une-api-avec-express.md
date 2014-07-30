@@ -39,6 +39,8 @@ L'installation d'Express est très rapide ! Vous avez besoin de [Node.js](http:/
 npm install express 
 {% endhighlight %}
 
+Pour pouvoir tester notre API, je vous conseille d'installer [Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm), c'est une très bon extension Chrome qui offre énormement de possibilités.
+
 ### Fonctionnement
 
 Comme vous avez pu le constater dans le code précedent, Express possède une API verbeuse qui permet de créer facilement une API RESTful. 
@@ -50,3 +52,18 @@ REST pour **RE**presentational **S**tate **T**ransfer est une architecture assez
 - DELETE
 
 Chacun de ces verbes est utilisé dans un but précis, par exemple un **POST** est généralement utilisé pour la création ou encore **PUT** qui lui est utilisé pour de la mise à jour de donnée.
+
+#### Récupération des articles
+
+Tout d'abord, nous allons récupérer la liste des articles existants. Voici un petit rappel du code pour démarrer :
+{% highlight js %}
+var express = require('express');
+var app = express();
+
+app.listen(3000);
+{% endhighlight %} 
+
+On récupère le module __express__ pour ensuite l'appeler et on oublie pas de donner un port d'écoute pour notre application (ici 3000). Vous pouvez évidemment mettre celui que vous voulez à condition qu'il ne soit pas utilisé !
+
+Lorsque vous développez une API, il est recommandé d'utiliser des namespaces pour chacun de vos éléments. Ici nous allons donc créer un namespace **/api/**, dans ce namespace, nous allons en créer un nouveau appelé **/posts**.
+
