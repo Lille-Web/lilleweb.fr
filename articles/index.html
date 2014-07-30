@@ -3,7 +3,8 @@ layout: default
 title: "Articles"
 ---
 
-<div id="contents" ng-app>
+
+<div id="contents" ng-app="contentsApp">
   <div id="listContent" class="col-md-7 col-md-offset-1 col-xs-8 col-xs-offset-2">
     <div id="articles">
       <h1> Articles </h1>
@@ -26,8 +27,28 @@ title: "Articles"
         </article>
       {% endfor %}
     </div>
-    <div id="searchResults">
+    <div id="searchResults" ng-controller="searchController">
       <h1> Recherche </h1>
+      <article>
+        <h4> Articles </h4>
+        <ul>
+          <li ng-repeat="result in results.articles | filter: searchValue">
+            <a href="[[result.url]]">[[result.title]]</a>
+          </li>
+        </ul>
+        <h4> Ressources </h4>
+        <ul>
+          <li ng-repeat="result in results.ressources | filter: searchValue">
+            <a href="[[result.url]]">[[result.name]]</a>
+          </li>
+        </ul>
+        <h4> Membres </h4>
+        <ul>
+          <li ng-repeat="result in results.members | filter: searchValue">
+            <a href="#">[[result.name]]</a>
+          </li>
+        </ul>
+      </articles>
     </div>
 
 
@@ -48,7 +69,7 @@ title: "Articles"
     {% endif %}
 
   </div>
-  <div id="option" class="col-md-2 hidden-xs hidden-sm" ng-controller="optionsController">
+  <div id="option" class="col-md-2 hidden-xs hidden-sm">
     <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
     <h3> Recherche </h3>
     <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
