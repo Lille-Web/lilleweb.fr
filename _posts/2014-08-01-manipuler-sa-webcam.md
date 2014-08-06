@@ -46,9 +46,11 @@ Avant d'appeler notre méthode, il nous faut vérifier si celle-ci existe bien d
 
 {% highlight js %}
 if (navigator.getUserMedia) {
-  // Appel navigator.userMedia()
-} else {
+  // navigator.userMedia()
+} 
+else {
   console.error("getUserMedia not supported");
 }
 {% endhighlight %}
 
+À présent, nous pouvons appeler notre méthode, je vous conseille de désactiver le micro pour oreilles.
