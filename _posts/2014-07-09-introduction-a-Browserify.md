@@ -12,7 +12,9 @@ icon: /src/articles/browserify-logo.png
 <img src="/src/articles/browserify-logo.png" class="pull-left" alt="Browserify logo" />
 Imaginez vous pouvoir récupérer la librairie [Underscore](http://underscorejs.org/) depuis votre navigateur sans avoir à aller sur le site pour télécharger le fichier ? Voilà tout l'intérêt de [Browserify](http://browserify.org/).
 
-### Des modules dans le navigateur ?
+<h3 class="specialFloat">
+	Des modules dans le navigateur ?
+</h3> 
 
 Comme vous le savez, nos navigateurs actuels ne permettent pas de créer simplement des modules et de les partager à l'instar de [Node.js](http://nodejs.org) et ses nombreux modules [npm](http://npm.org). 
 

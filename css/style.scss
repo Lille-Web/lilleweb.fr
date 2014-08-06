@@ -198,3 +198,14 @@ a:hover {
   }
 }
 
+
+h3.specialFloat {
+  display: inline-block;
+  width: 525px;
+  margin-top: 10px !important;
+}
+
+ul.specialFloat li {
+  position: relative;
+  left: 30px;
+}
