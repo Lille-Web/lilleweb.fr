@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gulp, un task runner rapide et efficace"
-date:   2014-08-01
+date:   2014-08-08
 category: JS
 tags : task cli 
 author: dck
