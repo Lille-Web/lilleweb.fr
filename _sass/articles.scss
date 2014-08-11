@@ -30,6 +30,9 @@
     &.JS {
       background-color: #F1BF26;
     }
+    &.CSS{
+      background-color : #2AA9E0;
+    }
   }
   #listContent{
     padding-left:  10px;
@@ -77,58 +80,57 @@
           -o-transition: all 0.5s ease;
           transition: all 0.5s ease;
 
-          &:hover{
-            filter: grayscale(0%);
-            -webkit-filter: grayscale(0%);
-            -moz-filter: grayscale(0%);
-            -ms-filter: grayscale(0%);
-            -o-filter: grayscale(0%);
-            opacity : 1;
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%);
+          -ms-filter: grayscale(0%);
+          -o-filter: grayscale(0%);
+          opacity : 1;
 
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-          }
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
         }
-        .title, .categorie{display:inline-block;}
-        .title{
-          margin-bottom : 0px;
-          a{
-            color : $grey;
-            &:hover{
-              color : $red;
-              font-style:normal;
-            }
-          }
-        }
-        .info{
-          .author{
-            font-weight : bolder;
-          }
-          .date{
-            font-style : italic;
-          }
-        }
-        .desc{
-          margin : 30px 0px;
-        }
-        .tag{
-          border : 1px solid #A6A6A6;
-          color : #A6A6A6;
-          border-radius : 4px;
-          padding : 4px 12px;
-          margin-right : 10px;
+      }
+      .title, .categorie{display:inline-block;}
+      .title{
+        margin-bottom : 0px;
+        a{
+          color : $grey;
           &:hover{
-            text-decoration : none;
-            background-color : $red;
-            color :#FFF;
-            border-color : transparent;
+            color : $red;
+            font-style:normal;
           }
         }
       }
+      .info{
+        .author{
+          font-weight : bolder;
+        }
+        .date{
+          font-style : italic;
+        }
+      }
+      .desc{
+        margin : 20px 0px;
+      }
+      .tag{
+        border : 1px solid #A6A6A6;
+        color : #A6A6A6;
+        border-radius : 4px;
+        padding : 4px 12px;
+        margin-right : 10px;
+        &:hover{
+          text-decoration : none;
+          background-color : $red;
+          color :#FFF;
+          border-color : transparent;
+        }
+      }
     }
+  }
     #searchResults{
       display : none;
     }
@@ -173,7 +175,6 @@
       }
     }
   }
-}
 
 body.zen{
   header{
