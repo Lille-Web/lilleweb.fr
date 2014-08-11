@@ -191,4 +191,8 @@ function takeSnap() {
 En plus de récupérer la vidéo, nous récupérons le canvas de la page pour lui assigner une largeur et une hauteur. N'hésitez pas à indiquer les dimension de votre choix.
 Ensuite, nous allons indiquer que notre canvas sera en 2 dimensions à l'aide de la méthode `getContext`. 
 
-La méthode `drawImage` nous donne la possibilité de dessiner une image [à partir d'un élément](https://developer.mozilla.org/fr/docs/Tutoriel_canvas/Utilisation_d'images#drawImage)
+La méthode `drawImage` nous donne la possibilité de dessiner une image [à partir d'un élément](https://developer.mozilla.org/fr/docs/Tutoriel_canvas/Utilisation_d'images#drawImage), nous lui passons donc notre vidéo puis la position x/y et pour finir les dimensions de notre dessin.
+
+Pour que le canvas puisse afficher ce que nous venons de créer, nous avons besoin de transformer notre élément en image. Pour cela, nous pouvons utiliser la méthode `toDataURL` suivi du type en argument pour créer un lien vers notre image. Il ne reste plus qu'à lier ce lien à notre canvas pour voir s'afficher notre screenshot !
+
+Vous pouvez retrouver le code de l'application un peu plus élaboré sur [Github](https://github.com/Lille-Web/Snapcam). N'hésitez pas à partager vos idées ou autres commentaires !
