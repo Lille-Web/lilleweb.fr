@@ -37,6 +37,12 @@ header.hd-index{
       background : none;
       border : 1px solid $white !important;
       margin-top : 40px;
+      a{
+        color : #FFF;
+        &:hover{
+          color : $red;
+        }
+      }
       &:hover{
         background-color : $white;
       }
