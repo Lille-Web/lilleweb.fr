@@ -37,4 +37,7 @@ livre:
 
 cours:
   name: Cours
-  content :
+  content : 
+    soon: 
+      name: "A venir"
+      link: "#"
