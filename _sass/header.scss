@@ -45,6 +45,8 @@ header.hd-index{
       }
       &:hover{
         background-color : $white;
+
+        a { color: $red; }
       }
     }
   }
