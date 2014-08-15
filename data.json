@@ -9,7 +9,7 @@
         "category" : "{{ post.category }}",
         "url" : "{{ post.url }}",
         "date" : "{{ post.date }}",
-        "tags" : "{{ post.tags | escape }}",
+        "tags" : "{{ post.tags  }}",
         "author" : "{{ post.author }}"
       }{% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
