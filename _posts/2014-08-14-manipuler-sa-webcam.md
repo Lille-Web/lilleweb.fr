@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Manipuler sa webcam"
-date:   2014-08-01
+date:   2014-08-14
 category: JS
 tags : webcam hack
 author: dck

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Filtre pour Jekyll (ou autre) en AngularJS - Part 1. Le champ de recherche"
-date:   2014-07-30
+date:   2014-08-10
 category: JS
 tags : Ruby Jekyll JSON AngularJS
 author: john
@@ -15,8 +15,6 @@ L’un des principaux avantages de Jekyll est aussi un de ses inconvénients maj
 ## Le problème des accolades
 
 Jekyll utilise le moteur de template Liquid. Ce langage impose d’utiliser des doubles curly brackets ( {{ … }} ) pour afficher des éléments. Ces tags d’interpolation sont les mêmes que ceux utilisés par AngularJS que l’on souhaite utiliser ici. Il faut donc pouvoir utiliser autre chose par défaut pour AngularJS.
-
-Ce point avait déjà été traité dans l’article [AngularJS : modifier les tags d’interpolations ( {{ }} )](http://johnathan.fr/blog/angularjs-modifier-les-tags-dinterpolations/)
 
 Pour rappel il vous suffit de faire :
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction à Browserify"
-date:   2014-07-19
+date:   2014-08-05
 category: JS
 tags : Node.js npm
 author: dck
