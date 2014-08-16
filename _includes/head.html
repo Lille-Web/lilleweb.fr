@@ -4,7 +4,7 @@
     <title>
         {% if page.title %}
             {{ page.title }} -
-        {% endif %} 
+        {% endif %}
         Lille Web</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
@@ -18,6 +18,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-    <script src="/js/angular.min.js">
+    <script src="/js/angular.min.js"></script>
+    {% include analytics.html %}
 </head>
-{% include analytics.html %}
