@@ -215,3 +215,28 @@ ul.specialFloat li {
   position: relative;
   top: 35px;
 }
+
+@media (max-width: 768px) { 
+  #articles {
+    h1, input[type="button"] { 
+      margin-left: 5px;
+    }
+    h2.title {
+      width: 84%;
+    }
+
+    #option {
+
+    }
+  }
+  #contents #listContent article {
+    padding: 15px;
+  }
+
+  pre {
+    word-break: normal;
+    word-wrap: normal;
+    overflow-x: scroll;
+  }
+
+}
