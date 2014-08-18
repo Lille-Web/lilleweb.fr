@@ -1,7 +1,7 @@
 # Site settings
 title: Lille Web
 email: contact@lille-web.fr
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Articles, conférences, formations, retrouvez tout ce dont vous avez besoin, pour et par des passionnés du web !"
 baseurl: ""
 url: "http://lille-web.fr"
 twitter_username: lille_web
