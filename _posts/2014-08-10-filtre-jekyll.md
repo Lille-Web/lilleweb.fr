@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Filtre pour Jekyll (ou autre) en AngularJS - Part 1. Le champ de recherche"
+title:  "Créer un filtre avec AngularJS - Part 1. Le champ de recherche"
 date:   2014-08-10
 category: JS
 tags : Ruby Jekyll JSON AngularJS
