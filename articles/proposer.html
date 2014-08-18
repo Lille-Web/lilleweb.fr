@@ -19,12 +19,12 @@ header_titleSub : Participer activement à la communauté Lille Web
       <div class="col-md-10 col-md-offset-1">
         <h3> Partager un article </h3>
         <p> Vous avez juste à nous proposer ici le lien d'un article en français que vous jugez pertinent. Cet article peut également venir de votre blog si vous souhaitez que nous le relayons !
-        <form method="POST" action="mail.php?source=articleShareExtern" role="form">
+        <form method="POST" action="/mail.php?source=articleShareExtern" role="form">
           <div class="col-md-3">
-            <input type="name" placeholder="Votre nom" class="form-control">
+            <input type="name" placeholder="Votre nom" id="name" name="name" class="form-control">
           </div>
           <div class="col-md-6">
-            <input type="link" placeholder="Lien de l'article" class="form-control">
+            <input type="link" placeholder="Lien de l'article" id="content" name="content" class="form-control">
           </div>
           <div class="col-md-3">
             <button type="submit" class="btn btn-success">Submit</button>

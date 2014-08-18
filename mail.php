@@ -1,5 +1,5 @@
 <?php
-	if($_POST['source'] == 'contact'){
+	if($_GET['source'] == 'contact'){
 		if (get_magic_quotes_gpc())
 		{
 			$name = stripslashes($_POST['name']);
@@ -15,6 +15,7 @@
 			$object = $_POST['object'];
 			$content = $_POST['content'];
 		}
+
 		$to = 'contact@lille-web.fr';
 		$object = '[Contact-LilleWeb] from '.$name.' about : '. $object;
 
@@ -22,8 +23,8 @@
 		$msg .= ''."\r\n";
 		$msg .= 'Objet : '.$object."\r\n";
 		$msg .= 'Email : '.$mail."\r\n";
-		$msg .= 'Contenu du message : '.$message."\r\n";
-	}elseif($_POST['source'] == 'articleShareExtern'){
+		$msg .= 'Contenu du message : '.$content."\r\n";
+	}elseif($_GET['source'] == 'articleShareExtern'){
 		if (get_magic_quotes_gpc())
 		{
 			$name = stripslashes($_POST['name']);
