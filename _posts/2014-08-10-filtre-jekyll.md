@@ -46,11 +46,11 @@ Exemple :
 
 ## JSON
 
-Tout le contenu que vous souhaitez rendre disponible dans vos filtres de recherches doit être présent dans un fichier JSON. Vous pouvez consulter [cet article](‘#’) pour savoir comment faire facilement.
+Tout le contenu que vous souhaitez rendre disponible dans vos filtres de recherches doit être présent dans un fichier JSON. Vous pouvez consulter [cet article](http://lilleweb.fr/ruby/2014/08/03/data-jekyll/) pour savoir comment faire facilement.
 
 ## Récupérer le contenu dans votre application AngularJS
 
-Pour récupérer les données de votre site dans votre application AngularJS, il vous suffit d’utiliser le service $http. Pour information, $http est un service du core d’AngularJS qui permet les communications http avec le serveur. Vous pouvez trouver plus d’infos sur [la doc](https://docs.angularjs.org/api/ng/service/$http).
+Pour récupérer les données de votre site dans votre application AngularJS, il vous suffit d’utiliser le service $http. Vous devrez aller chercher le fichier que vous venez de générer contenant le contenu de votre site que vous souhaitez indexer. Pour information, $http est un service du core d’AngularJS qui permet les communications http avec le serveur. Vous pouvez trouver plus d’infos sur [la doc](https://docs.angularjs.org/api/ng/service/$http).
 
 {% highlight js %}
 
