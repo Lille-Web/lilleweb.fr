@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Créer des tâches avec npm"
+title:  "Créer des tâches avec npm-script"
 category: JS
+date:   2014-08-21
 tags : Node.js npm task
 author: dck
 description : Créez facilement des tâches pour vos projets avec npm !
@@ -12,7 +13,7 @@ Peut être avez vous déjà essayer les différents task runner du moment, on re
 
 ### Fonctionnement
 
-Tout va se jouer dans notre `package.json`, en effet, npm est capable de lire et exécuter des commandes. 
+Tout va se jouer dans notre `package.json`, en effet, npm est capable de lire et exécuter des commandes dans votre terminal. 
 Lorsque vous démarrez un projet, vous pouvez utiliser la commande `npm init` pour créer un fichier __package.json__ à l'aide d'un assistant en ligne de commande. Voici un exemple :
 
 {% highlight js %}
@@ -63,8 +64,12 @@ Passons à des choses plus intéressantes, ici nous allons créer des tâches po
     "build-css": "lessc styles/less/*.less > styles/css/bundle.css"
   },
   "author": "Lille Web",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^1.7.4"
+  }
 }
+
 {% endhighlight %}
 
 Voilà le travail ! Vous pouvez maintenant lancer la commande `npm run build-css` pour compiler vos fichiers less sans avoir à se rappeler du bon chemin et de la bonne syntaxte ! C'est idéal lorsque vous revenez sur un projet après de longues vacances.
@@ -81,14 +86,19 @@ N'oubliez pas d'installer le module en faisant `npm install browserify --save`. 
   "main": "index.js",
   "scripts": {
     "build-css": "lessc styles/less/*.less > styles/css/bundle.css",
-    "build-js": "browerify js/modules/*.js > js/main.js"
+    "build-js": "browserify js/modules/*.js > js/main.js",
   },
   "author": "Lille Web",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^5.10.0",
+    "less": "^1.7.4"
+  }
 }
+
 {% endhighlight %}
 
-Ici une question se pose, ce n'est pas pratique du tout de devoir lancer les tâches en 2 fois ? Je vous l'accorde, c'est pour cela que nous allons créer une 3<sup>ème</sup> tâche qui va lancer les deux autres comme ceci :
+Ici un problème se pose, doit on vraiment s'amuser à lancer les scripts un par un ? La réponse est non. Pour remédier à ce problème, nous allons créer une 3<sup>ème</sup> tâche qui va lancer les deux autres comme ceci :
 
 {% highlight js %}
 {
@@ -98,14 +108,21 @@ Ici une question se pose, ce n'est pas pratique du tout de devoir lancer les tâ
   "main": "index.js",
   "scripts": {
     "build-css": "lessc styles/less/*.less > styles/css/bundle.css",
-    "build-js": "browerify js/modules/*.js > js/main.js",
+    "build-js": "browserify js/modules/*.js > js/main.js",
     "build": "npm run build-css && npm run build-js"
   },
   "author": "Lille Web",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^5.10.0",
+    "less": "^1.7.4"
+  }
 }
+
 {% endhighlight %}
+
+Il est désormais plus facile pour tout compiler en une seule ligne de commande.
 
 ### Conclusion
 
-Grâce aux tâches npm, nous pouvons nous passer des task runners les plus connus pour de petits projets grâce à sa souplesse et sa rapidité de mise en place.
+Grâce aux tâches npm, nous pouvons nous passer des task runners les plus connus pour de petits projets grâce à sa souplesse et sa rapidité de mise en place. Evidemment pour des projets à envergures il est nettement recommandé de se servir d'une librairie afin d'avoir plus de souplesse dans l'organisation des tâches.
