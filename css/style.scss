@@ -100,6 +100,9 @@ a:hover {
           &.JS {
             background-color: #F1BF26;
           }
+          &.HTML {
+            background-color: #F1652A;
+          }
         }
 
         p.date{
@@ -218,10 +221,40 @@ ul.specialFloat li {
   position: relative;
   top: 35px;
 }
+#contents  {
+  .pagination {
+    width: 50%;
+    margin: auto;
+    display: block;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .pagination>li>a:hover, 
+  .pagination>li>span:hover, 
+  .pagination>li>a:focus, 
+  .pagination>li>span:focus {
+    color: $red;
+  }
 
-@media (max-width: 768px) { 
+  .pagination>li>a, .pagination>li>span {
+    color: $red;
+  }
+
+  .pagination>.active>a, 
+  .pagination>.active>span, 
+  .pagination>.active>a:hover, 
+  .pagination>.active>span:hover, 
+  .pagination>.active>a:focus, 
+  .pagination>.active>span:focus {
+    background: $red;
+    border-color: $red;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
   #articles {
-    h1, input[type="button"] { 
+    h1, input[type="button"] {
       margin-left: 5px;
     }
     h2.title {
