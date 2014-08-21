@@ -32,7 +32,8 @@ Lorsque vous démarrez un projet, vous pouvez utiliser la commande `npm init` po
 
 Pour créer une commande, c'est assez simple, vous pouvez repérer l'objet **scripts** qui contient ici une clé __test__.
 Placez vous dans le répertoire contenant votre package.json si ce n'est pas déjà le cas et lancez la commande `npm run test`.
-La commande echo est bien utilisée après c'est un cas particulier, vous pouvez vous amuser à en créer une similaire par exemple :
+
+La commande echo est donc bien utilisée après c'est un cas particulier, vous pouvez vous amuser à en créer une similaire. Ici par exemple, j'ai remplacé la tâche test par la tâche __hello__, il ne vous reste plus qu'à exécuter la commande `npm run hello` dans votre terminal :
 
 {% highlight js %}
 {
