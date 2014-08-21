@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Créer une API avec Express"
+title:  "Créer une API avec Express - Partie 1"
 category: JS
 tags : Node.js API
 author: dck
-description : Créer rapidement une application pour vos applications web grâce ce web framework Node.js 
+description : "Créer rapidement une application pour vos applications web grâce ce web framework Node.js"
 ---
 
+<img src="/src/articles/4-express-part-1/expresslogo.png" class="pull-left" alt="Express logo" />
 Aujourd'hui, lorsque que souhaitez créer votre site internet, on rencontre toujours le même cas de figure, le choix du langage serveur. 
 Dans ces choix, on distingue en top 3 les indémodables PHP, Java ou encore .NET. 
 
 Etant moi même développeur front-end, il me serait inintéressant de perdre mon temps à apprendre un nouveau langage alors que l'on peut très bien utiliser [Node.js](http://nodejs.org) et le framework web Express.
 
-Dans cet article, nous allons voir comment fonctionne Express et mettre en place une API pour un blog. Nous verrons plus tard comment exploiter cette API avec différents frameworks JavaScript.
+Cet article correspond à une série car le sujet est assez long à traiter, aujourd'hui nous allons voir comment fonctionne Express et mettre en place le modèle de notre application.
 
 ### Un framework
 
@@ -66,32 +67,40 @@ Voilà à quoi devra ressembler nos URLs :
 
 ### Création du modèle
 
+Etant assez conventioniste, je suis me suis naturellement dirigé vers le pattern **MVC** (Modèle Vue Contrôleur) qui pour moi permet de bien structurer son application. 
 
-#### Récupération des articles
-Tout d'abord, nous allons récupérer la liste des articles existants. Voici un petit rappel du code pour démarrer :
+Notre modèle est représenté ici par des articles, nous allons donc créer un objet __Post__ qui contiendra les diverses méthodes permettant d'effectuer des requêtes en bases de données.
+
+**Choisir une base de donnée**
+
+Comme pour les autres langages, nous avons l'embarrat du choix, entre les bases NoSQL qui montent en puissance (MongoDB, Redis, ..) ou les choix plus classiques comme MySQL ou PostgreSQL tous possèdent un module npm.
+
+J'ai décidé de faire simple et rester sur MySQL, je prendrais un peu plus de temps dans un autre article pour vous faire découvrir une base NoSQL.
+
+Pour commencer, nous allons mettre en place le module npm de [MySQL](https://www.npmjs.org/package/mysql), créez donc une base de donnée du nom de votre choix avec une table __posts__. 
+
+J'ai pour habitude de placer tous mes fichiers de configurations dans un dossier **config**, cela me permet de m'y retrouver plus facilement. Dans ce dossier, nous allons créer un fichier **mysql.js** qui contiendra l'initialisation :
+
 {% highlight js %}
-var express = require('express');
-var app = express();
-
-var Post = require('./models/post.js');
-
-app.listen(3000);
-{% endhighlight %} 
-
-On récupère le module __express__ pour ensuite l'appeler et on oublie pas de donner un port d'écoute pour notre application (ici 3000). Vous pouvez évidemment mettre celui que vous voulez à condition qu'il ne soit pas utilisé !
-
-Commençons par récupérer la liste de nos articles, nous :
-{% highlight js %}
-app.get('/api/posts', function(req, res) {
-  Post.findAll(function(err, posts) {
-    err ? res.send(500) : res.send(posts);
-  })
+var mysql = require('mysql'),
+connection = mysql.createConnection({
+  database : 'Blog',
+  host     : 'localhost',
+  user     : 'root',
+  password : ''
 });
+
+module.exports = connection;
 {% endhighlight %}
 
-Ici, on utilise la méthode GET étant donné que c'est pour récupérer des informations, chaque méthode express (get/post/put/delete) prend en paramètre 2 arguments :
+Ensuite, créez un fichier `Post.js` dans un dossier __models__, ce fichier contiendra notre objet comme ceci :
+{% highlight js %}
+var mysql = require('../config/mysql');
+var Post = function() {};
 
-- une URL
-- une fonction de callback comprenant la requête et la réponse en argument
+module.exports = Post;
+{% endhighlight %}
 
-Vous aurez sans doute deviné que tout va se jouer dans ce callback, nous pouvons appeler notre méthode créée auparavant pour récupérer tout nos articles.
+Nous appelons notre module __mysql__ que nous avons crée précedemment, ça nous évite de devoir répeter plusieurs la connexion à la base de donnée.
+
+
