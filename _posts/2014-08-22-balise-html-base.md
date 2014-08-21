@@ -2,10 +2,10 @@
 layout: post
 title:  "La balise base"
 date:   2014-08-22
-category: html
+category: HTML
 tags : balise base url lien
 author: john
-description : "Découvrez la balise base qui vous permet "
+description : "Découvrez la balise base qui vous permet de spécifier un préfixe pour les URL relative."
 ---
 Je suis récemment tombé sur la balise `base` dans une page html où je devais intégrer un test et je ne connaissais pas son existence.
 
