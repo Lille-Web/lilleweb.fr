@@ -39,7 +39,7 @@ Cette balise possède également l'attribut target qui permet de spécifier l'ou
 
 {% endhighlight %}
 
-*Voici un exemple d'utilisation concrète, ici tout les liens twitter pointeront vers la page dédié au compte et s'ouvriront dans un nouvel onglet sans devoir préciser l'adresse à chaque fois : *
+*Voici un exemple d'utilisation concrète, ici tout les liens twitter pointeront vers la page dédié au compte et s'ouvriront dans un nouvel onglet sans devoir préciser l'adresse à chaque fois :*
 
 {% highlight html %}
 
