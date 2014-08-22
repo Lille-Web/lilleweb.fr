@@ -39,6 +39,23 @@ Cette balise possède également l'attribut target qui permet de spécifier l'ou
 
 {% endhighlight %}
 
+*Voici un exemple d'utilisation concrète, ici tout les liens twitter pointeront vers la page dédié au compte et s'ouvriront dans un nouvel onglet sans devoir préciser l'adresse à chaque fois : *
+
+{% highlight html %}
+
+<head>
+   <base href="https://twitter.com/" target="_blank">
+</head>
+<body>
+   <ul>
+      <li><a href="lille_web"> @Lille_web</a></li>
+      <li><a href="JohnathanSUP"> @JohnathanSUP</a></li>
+      <li><a href="DCK__"> @DCK__</a></li>
+   </ul>
+</body>
+
+{% endhighlight %}
+
 ### Compatibilité
 
 Cette balise a été implémentée dans les spécifications HTML 4.01
