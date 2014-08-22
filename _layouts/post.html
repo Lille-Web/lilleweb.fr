@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<script src="{{ "/js/navigationMenu.js" | prepend: site.baseurl }}"></script>
+
 {% assign author = site.data.members[page.author] %}
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -12,12 +14,12 @@ layout: default
         <input type="button" class="btn btn-event" id="backToArticles" value="&larr; Articles" style="margin-top : -50px;" />
         <article class="post">
           <div class="page-header">
-              <h2 class="title">
+              <h1 class="title">
                   {{ page.title }}
                   <small>
                       <span class="date"> ajouté le {{ page.date | date: "%d/%m/%Y" }} </span>
                   </small>
-              </h2>
+              </h1>
           </div>
 
           {{ content }}
@@ -62,5 +64,14 @@ layout: default
           {% endfor %}
         </ul>
       </div>
+      {% assign navigationMenu = page.navigationMenu | downcase %}
+      {% if navigationMenu == 'true' %}
+        <div id="navigationMenu">
+          <h3> Sommaire </h3>
+          <div class="navigationMenuEntries"><script>createNavigationMenu();</script></div>
+        </div>
+      {% endif %}
     </div>
 </div>
+
+<script src="{{ "/js/zen.js" | prepend: site.baseurl }}"></script>
