@@ -50,5 +50,17 @@ layout: default
               data-size="large"
               data-lang="en">Tweet</a>
       </div>
+      <div id="relatedArticles">
+        <h3> Articles relatifs </h3>
+        <ul>
+          {% assign cat = page.category | downcase %}
+
+          {% for post in site.categories.[cat] limit:3 %}
+            <li>
+              <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
 </div>
