@@ -14,8 +14,14 @@ title: "Team"
                 <div class="caption col-md-9 col-xs-5">
                   <h3>{{member[1].name}} <small>{{member[1].poste}}</small></h3>
                   <p> {{member[1].description}}</p>
-                  <span class="github"> <a href="http://github.com/{{member[1].github}}"> <img src="/src/img/pictos/github.png"> </a> </span>
-                  <span class="twitter"> <a href="http://twitter.com/{{member[1].twitter}}"> <img src="/src/img/pictos/twitter.png"> </a> </span>
+                  {% assign github = member[1].github | downcase %}
+                  {% if github != 'false' %}
+                    <span class="github"> <a href="http://github.com/{{github}}"> <img src="/src/img/pictos/github.png"> </a> </span>
+                  {% endif %}
+                  {% assign twitter = member[1].twitter | downcase %}
+                  {% if twitter != 'false'%}
+                    <span class="twitter"> <a href="http://twitter.com/{{twitter}}"> <img src="/src/img/pictos/twitter.png"> </a> </span>
+                  {% endif %}
                   <h4> <a href="http://{{member[1].site}}"> {{member[1].site}} </a>  </h4>
                 </div>
               </div>
