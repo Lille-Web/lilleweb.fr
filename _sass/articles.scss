@@ -185,12 +185,22 @@
     #navigationMenu{
       background-color: #FFF;
       border: 1px solid #ddd;
-      padding: 0px 10px;
+      padding: 10px 10px;
       h3{
-        margin-top : 10px;
+        margin-top : 0px;
       }
-      .subTitle{
-        padding-left : 10px;
+      a{
+        display : block;
+        line-height : 25px;
+        &.title{
+          margin-top : 20px;
+          &:first-child{
+            margin-top : 0px;
+          }
+        }
+        &.subTitle{
+          padding-left : 10px;
+        }
       }
     }
   }
