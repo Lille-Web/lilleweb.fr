@@ -53,6 +53,41 @@ L'un des points fort du Sony Smartband SWR10 est son offre logicielle très comp
 
 ### Smart Connect
 
+Comme son nom l'indique, la première application a installer permet d'établir la connexion entre le bracelet et le téléphone ou la tablette. A l'installation, cette application pourra executer différentes tâches au branchement d'un chargeur, d'un casque ou d'une oreillette. Il faudra installer l'extension Sony Smartband pour pouvoir établir la connexion avec le bracelet.
+
+![Markdown preferences pane](/src/articles/sonySmartband/smartConnect.png)
+
+Lorsque la connexion avec le bracelet sera établi, l'application affichera l'autonomie du bracelet et les applications le sollicitant.
+
+![Markdown preferences pane](/src/articles/sonySmartband/smartConnectSmartband.png)
+
+Vous pourrez également accéder aux paramètres.
+
+#### Les paramètres
+
+Les paramètres sont assez complet, vous retrouverez ce dont vous avez besoin sans en faire trop :
+
+* Activation du mode nuit automatiquement (le mode nuit permet d'enregistrer le sommeil et de ne plus être dérangé par les notifications)
+* Activation des notifications : le bracelet a la capacité de vibrer si vous recevez une notification sur les applications choisies.
+* Le réveil intelligent : le bracelet ayant la capacité de surveiller votre sommeil et de vibrer, Sony a inclut une fonctionnalité extrêmement utile. Il détecte le meilleur moment pour vous réveiller durant une période que vous lui avez indiqué.
+* Activation de l'alerte hors de portée : il vibrera 3 fois si vous le bracelet perd la connexion avec votre téléphone. Très pratique quand vous l'oubliez le matin !
+* Il peut également vibrer en cas d'appel entrant.
+* Le dernier paramètre sert à configurer les applications du bracelet que nous allons détailler.
+
+![Markdown preferences pane](/src/articles/sonySmartband/smartConnectSmartbandParameters.png)
+
+#### Les applications
+
+Smart Connect appelle ça des applications, j'appellerais plus ça des extensions. En effet, vous pouvez définir une extension qui permettra, après une action de votre part, d'executer une tâche sur votre téléphone. Par exemple si vous choisissez l'application "Lecteur Multimédia", en appuyant sur le bouton du bracelet et en tapant une fois dessus, la musique se mettra en pause.
+
+![Markdown preferences pane](/src/articles/sonySmartband/smartConnectLecteurMultimédia.png)
+
+Une seule application peut être utilisé à la fois, il faudra passer par les paramètre pour modifier l'application a executer. Elles sont seulement au nombre de 5, la plus utile à mes yeux permet de faire sonner le téléphoner en appuyant sur le bouton du bracelet et en tapant dessus : très utile quand vous ne le retrouvez plus !
+
+![Markdown preferences pane](/src/articles/sonySmartband/smartConnectApplication.png)
+
+Il en existe également une pour prendre une photo à distance !
+
 ### Lifelog
 
 ## Au quotidien
