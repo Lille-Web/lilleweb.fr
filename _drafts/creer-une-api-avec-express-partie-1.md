@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Créer une API avec Express - Partie 1"
+title:  "Créer une application avec Node.js - Partie 1 : Express et méthodologie"
 category: JS
 tags : Node.js API
 author: dck
-description : "Créer rapidement une application pour vos applications web grâce ce web framework Node.js"
+description : "Apprenez à créer une application web avec Node.js depuis zéro, au programme d'aujourd'hui, présentation de Express et des méthodologies qui vont être utilisées."
 ---
 
 <img src="/src/articles/4-express-part-1/expresslogo.png" class="pull-left" alt="Express logo" />

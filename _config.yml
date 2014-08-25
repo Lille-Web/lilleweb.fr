@@ -3,7 +3,7 @@ title: Lille Web
 email: contact@lille-web.fr
 description: "Articles, conférences, formations, retrouvez tout ce dont vous avez besoin, pour et par des passionnés du web !"
 baseurl: ""
-url: "http://lille-web.fr"
+url: "http://lilleweb.fr"
 twitter_username: lille_web
 github_username:  jekyll
 paginate: 5
@@ -15,3 +15,14 @@ permalink: pretty
 sass:
   style: compressed
   sass_dir: _sass
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+        - "/data.json"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "daily"
+    priority_name: "0.8"
