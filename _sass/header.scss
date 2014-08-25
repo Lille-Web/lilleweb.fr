@@ -85,6 +85,10 @@ header.side {
           width: 35px;
           opacity: 0.5;
           transition : opacity 0.2s ease;
+
+          &.twitter {
+            width: 45px;
+          }
           &:hover{
             opacity : 1;
             transition : opacity 0.2s ease;

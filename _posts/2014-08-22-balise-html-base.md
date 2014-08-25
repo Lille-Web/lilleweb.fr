@@ -18,7 +18,7 @@ Elle est très facile à utiliser. Il vous suffit de la déclarer dans le head e
 {% highlight html %}
 
 <head>
-<base href="http://www.lilleweb.fr">
+  <base href="http://www.lilleweb.fr">
 </head>
 
 {% endhighlight %}
@@ -34,7 +34,7 @@ Cette balise possède également l'attribut target qui permet de spécifier l'ou
 {% highlight html %}
 
 <head>
-<base target="_blank">
+  <base target="_blank">
 </head>
 
 {% endhighlight %}
