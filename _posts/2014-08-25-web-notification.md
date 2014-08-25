@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Les notifications dans votre navigateur ?"
-date:   2014-08-20
+title:  "Allons plus loin avec les web notifications !"
+date:   2014-08-26
 category: JS
-tags : notification
+tags : notification HTML5 API
 author: john
 description : "Apprenez à soulever des notifications dans votre navigateur pour augmenter les interactions avec l'utilisateur"
 ---
@@ -22,6 +22,9 @@ Les notifications sont très populaires depuis leur arrivée sur iOS dans les ap
 
 Une notification se présente sous la forme d'un bandeau rectangulaire d'aspect différent selon les navigateurs et qui présente l'avantage de venir se placer sur le bureau courant (sur mac) au-dessus de toutes les autres fenêtres. Une notification se compose d'un titre et d'une description, elle peut se fermer automatiquement (4s par défaut sur Firefox, il est possible comme on va le voir de définir soit même cette durée) ou manuellement. Il est également possible de tagger des notifications comme nous le verrons plus tard.
 
+![Markdown preferences pane](/src/articles/webNotif/chromeNotif.png)
+![Markdown preferences pane](/src/articles/webNotif/firefoxNotif.png)
+
 ### A quoi servent-elles ?
 
 Beaucoup moins utilisées que sur mobiles, elles restent cependant très utiles. Voici une liste non exhaustive de quelques idées d'utilisation :
@@ -36,6 +39,8 @@ Beaucoup moins utilisées que sur mobiles, elles restent cependant très utiles.
 #### Demander l'autorisation
 
 Avant de pouvoir pousser une notification à l'utilisateur, il faut lui demander la permission. Durant cette étape obligatoire, un bandeau apparaîtra en haut du navigateur pour demander à l'utilisateur s'il les souhaite ou non.
+
+![Markdown preferences pane](/src/articles/webNotif/chromeRequest.png)
 
 Il faut pour cela appeler `requestPermission` de `Notification`, vérifier que la réponse est différente de l'état actuel et setter `Notification.permission` avec le nouveau status.
 
