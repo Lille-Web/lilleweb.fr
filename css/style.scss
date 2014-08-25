@@ -71,6 +71,11 @@ a:hover {
     .col-md-10 > article > .col-md-11{ /* For articles page */
       margin-bottom : 50px;
     }
+    .col-md-7 > a{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
     article{
       h3{
         margin-top : 0px;
@@ -229,9 +234,9 @@ ul.specialFloat li {
     height: 50px;
     margin-bottom: 20px;
   }
-  .pagination>li>a:hover, 
-  .pagination>li>span:hover, 
-  .pagination>li>a:focus, 
+  .pagination>li>a:hover,
+  .pagination>li>span:hover,
+  .pagination>li>a:focus,
   .pagination>li>span:focus {
     color: $red;
   }
@@ -240,11 +245,11 @@ ul.specialFloat li {
     color: $red;
   }
 
-  .pagination>.active>a, 
-  .pagination>.active>span, 
-  .pagination>.active>a:hover, 
-  .pagination>.active>span:hover, 
-  .pagination>.active>a:focus, 
+  .pagination>.active>a,
+  .pagination>.active>span,
+  .pagination>.active>a:hover,
+  .pagination>.active>span:hover,
+  .pagination>.active>a:focus,
   .pagination>.active>span:focus {
     background: $red;
     border-color: $red;
