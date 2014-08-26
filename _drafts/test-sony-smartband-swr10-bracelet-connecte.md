@@ -55,11 +55,11 @@ L'un des points fort du Sony Smartband SWR10 est son offre logicielle très comp
 
 Comme son nom l'indique, la première application a installer permet d'établir la connexion entre le bracelet et le téléphone ou la tablette. A l'installation, cette application pourra executer différentes tâches au branchement d'un chargeur, d'un casque ou d'une oreillette. Il faudra installer l'extension Sony Smartband pour pouvoir établir la connexion avec le bracelet.
 
-![Markdown preferences pane](/src/articles/sonySmartband/smartConnect.png)
+<img src="/src/articles/sonySmartband/smartConnect.png)"/>
 
 Lorsque la connexion avec le bracelet sera établi, l'application affichera l'autonomie du bracelet et les applications le sollicitant.
 
-![Markdown preferences pane](/src/articles/sonySmartband/smartConnectSmartband.png)
+<img src="/src/articles/sonySmartband/smartConnectSmartband.png)"/>
 
 Vous pourrez également accéder aux paramètres.
 
@@ -74,21 +74,32 @@ Les paramètres sont assez complet, vous retrouverez ce dont vous avez besoin sa
 * Il peut également vibrer en cas d'appel entrant.
 * Le dernier paramètre sert à configurer les applications du bracelet que nous allons détailler.
 
-![Markdown preferences pane](/src/articles/sonySmartband/smartConnectSmartbandParameters.png)
+<img src="/src/articles/sonySmartband/smartConnectSmartbandParameters.png)"/>
 
 #### Les applications
 
 Smart Connect appelle ça des applications, j'appellerais plus ça des extensions. En effet, vous pouvez définir une extension qui permettra, après une action de votre part, d'executer une tâche sur votre téléphone. Par exemple si vous choisissez l'application "Lecteur Multimédia", en appuyant sur le bouton du bracelet et en tapant une fois dessus, la musique se mettra en pause.
 
-![Markdown preferences pane](/src/articles/sonySmartband/smartConnectLecteurMultimédia.png)
+<img src="/src/articles/sonySmartband/smartConnectLecteurMultimédia.png)"/>
 
 Une seule application peut être utilisé à la fois, il faudra passer par les paramètre pour modifier l'application a executer. Elles sont seulement au nombre de 5, la plus utile à mes yeux permet de faire sonner le téléphoner en appuyant sur le bouton du bracelet et en tapant dessus : très utile quand vous ne le retrouvez plus !
 
-![Markdown preferences pane](/src/articles/sonySmartband/smartConnectApplication.png)
+<img src="/src/articles/sonySmartband/smartConnectApplication.png"/>
 
 Il en existe également une pour prendre une photo à distance !
 
 ### Lifelog
+
+Pierre angulaire de cet écosystème, Lifelog permet, comme son nom l'indique, d'enregistrer votre vie, littéralement.
+
+Cette application enregistre tout ce que vous faîtes sur votre téléphone : jeux, réseaux sociaux, appel, vidéo, ect. Utilisé avec le bracelet, vous pourrez retrouver le nombre de pas fait dans la journée, le temps de marche et de course, et de nombreuses informations sur le sommeil.
+C'est donc couplé avec le Sony Smartband que Lifelog trouve tout son sens.
+
+L'interface est des plus réussi mais reste perfectible. Différentes jauges se remplissant selon vos objectifs sont affichés ainsi que les valeurs détaillés de chaque élément.
+
+<img src="/src/articles/sonySmartband/lifelog.png"/>
+
+La timeline permet d'explorer la journée et de voir l'avancement de chaque objectif en temps réel. Il est également possible d'explorer des journées passées. 
 
 ## Au quotidien
 
@@ -96,8 +107,15 @@ Il en existe également une pour prendre une photo à distance !
 
 ### Les plus
 
+* Design épuré
+* Nombreuses couleurs pour tout les gouts
+* Bonne autonomie (5 jours)
+* Notification
+* Réveil intelligent
+* Etanche : IP58
+
 ### Les moins
 
-
+* Perte de connexion fréquente
 
 ## Où l'acheter
