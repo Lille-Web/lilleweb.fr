@@ -8,6 +8,8 @@ description : Créer rapidement une application pour vos applications web grâce
 ---
 Cet article correspond à une série car le sujet est assez long à traiter, vous pouvez retrouver la partie 1 [ici](link).
 
+Aujourd'hui, nous allons mettre en place le contrôleur pou
+
 #### Récupération des articles
 Tout d'abord, nous allons récupérer la liste des articles existants. Voici un petit rappel du code pour démarrer :
 {% highlight js %}
