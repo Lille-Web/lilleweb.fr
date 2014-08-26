@@ -22,8 +22,8 @@ Les notifications sont très populaires depuis leur arrivée sur iOS dans les ap
 
 Une notification se présente sous la forme d'un bandeau rectangulaire d'aspect différent selon les navigateurs et qui présente l'avantage de venir se placer sur le bureau courant (sur mac) au-dessus de toutes les autres fenêtres. Une notification se compose d'un titre et d'une description, elle peut se fermer automatiquement (4s par défaut sur Firefox, il est possible comme on va le voir de définir soit même cette durée) ou manuellement. Il est également possible de tagger des notifications comme nous le verrons plus tard.
 
-![Markdown preferences pane](/src/articles/webNotif/chromeNotif.png)
-![Markdown preferences pane](/src/articles/webNotif/firefoxNotif.png)
+<img src="/src/articles/webNotif/chromeNotif.png" title="Notification Chrome" alt="Visuel d'exemple d'une notification chrome"/>
+<img src="/src/articles/webNotif/firefoxNotif.png" title="Notification Firefox" alt="Visuel d'exple d'une notification Firefox"/>
 
 ### A quoi servent-elles ?
 
@@ -40,7 +40,7 @@ Beaucoup moins utilisées que sur mobiles, elles restent cependant très utiles.
 
 Avant de pouvoir pousser une notification à l'utilisateur, il faut lui demander la permission. Durant cette étape obligatoire, un bandeau apparaîtra en haut du navigateur pour demander à l'utilisateur s'il les souhaite ou non.
 
-![Markdown preferences pane](/src/articles/webNotif/chromeRequest.png)
+<img src="/src/articles/webNotif/chromeRequest.png" title="Bandeau demande notification chrome" alt="Visuel d'exple d'une demande d'autorisation des notifications Chrome" />
 
 Il faut pour cela appeler `requestPermission` de `Notification`, vérifier que la réponse est différente de l'état actuel et setter `Notification.permission` avec le nouveau status.
 
