@@ -26,7 +26,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
                 <div class="col-md-11 col-xs-11">
                   <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
                   <p> {{post.description}}</p>
-                  <p class="date"> {{ post.date | date: "%-d %B" }}</p>
+                  <em class="date"> {{ post.date | date: "%-d %B" }}</em>
                 </div>
               </article>
               {% endfor %}
@@ -81,7 +81,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
                 <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Jonhathan Meunier">
                 <div class="caption col-md-6 col-xs-5">
                   <h4>{{team.name}}</h4>
-                  <h5>{{team.poste}}</h5>
+                  <h5><em>{{team.poste}}</em></h5>
                   <h5> <a href="http://{{team.site}}"> {{team.site}} </a>  </h5>
                 </div>
               </div>
@@ -92,7 +92,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
                 <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Thomas Deconinck">
                 <div class="caption col-md-6 col-xs-5">
                   <h4>{{team.name}}</h4>
-                  <h5>{{team.poste}}</h5>
+                  <h5><em>{{team.poste}}</em></h5>
                   <h5> <a href="http://{{team.site}}"> {{team.site}} </a>  </h5>
                 </div>
               </div>
