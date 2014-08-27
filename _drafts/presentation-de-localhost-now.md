@@ -41,7 +41,7 @@ Si vous lancez la commande `localhost` sans argument, cela va vous créer un ser
 
 <img src="/src/articles/5-localhost-now/capture.png" alt="Commande localhost" />
 
-Vous désirez utiliser un port spécifique ? Il vous suffit de le préciser en argument par exemple `localhost 8080` et le serveur écoutera alors le port **8080**.
+Vous désirez utiliser un port spécifique ? Il vous suffit le préciser en argument par exemple `localhost 8080` et le serveur écoutera alors le port **8080**.
 
 <img src="/src/articles/5-localhost-now/capture-port.png" alt="Commande localhost avec port" />
 
