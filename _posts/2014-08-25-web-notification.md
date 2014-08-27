@@ -154,4 +154,4 @@ if (window.Notification && Notification.permission === "granted") {
 
 {% endhighlight %}
 
-Vous pouvez retrouver aussi un repo où je fais quelques "expériences" sur [GitHub]('https://github.com/JohnathanSUP/Web-Notification').
+Vous pouvez retrouver aussi un repo où je fais quelques "expériences" sur [GitHub](https://github.com/JohnathanSUP/Web-Notification).
