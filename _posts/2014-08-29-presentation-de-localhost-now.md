@@ -5,7 +5,7 @@ category: JS
 tags : web server npm nodejs
 author: dck
 date:  2014-08-29
-description : "Créer un serveur web depuis n'importe quel répertoire de votre ordinateur !"
+description : "Créer un serveur web depuis n'importe quel répertoire de votre ordinateur"
 ---
 
 Aujourd'hui, je voulais vous parler d'un module npm que j'ai crée il y a peu prénommé [localhost-now](https://www.npmjs.org/package/localhost-now).
