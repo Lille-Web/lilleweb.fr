@@ -39,3 +39,12 @@ Vous désirez utiliser un port spécifique ? Il vous suffit le préciser en argu
   <p>Cette erreur peut paraitre non explicite pour certains d'entre vous, elle indique tout simplement que le port que vous souhaitez écouter est déjà utilisé.</p>
 </div>
 
+### Evolutions à venir
+
+Dans un futur proche, j'aimerais que ce module soit capable de :
+
+- Afficher un message d'erreur plus explicite si l'adresse est déjà utilisée
+- Créer un démon pour que le script n'occupe pas le terminal
+- Créer un serveur en précisant un chemin relatif ou absolu
+
+Si vous avez des idées à soumettre n'hésitez pas à forker [le projet sur Github](https://github.com/DCKT/localhost-now/blob/master/lib/app.js) ! Pour les non-adeptes de Github, n'hésitez pas à proposer cela en commentaire de l'article.
