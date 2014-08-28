@@ -29,9 +29,11 @@ header.hd-index{
   }
   .header-content{
     margin: 90px 0px;
+    h1 {
+      font-size: 36px;
+    }
     h2{
-      font-size: 50px;
-      font-family: Roboto;
+      font-size: 24px;
     }
     button{
       background : none;
@@ -85,6 +87,10 @@ header.side {
           width: 35px;
           opacity: 0.5;
           transition : opacity 0.2s ease;
+
+          &.twitter {
+            width: 45px;
+          }
           &:hover{
             opacity : 1;
             transition : opacity 0.2s ease;

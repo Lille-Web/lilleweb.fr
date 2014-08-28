@@ -80,7 +80,7 @@ a:hover {
       h3{
         margin-top : 0px;
       }
-      p.date{
+      .date{
         float: right;
         font-size: 12px;
         color : #757575;
@@ -95,6 +95,7 @@ a:hover {
           border-radius: 4px;
           font-weight: 900;
           padding: 4px 0px;
+          display: block;
 
           &.CSS {
             background-color : #2AA9E0;
@@ -287,4 +288,19 @@ ul.specialFloat li {
     overflow-x: scroll;
   }
 
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+
+  &.bs-callout-warning {
+    border-left-color: #f0ad4e;
+  }
+  &.bs-callout-info {
+    border-left-color: #5bc0de;
+  }
 }

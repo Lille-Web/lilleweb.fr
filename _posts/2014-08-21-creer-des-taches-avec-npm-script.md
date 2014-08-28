@@ -3,7 +3,7 @@ layout: post
 title:  "Créer des tâches avec npm-script"
 category: JS
 date:   2014-08-21
-tags : Node.js npm task
+tags : nodejs npm task
 author: dck
 description : Créez facilement des tâches pour vos projets avec npm !
 ---
