@@ -15,4 +15,4 @@ Nous avons donc pensé vous présenter chaque semaine un sujet qui nous tient à
 
 Le premier article portera sur le Sony Smartband que je vais vous présenter le plus précisemment possible la semaine prochaine.
 
-A bientot sur <a href="http://lilleweb.fr" title="Lille Web"> Lille Web </a>
+A bientot sur <a href="http://lilleweb.fr" title="Lille Web"> Lille Web </a> !
