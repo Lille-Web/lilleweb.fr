@@ -108,6 +108,13 @@ a:hover {
           &.HTML {
             background-color: #F1652A;
           }
+          &.COFFEE{
+            background: url("/src/img/pictos/icon_coffee.png") no-repeat;
+            font-size: 0px;
+            width: 47px;
+            height: 30px;
+            background-size: 100%;
+          }
         }
 
         p.date{
