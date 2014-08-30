@@ -304,3 +304,25 @@ ul.specialFloat li {
     border-left-color: #5bc0de;
   }
 }
+.post .author {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  margin: 50px 0 25px 0;
+  strong {
+    margin-left: 15px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  span {
+    img {
+      display: inline !important;
+      width: 20px;
+      position: relative;
+      left: 4px;
+      top: -1px;
+    }
+  }
+}

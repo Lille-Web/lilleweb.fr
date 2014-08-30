@@ -41,5 +41,7 @@ On récupère le module http pour ensuite créer un serveur à l'aide de la mét
 - La requête faite par le navigateur
 - La réponse que nous allons émettre
 
-Nous indiquons ensuite un port sur lequel notre serveur doit écouter. Il est toujours intéressant de placer un message pour indiquer que le serveur est bien lancé. Voici le résultat que vous devriez obtenir :
+Nous indiquons ensuite un port sur lequel notre serveur doit écouter. Il est toujours intéressant de placer un message pour indiquer que le serveur est bien lancé.
+
+Voici le résultat que vous devriez obtenir :
 <img src="/src/articles/6-node-mailer/hello-world.png" title="Hello World avec Node.js" alt="Hello World avec Node.js"/>

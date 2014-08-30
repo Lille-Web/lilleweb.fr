@@ -23,23 +23,29 @@ layout: default
           </div>
 
           {{ content }}
+
+          {% if author %}
+          <div class="author row">
+            <img src="{{ author.image }}" class="img-circle col-md-2" alt="{{ author.name }}">
+            <strong>
+              {{author.name}}
+              {% assign github = author.github | downcase %}
+              {% if github != 'false' %}
+                <span class="github"> <a href="http://github.com/{{github}}"> <img src="/src/img/pictos/github.png" alt="Profil Github de {{author.name}}"> </a> </span>
+              {% endif %}
+              {% assign twitter = author.twitter | downcase %}
+              {% if twitter != 'false'%}
+                <span class="twitter"> <a href="http://twitter.com/{{twitter}}"> <img src="/src/img/pictos/twitter_blue.png" alt="Profil Twitter de {{author.name}}"> </a> </span>
+              {% endif %}
+            </strong>
+            <p class="col-md-10">{{author.description}}</p>
+          </div>
+          {% endif %}
         </article>
         {% include disqus.html %}
     </div>
     <div id="option" class="col-md-2 col-xs-10 col-sm-offset-0 col-xs-offset-2">
       <button id="toggleZen" class="btn btn-block btn-event hidden-xs"> Lecture Zen </button>
-      {% if author %}
-      <div id="authors">
-        <h3> Auteur </h3>
-        <ul>
-          <li>
-            <a href="/team">
-              <img src="{{ author.image }}" class="img-circle" alt="{{ author.name }}">{{author.name}}
-            </a>
-          </li>
-        </ul>
-      </div>
-      {% endif %}
       <div id="share">
         <h3> Partager </h3>
           <a href="https://twitter.com/share"
