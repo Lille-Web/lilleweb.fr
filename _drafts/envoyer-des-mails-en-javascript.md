@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Envoyer des mails en JavaScript"
-date:   2014-09-07
 category: JS
 tags : nodejs mail
 author: dck
