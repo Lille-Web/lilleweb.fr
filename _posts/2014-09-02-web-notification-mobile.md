@@ -5,7 +5,7 @@ date:   2014-09-02
 category: JS
 tags : js mobile web notification api firefox mozilla
 author: john
-description : ""
+description : "Après avoir été loin avec les web notifications sur desktop, jouons avec elles sur mobile !"
 ---
 
 Mardi passé, j'évoquais dans le début de <a href="http://lilleweb.fr/js/2014/08/26/web-notification/">l'article sur les web notifications</a> l'idée de les utiliser sur mobile.
@@ -20,7 +20,7 @@ Puis une notification dans le centre de notification :
 
 <img src="/src/articles/webNotifMobile/webNotificationMobile.png">
 
-J'ai ensuite tenté de soulever une notification après un délai de 10s, j'ai entre temps changé d'application. Ma notification s'est bien affichée même si Firefox n'était pas au premier plan !
+J'ai ensuite tenté de soulever une notification après un délai de 10s, j'ai entre temps changé d'application. Ma notification s'est bien affichée même si Firefox n'était pas au premier plan ! Seul petit bémol, je n'ai pas réussi à passer une icône au notification. L'icône affichée est celle par défault, c'est-à-dire le logo de Firefox.
 
 Cette expérience apporte beaucoup de bonnes nouvelles et d'évolutions pour nos web apps dans le futur. Elle n'est pas sans rappelée la vision originale de Steve Jobs pour l'iPhone :
 
