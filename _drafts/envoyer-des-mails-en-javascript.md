@@ -45,3 +45,20 @@ Nous indiquons ensuite un port sur lequel notre serveur doit écouter. Il est to
 
 Voici le résultat que vous devriez obtenir :
 <img src="/src/articles/6-node-mailer/hello-world.png" title="Hello World avec Node.js" alt="Hello World avec Node.js"/>
+
+### Filtrer les requêtes
+Pour le moment, que vous fassiez une requête en GET ou en POST, cela ne change rien du tout. Dans notre cas, nous avons besoin de filtrer les URL utilisant un POST.
+Avec Node.js, un objet **method** est présent dans la variable __request__ fournit par le serveur http.
+Il suffit alors de vérifier si le contenu de method est égal à **POST** ou non :
+
+{% highlight js %}
+var server = http.createServer(function(req, res) {
+  if (req.method === 'POST') {
+
+  }
+  else {
+    // Requêtes autres qu'en POST
+  }
+  res.end();  
+});
+{% endhighlight %}

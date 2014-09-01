@@ -2,7 +2,13 @@
   background-color: #B64747;
   color : #FFF;
 }
-
+.article-content {
+  #option {
+    padding-top: 20px;
+    margin-top: 20px;
+    background: white;
+  }
+}
 #contents{
   background-color : rgba(245, 245, 245, 1);
   width: 100%;
@@ -13,6 +19,7 @@
   .page-header {
     margin-top: 0px;
   }
+
 
   .categorie{
     color: #FFF;
@@ -146,9 +153,7 @@
     }
   }
   #option{
-    padding-top: 20px;
-    margin-top: 20px;
-    background: white;
+
 
     h3 {
       border-bottom: 1px solid #ccc;
