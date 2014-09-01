@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sony Smartband SWR10"
-date:   2014-08-20
+date:   2014-09-05
 category: COFFEE
 tags : notification
 author: john
@@ -13,15 +13,20 @@ J'ai cherché pendant longtemps un bracelet connecté qui me correspondait. J'en
 
 C'est donc ce que propose le Sony Smartband SWR10 grâce à une suite logicielle complète (trop ?) et à un matériel très adapté !
 
+<img src="/src/articles/sonySmartband/smartband.jpg"/>
+
 ## Design et confort
 
 ### Design
 
-Ce bracelet propose un design extrêmement simple mais très coloré.
+Ce bracelet propose un design extrêmement simple et très coloré.
+
 
 ### Confort
 
 Sa présence déroute beaucoup durant les premières heures. Il n'est pas naturel d'avoir un bracelet qui va tracker continuellement les déplacements ! Je pense que ce ressenti sera différent pour tout le monde. Je me suis vraiment demandé au début si j'allais m'y habituer.
+
+<img src="/src/articles/sonySmartband/smartbandPorte.jpeg"/>
 
 Au bout d'une journée, il se fait totalement oublié. Ses 21 grammes permettent de ne pas être dérangé continuellement. Même la nuit, sa présence ne dérange pas du tout.
 
@@ -29,13 +34,19 @@ Au bout d'une journée, il se fait totalement oublié. Ses 21 grammes permettent
 
 Le Smartband se compose d'un core où se trouve tout l'électronique et d'un bracelet.
 
+<img src="/src/articles/sonySmartband/smartband3.jpg"/>
+
 ### Le core
 
 Le core contient tout l'électronique : les capteurs, le vibreur, les LEDs, ... et mesure seulement 4*1.5cms
 
+<img src="/src/articles/sonySmartband/smartbandCore.jpg"/>
+
 La recharge se fait via un simple cable micro USB. L'autonomie est légérement inférieur à 5 jours, ce qui reste assez confortable pour ne pas devoir s'en soucier. Nous verrons après dans la partie logicielle comment être informé du niveau de batterie.
 
 Comme je l'ai indiqué au début, le Smartband peut interagir avec vous. Il peut par exemple vous informer en cas de notification, vous réveiller, vous informer si vous vous éloignez trop de votre téléphone, ... Je détaillerai ces possibilités dans la partie logicielle. Tout ceci se fait grâce au vibreur. Les LEDs permettent quant à elle de vous informer sur le mode du bracelet (jour/nuit) entre autres.
+
+<img src="/src/articles/sonySmartband/smartbandCore2.jpg"/>
 
 Pour finir, le core est connecté à votre téléphone en Bluetooth® 4.0 Low Energy (BLE). C'est à dire que votre téléphone doit être compatible avec cette technologie pour pouvoir s'y connecter.
 
@@ -47,6 +58,8 @@ Les stries offrent une esthétique intéressante et une prise en main irréproch
 
 Le système de fermeture pose problème au début. Le bracelet est vraiment compliqué à fermer quand on en a pas l'habitude, le système n'est pas aussi efficace que sur un FitBit Flex par exemple. Néanmoins, on prend rapidement l'habitude au bout de quelques jours !
 
+Plusieurs coloris sont disponibles : vert, orange, blanc, noir, ...
+
 ## L'offre logiciel
 
 L'un des points fort du Sony Smartband SWR10 est son offre logicielle très complète. Elle se compose d'une application qui sera chargé de la connexion avec le bracelet (Smart Connect) et d'une autre qui recensera tout ce que vous faites dans la journée (Life Log)
@@ -55,11 +68,11 @@ L'un des points fort du Sony Smartband SWR10 est son offre logicielle très comp
 
 Comme son nom l'indique, la première application a installer permet d'établir la connexion entre le bracelet et le téléphone ou la tablette. A l'installation, cette application pourra executer différentes tâches au branchement d'un chargeur, d'un casque ou d'une oreillette. Il faudra installer l'extension Sony Smartband pour pouvoir établir la connexion avec le bracelet.
 
-<img src="/src/articles/sonySmartband/smartConnect.png)"/>
+<img src="/src/articles/sonySmartband/smartConnect.png"/>
 
 Lorsque la connexion avec le bracelet sera établi, l'application affichera l'autonomie du bracelet et les applications le sollicitant.
 
-<img src="/src/articles/sonySmartband/smartConnectSmartband.png)"/>
+<img src="/src/articles/sonySmartband/smartConnectSmartband.png"/>
 
 Vous pourrez également accéder aux paramètres.
 
@@ -74,13 +87,13 @@ Les paramètres sont assez complet, vous retrouverez ce dont vous avez besoin sa
 * Il peut également vibrer en cas d'appel entrant.
 * Le dernier paramètre sert à configurer les applications du bracelet que nous allons détailler.
 
-<img src="/src/articles/sonySmartband/smartConnectSmartbandParameters.png)"/>
+<img src="/src/articles/sonySmartband/smartConnectSmartbandParameters.png"/>
 
 #### Les applications
 
 Smart Connect appelle ça des applications, j'appellerais plus ça des extensions. En effet, vous pouvez définir une extension qui permettra, après une action de votre part, d'executer une tâche sur votre téléphone. Par exemple si vous choisissez l'application "Lecteur Multimédia", en appuyant sur le bouton du bracelet et en tapant une fois dessus, la musique se mettra en pause.
 
-<img src="/src/articles/sonySmartband/smartConnectLecteurMultimédia.png)"/>
+<img src="/src/articles/sonySmartband/smartConnectLecteurMultimédia.png"/>
 
 Une seule application peut être utilisé à la fois, il faudra passer par les paramètre pour modifier l'application a executer. Elles sont seulement au nombre de 5, la plus utile à mes yeux permet de faire sonner le téléphoner en appuyant sur le bouton du bracelet et en tapant dessus : très utile quand vous ne le retrouvez plus !
 
@@ -99,11 +112,17 @@ L'interface est des plus réussi mais reste perfectible. Différentes jauges se 
 
 <img src="/src/articles/sonySmartband/lifelog.png"/>
 
-La timeline permet d'explorer la journée et de voir l'avancement de chaque objectif en temps réel. Il est également possible d'explorer des journées passées. 
+La timeline permet d'explorer la journée et de voir l'avancement de chaque objectif en temps réel. Il est également possible d'explorer des journées passées.
 
 ## Au quotidien
 
-## Conclusion
+Une journée avec le Sony Smartband commence par des vibrations assez insistantes au poignet nous incitant à nous réveiller. En effet, le vibreur servant à nous réveiller dans le laps de temps que vous avez choisi est assez fort. J'ai également l'impression qu'il réveille la plupart du temps dès le laps de temps atteint, c'est à dire que si vous choisissez d'être réveillé entre 07h15 et 07h35, vous serez généralement réveillé à 07h15. Pour arrêter le vibreur il suffit d'appuyer sur le bouton. Geste tout à fait évident puisque c'est le seul élément avec lequel on peut interagir. Maintenant le piège c'est de ne pas se rendormir car il n'y a pas de fonction snooze ...
+
+Une fois tranquillement réveiller il vous suffit d'activer le mode jour, pour cela vous devez juste rester appuyé sur le bouton jusqu'à sentir une vibration et voir les 3 LEDs s'allumer. A partir de maintenant, vous allez pouvoir être informer de chaque notification que vous avez choisi par une simple vibration, de la perte de connexion par trois vibrations et votre bracelet traquera tout les pas que vous allez faire dans la journée, détecter si c'est de la course ou de la marche, et même tenter de déterminer aproximativement la distance parcouru.
+
+Le port de ce genre de produit amène à changer naturellement ses habitudes. Désormais mon téléphone est tout le temps en silencieux, dans ma poche quand j'y pense sinon il est dans mon sac ou posé sur mon bureau. Je suis désormais déranger seulement par ce que j'ai choisi et que j'ai jugé utile : les appels, les messages et les snapchats. Je n'ai plus à sortir tout les cinq minutes m'ont téléphones pour regarder la dernière vente flash de mon vendeur favori que je reçois par mail ou une demande de vie suplémentaire sur Candy Crush ! Quand j'ai envie de m'informer de mes dernières notification j'ai juste à déverouiller mon téléphone. Je trouve que c'est un très bon compromis : être déranger par ce que l'on a réellement besoin et pouvoir consulter quand on le souhaites les choses moins utiles.
+
+Et on ne parle ici que de la fonction notification. Vous allez également vous amuser à consulter tout au long de votre journée le nombre de pas que vous avez effectué afin de remplir votre objectif, battre votre record ou juste comparer ce chiffre avec vos amis.
 
 ### Les plus
 
@@ -113,9 +132,21 @@ La timeline permet d'explorer la journée et de voir l'avancement de chaque obje
 * Notification
 * Réveil intelligent
 * Etanche : IP58
+* Prix
 
 ### Les moins
 
 * Perte de connexion fréquente
+
+## Conclusion
+
+Ça fait déjà 3 semaines que j'utilise le Sony Smartband au quotidien et je n'en suis pas déçu, bien au contraire.
+
+Comme je l'ai évoqué plus haut, ce bracelet a vraiment changé mes habitudes. Désormais je ne suis plus géné par des informations futiles mais seulement par celles dont j'ai besoin (messages, appels et tout ce que j'ai moi même choisi).
+
+Je m'amuse désormais à essayer de marcher plus que la veille en prenant le métro une station plus loin ou en faisant plus souvent du sport après le boulot. Beaucoup de mauvaise langues prétendent que ce genre de bracelet sert juste à vous dire que vous ne faites pas assez de sport, je trouve que cette image est totalement réductrice, il suffit de jouer le jeux et d'être conscient que ce genre de produit n'est pas voué à faire maigrir directement mais juste à vous inciter à plus bouger.
+
+<img src="/src/articles/sonySmartband/smartbandEnSituation.jpg"/>
+
 
 ## Où l'acheter
