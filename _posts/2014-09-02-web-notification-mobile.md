@@ -36,4 +36,4 @@ Certes on est loin de cette vision, mais on commence à s'y approcher. L'arrivé
 
 J'ai très à coeur l'idée d'un écosystème rempli de web apps de qualité, utilisable sur ordinateur, mobile, télévision, voiture, et autres supports inattendus. Un écosystème où un développeur de qualité pourrait déployer son application sur de nombreux devices sans se soucier de la redévelopper sur d'autres systèmes.
 
-__Je pourrais discuter de cette idée pendant des heures, l'écriture de cette article m'a donné envie d'en  écrire un autre, beaucoup plus complet sur l'idée d'un écosystème où cohabiteraient applications natives et applications web.__
+__Je pourrais discuter de cette idée pendant des heures, l'écriture de cet article m'a donné envie d'en  écrire un autre, beaucoup plus complet sur l'idée d'un écosystème où cohabiteraient applications natives et applications web.__
