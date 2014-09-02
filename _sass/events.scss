@@ -1,0 +1,25 @@
+#contents #listContent #events{
+  h1{
+    margin-bottom : 50px;
+  }
+  article{
+    padding : 20px;
+    text-align : center;
+    a.location{
+      display : block;
+    }
+    a.btn-red{
+      background-color: #B64747;
+      color: #FFF;
+      display : block;
+      padding : 10px 0px;
+      margin-top : 10px;
+      border-radius : 4px;
+      font-size : 18px;
+      &:hover{
+        background-color : #CC6161;
+        text-decoration : none;
+      }
+    }
+  }
+}
