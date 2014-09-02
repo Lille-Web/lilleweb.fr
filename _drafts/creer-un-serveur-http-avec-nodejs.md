@@ -115,3 +115,83 @@ var server = http.createServer(function(req, res) {
 server.listen(1337);
 console.log("Serveur web lancé sur localhost:1337 ...");
 {% endhighlight %}
+
+<div class="bs-callout bs-callout-info">
+  <strong>Testez votre serveur</strong>
+  <p>
+    Pour faire des tests, j'utilise <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm">Postman</a>, un client REST qui fonctionne très bien ! Vous pourrez ainsi créer différentes requêtes pour tester votre serveur.
+  </p>
+</div>
+
+Comme il a été dit plus haut, on récupère nos paramètres sous la forme `clé=valeur`, ici plusieurs cas s'offrent à nous :
+
+- Parser manuellement la chaine de caractère
+- Utiliser un module, par exemple **querystring** réduit la logique à un simple `.parse()`
+
+Choisisson la seconde méthode, la 1<sup>ère</sup> n'étant que de la logique cela ne nous intéresse pas spécialement.
+
+**Installation du module**
+
+Il faut tout d'abord installer le module dans notre projet, pour cela, un simple
+{% highlight js %}
+npm install querystring --save
+{% endhighlight %}
+
+Nous pouvons alors le récupérer via la fonction `require()` offerte par Node.js permttant de récupérer les modules installés dans notre projet.
+Donc au début du fichier, nous pouvons récupérer le module :
+{% highlight js %}
+var http = require('http'),
+qs       = require('querystring');
+{% endhighlight %}
+
+Revenons alors dans le callback du listener **end**, nous pouvons parser notre variable body :
+{% highlight js %}
+if (req.method === 'POST') {
+  var body = '';
+  req.on('data', function (data) {
+    body += data;
+  });
+
+  req.on('end', function () {
+    var parsedBody = qs.parse(body);
+    // Logique ...
+  });
+}
+{% endhighlight %}
+
+### Afficher un fichier HTML
+
+Pour le moment, nous ne faisons que retourner du texte en brut ce qui a peu d'intérêt ici. Pour pouvoir rendre un fichier HTML, nous avons besoin du module [**fs**](http://nodejs.org/api/fs.html) (File System) de Node qui va nous permettre de lire le contenu d'un fichier. Voici la marche à suivre :
+
+{% highlight js %}
+var http = require('http'),
+fs       = require('fs');
+
+var server = http.createServer(function(req, res) {
+  fs.readFile('index.html', function(err, data) {
+    if (err) {
+      res.writeHead(500);
+    }
+    else {
+      res.writeHead(200, { 'Content-Type': 'text/html'});
+      res.end(data);
+    }
+  });
+});
+
+server.listen(1337);
+console.log("Serveur web lancé sur localhost:1337 ...");
+{% endhighlight %}
+
+Evidemment, vous devez disposer d'un fichier __index.html__ à la racine de votre projet, si ce n'est pas le cas, vous n'avez qu'à indiquer le chemin adéquat. Nous utilisons ici la méthode **readFile** présente dans l'API fournit qui permet comme son nom le laisse supposer, la lecture de fichier.
+
+Cette méthode prend 2 arguments:
+
+- Le chemin vers le fichier (relatif ou absolu)
+- Une fonction en callback qui prend elle aussi 2 arguments : les erreurs et le contenu du fichier
+
+Dans ce callback, nous vérifions si la lecture du fichier a rencontré un problème et si tel est le cas nous renvoyons une erreur 500. Sinon, nous envoyons simplement un code 200 et un **Content-Type** différent de celui par défaut afin que l'HTML soit interprété sans oublier de passer en paramètre le contenu du fichier lu dans la réponse.
+
+
+### Conclusion
+Il reste énormement de choses à faire rien qu'avec ce module, mais cela nous prouve que Node.js offre une multitude de possibilités ! 
