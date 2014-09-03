@@ -93,7 +93,7 @@ Une fois la requête filtrée, nous devons récupérer les éléments envoyés. 
 Par défaut, les formulaires envoient des requêtes encodées avec **x-www-form-urlencoded**, les données auront alors la forme `clé=valeur` (un peu comme des paramètres en GET). Pour récupérer ces données, des évenements sont levés à chaques requêtes.
 
 Ces évenements disposent de listener qui vont vérifier si l'évenement en question est déclenchée ou non.
-Concernant les données, il suffit d'écouter l'event **data** qui, lorsque celui-ci est actif, d'ajouter à une variable temporaire le contenu. L'event **end** nous permettra de savoir lorsque la requête est terminée et d'afficher les données que nous avons récupérés.
+Concernant les données, il suffit d'écouter l'event **data** qui, lorsque celui-ci est actif, de rajouterle contenu à une variable temporaire. L'event **end** nous permettra de savoir lorsque la requête est terminée et d'afficher les données que nous avons récupérés.
 
 {% highlight js %}
 var http = require('http');
