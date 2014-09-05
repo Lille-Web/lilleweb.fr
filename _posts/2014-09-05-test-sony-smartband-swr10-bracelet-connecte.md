@@ -136,7 +136,8 @@ Et on ne parle ici que de la fonction notification. Vous allez également vous a
 
 ### Les moins
 
-* Perte de connexion fréquente
+* Perte de connexion fréquente (même si la reconnexion se fait très rapidement)
+* Les LEDs n'apportent pas assez d'information
 
 ## Conclusion
 
@@ -150,3 +151,15 @@ Je m'amuse désormais à essayer de marcher plus que la veille en prenant le mé
 
 
 ## Où l'acheter
+
+Amazon modèle noir: <a href="http://www.amazon.fr/gp/product/B00HQIFKWW/ref=as_li_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=B00HQIFKWW&linkCode=as2&tag=johnathan-21">Sony Smartband SWR10 Bracelet Connecté Bluetooth/NFC + 2 Bracelets pour Smartphone Taille S/L Noir</a><img src="http://ir-fr.amazon-adsystem.com/e/ir?t=johnathan-21&l=as2&o=8&a=B00HQIFKWW" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+Amazon modèle vert (et blanc) présent dans l'article : <a href="http://www.amazon.fr/gp/product/B00IKFAVXI/ref=as_li_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=B00IKFAVXI&linkCode=as2&tag=johnathan-21">Sony Smartband SWR10 Version Fifa S/L Bracelet connecté Bluetooth/NFC pour Smartphone</a><img src="http://ir-fr.amazon-adsystem.com/e/ir?t=johnathan-21&l=as2&o=8&a=B00IKFAVXI" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+LDLC : <a href="http://www.ldlc.com/fiche/PB00165367.html"> Sony Smartband noir </a>
+
+TopAchat : <a href="http://www.topachat.com/pages/detail2_cat_est_telephonie_puis_rubrique_est_w_oconn_puis_ref_est_in10077255.html"> Sony Smartband noir </a>
+
+FNAC : <a href="http://www.fnac.com/Bracelet-connecte-Sony-Smartband-SWR10/a6958463/w-4"> Sony Smartband noir </a>
+
+*A l'heure où j'écris ces lignes, Sony vient de présenter son nouveau Smartband, le Talk SWR-30, présenté chez <a href="http://www.frandroid.com/marques/sony/238319_sony-smartband-talk-tracker-dactivite-ecran-incurve-e-ink"> Frandroid </a>*
