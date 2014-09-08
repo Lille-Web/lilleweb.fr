@@ -13,19 +13,21 @@ icon: "/src/articles/6-node-mailer/mail.png"
 Comme beaucoup de personnes, lorsque j'avais besoin d'un formulaire de contact, j'avais pour habitude de le faire pointer sur un fichier PHP.
 C'était due, dans un premier temps, au fait que je ne connaissais que l'API de PHP pour envoyer des mails et puis celle-ci est assez accessible.
 
-Aujourd'hui grâce à Node.js et un peu de JavaScript, il vous est possible de remplacer votre script PHP ! Il existe maintenant de nombreux modules [npm](http://www.npmjs.org) permettant d'envoyer un mail.
+Aujourd'hui grâce à Node.js et un peu de JavaScript, il vous est possible de remplacer votre script PHP !
+ Il existe maintenant de nombreux modules [npm](http://www.npmjs.org) permettant d'envoyer un mail.
 
-Ici, je vais vous présenter rapidement [Node-mailer](http://nodemailer.com/) qui est pour moi à l'heure actuelle, le meilleur dans sa catégorie. Nous allons crée un petit serveur http sur lequel nous pourrons effectuer une requête POST avec nos informations de contact.
+Ici, je vais vous présenter rapidement [Node-mailer](http://nodemailer.com/) qui est pour moi à l'heure actuelle, le meilleur dans sa catégorie.
+Nous allons créer un petit serveur http sur lequel nous pourrons effectuer une requête POST avec nos informations de contact.
 
 
 ### Installation
-Evidemment, nous allons avoir besoin de [Node.js](http://nodejs.org) et du package `nodemailer` que je vous invite à télécharger via npm en faisant :
+Evidemment, nous allons avoir besoin de [Node.js](http://nodejs.org) et du package `nodemailer` que je vous invite à installer via npm en faisant :
 {% highlight js %}
 npm install nodemailer --save
 {% endhighlight %}
 
 ### Mise en place du serveur
-Tout d'abord, il nous faut un serveur HTTP qui va filter les URL pour ne servir uniquement les requêtes en **POST** sur l'url `/`.
+Tout d'abord, il nous faut un serveur HTTP qui va filter les URL pour ne servir que les requêtes en **POST** sur l'url `/`.
 
 <div class="bs-callout bs-callout-info">
   Pour les débutant(e)s avec Node.js, je vous invite à consulter
@@ -89,7 +91,7 @@ dans les plus importantes, on retrouve :
 - Le contenu en texte brut
 - Le contenu en HTML
 
-Personnellement, je n'aime pas trop avoir un gros objet dans une fonction, c'est
+Personnellement, je n'aime pas avoir un objet trop grand dans une fonction, c'est
 pourquoi j'ai préféré passer par une variable intermédiaire.
 
 {% highlight js %}
@@ -102,7 +104,7 @@ var mailOptions = {
 };
 {% endhighlight %}
 
-N'oubliez pas de bien définir avant les éléments que vous voulez récupérer de votre
+N'oubliez pas de bien définir les éléments que vous voulez récupérer de votre
 requête POST, dans mon cas, je récupère le nom, l'email et le message de l'envoyeur.
 Une fois vos options configurées, il ne reste plus qu'à utiliser la méthode `sendMail`,
 qui va prendre notre objet suivi d'un callback contenant 2 arguments (erreur et réponse)
@@ -114,7 +116,7 @@ transporter.sendMail(mailOptions, function(err, response){
 {% endhighlight %}
 
 
-Et voila ! n'hésitez pas à tester cela avec un client REST comme [POSTMAN](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm).
+Et voila ! N'hésitez pas à tester cela avec un client REST comme [POSTMAN](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm).
 Voici donc le code complet de notre application :
 
 {% highlight js %}
@@ -161,6 +163,6 @@ server.listen(1337);
 
 
 ### Conclusion
-Il est désormais très facile pour tous d'envoyer un mail en JavaScript plutôt qu'en PHP.
+Il est désormais possible d'envoyer un mail en JavaScript plutôt qu'en PHP.
 Le point négatif est qu'il faut bien configurer ses headers car les mails ont tendances à arriver
 dans les spams !
