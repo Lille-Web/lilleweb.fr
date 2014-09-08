@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "Envoyer des mails en JavaScript"
+title:  "Envoyer un mail en JavaScript"
 category: JS
+date:   2014-09-09
 tags : nodejs mail
 author: dck
-description : "Découvrez aujourd'hui comment envoyer des mails sans configurer de serveur mail"
+description : "Découvrez aujourd'hui comment envoyer un mail sans configurer de serveur mail"
 icon: "/src/articles/6-node-mailer/mail.png"
 ---
 
 <img src="/src/articles/6-node-mailer/mail.png" class="pull-left" alt="Mail" />
-Comme beaucoup de personnes, lorsque je créais un formulaire de contact, j'avais pour habitude de le faire pointer sur un fichier PHP. C'était due, dans un premier temps, au fait que je ne connaissais que l'API de PHP pour envoyer des mails.
+Comme beaucoup de personnes, lorsque j'avais besoin d'un formulaire de contact, j'avais pour habitude de le faire pointer sur un fichier PHP.
+C'était due, dans un premier temps, au fait que je ne connaissais que l'API de PHP pour envoyer des mails et puis celle-ci est assez accessible.
 
 Aujourd'hui grâce à Node.js et un peu de JavaScript, il vous est possible de remplacer votre script PHP ! Il existe maintenant de nombreux modules [npm](http://www.npmjs.org) permettant d'envoyer un mail.
 
@@ -24,8 +26,12 @@ npm install nodemailer --save
 
 ### Mise en place du serveur
 Tout d'abord, il nous faut un serveur HTTP qui va filter les URL pour ne servir uniquement les requêtes en **POST** sur l'url `/`.
-Si vous ne savez pas comment créer un serveur http avec Node.js, je vous invite à consulter
-[cet article](http://www.lilleweb.fr/js/2014/09/03/creer-un-serveur-http-avec-nodejs/).
+
+<div class="bs-callout bs-callout-info">
+  Pour les débutant(e)s avec Node.js, je vous invite à consulter
+  <a href="http://www.lilleweb.fr/js/2014/09/03/creer-un-serveur-http-avec-nodejs">cet article</a>.
+</div>
+
 Voici un serveur HTTP assez simple, n'oubliez pas d'installer le module **querystring** en faisant `npm install querystring`.
 
 {% highlight js %}
