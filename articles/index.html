@@ -16,7 +16,9 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <div class="info">
-            par <span class="author"> {{ site.data.members[post.author].name }} </span> -
+            {% if site.data.members[post.author].name %}
+              par <span class="author"> {{ site.data.members[post.author].name }} </span> -
+            {% endif %}
             <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
           </div>
           <p class="desc">{{post.description}}</p>
