@@ -3,9 +3,9 @@ layout: post
 title:  "Introduction à MongoDB"
 date:   2014-09-23
 category: JS
-tags : nosql database nodejs
+tags : nosql database nodejs sgbd mongodb
 author: dck
-description : Faites un premier pas avec la base de donnée NoSQL la plus utilisé du marché !
+description : Faites un premier pas avec le système de gestion de base de donnée NoSQL la plus utilisé du marché !
 icon: "/src/articles/8-mongodb/logo-mongo.png"
 ---
 
@@ -36,3 +36,17 @@ Une fois Homebrew installé, vous avez accès la commande `brew` dans votre term
 {% highlight ruby %}
 brew install mongodb
 {% endhighlight %}
+
+A la fin de l'installation, il ne vous reste plus qu'à créer un espace les dossiers **/data/db** pour stocker les bases de données, un simple `sudo mkdir -p /data/db` fera l'affaire.
+
+Vous pouvez dès à présent utiliser la commande **mongod** pour lancer MongoDB.
+
+#### Windows
+Pour Windows, je vous recommande de [télécharger l'installeur](http://www.mongodb.org/downloads?_ga=1.37199524.509237057.1411072824)
+
+Encore une fois, Mongo a besoin d'un répertoire pour stocker les bases, ouvrez un prompt Windows et tapez `md \data\db` ou pour les moins courageux directement en GUI.
+
+Voilà, il ne vous reste plus qu'à executer le fichier .exe comme ceci : `C:\Program Files\MongoDB\bin\mongod.exe`
+
+#### Linux 
+Pour Linux cela dépend de votre distribution, pour ceux sur Ubuntu un package est disponible, vous n'avez qu'à taper : `sudo apt-get install mongodb-org` et 
