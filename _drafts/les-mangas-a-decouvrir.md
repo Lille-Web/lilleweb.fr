@@ -12,7 +12,7 @@ Etant un grand passionné de mangas depuis quelques années maintenant, je tenai
 
 ### Stop aux préjugés !
 
-En France, un manga est considéré comme une simple bande-dessinée (oui oui, comme un Titeuf ou un Spirou) . Mais ne vous arrêtez pas à cela ! Sachez qu'au Japon, le manga est ancré dans la culture et n'empêche pas les personnes de plus de quarante ans de lire des mangas ! La plupart du temps c'est loin d'être un livre pour enfant. Personnellement, je considère un manga presque comme un roman (pour certains mangas spécifiques) tellement l'histoire est bien ficelée.
+En France, un manga est considéré comme une simple bande-dessinée (oui oui, comme un Titeuf ou un Spirou) . Mais ne vous arrêtez pas à ces stupides préjugés ! Sachez qu'au Japon, le manga est ancré dans la culture et n'empêche pas les personnes de plus de quarante ans de lire des mangas ! La plupart du temps c'est loin d'être un livre pour enfant. Personnellement, je considère presque certains mangas comme un roman (pour certains mangas spécifiques) tellement l'histoire est bien ficelée.
 
 ### Les différents types
 
@@ -34,7 +34,7 @@ Le Shojo est l'équivalent du Shonen mais cette fois-ci pour les filles. Les his
 Cette catégorie est plus dans l'optique d'un public mature / adulte, où ici les histoires sortent assez souvent de l'ordinaire avec selon les mangas de possible scènes érotiques.
 
 **Yônen**
-Dédié uniquement aux enfants, je ne saurais vraiment résumer la plupart des histoires n'ayant jamais vraiment regardé de "vrai" Yônen à ce jour. 
+Dédié uniquement aux enfants, je ne saurais vraiment résumer la plupart des histoires n'ayant moi-même jamais vraiment regardé de "vrai" Yônen à ce jour mis à par Pokémon. 
 
 ### Mon top 5
 
@@ -68,7 +68,7 @@ Cela ne sera pas chose aisée, il devra passer une suite de tests et examens en 
 
 
 #### Pour le fun
-Voici une petite liste des mangas que j'ai lu / vu (ou encore en cours):
+Voici une petite liste des différents mangas que j'ai lu / vu (ou encore en cours de lecture):
 
 Naruto, Death Note, Fullmetal Alchemist, Beelzebub, Hunter X Hunter, Code Geass, Soul Eater, L'attaque des titans, Kuruko No Basket, City Hunter, Les chevaliers du Zodiaque, Darwin's Game, Tokyo Ghoul, Dragon Ball, One Piece, GTO, Ranma 1/2, Trigun, Raxephon, Fairy Tail, Captain Tsubasa, Sword Art Online, Assassination Classroom.
 
