@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "API Géolocalisation"
-date:   2014-09-23
-category: HTML
+date:   2014-09-29
+category: JS
 tags : geolocalisation html5 api
 author: jo
 description : L'API de géolocalisation permet aux utilisateurs l'acceptant de partager leur position actuelle. Découvrons la ensemble.
