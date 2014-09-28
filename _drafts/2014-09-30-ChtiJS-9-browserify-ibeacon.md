@@ -20,16 +20,15 @@ La neuvième édition de la ChtiJS est l'occasion de parler d'un sujet attendu e
 
 ### Browserify
 
-<img src="/src/articles/chtijs/browserify-logo.png" style="float: left; width: 100px; margin: 20px;">
+<img src="/src/articles/chtijs/browserify-logo.png" class="left">
 
 <a href="http://lilleweb.fr/team/"> Thomas DECONINCK </a> aura l'occasion de vous présenter Browserify, un outil devenu indispensable. En effet, celui-ci nous permet d'avoir un projet structuré grâce à l'apport des modules basés sur CommonJS.
 
 Thomas vous expliquera donc comment l'installer et l'utiliser dans vos projets accompagné de petits retours d'expériences.
 
-
 ### Les iBeacons
 
-<img src="/src/articles/chtijs/logo-svg.png" style="float: left; width: 100px; margin: 20px;">
+<img src="/src/articles/chtijs/logo-svg.png" class="left">
 
 Cette ChtiJS sera également l'occasion de découvrir les iBeacons et bien évidemment leur utilisation en Javascript. On entend énormément parler de ces petites balises depuis qu'Apple a commencé à en parler, la plupart des utilisations sont faites sur iPhone et donc en Objective-C.
 
