@@ -5,7 +5,7 @@ date:   2014-09-23
 category: EVENT
 tags : chtijs mutualab conférences Browserify ibeacon javascript
 author: john
-description :
+description:
 ---
 
 ChtiJS se réunit plusieurs fois par an pour parler de web et surtout de Javascript. Cette communauté fait partie de FranceJS qui réunit plus de 500 passionnés sur <a href="http://www.meetup.com"> meetup</a>.
@@ -16,7 +16,10 @@ La neuvième édition de la ChtiJS est l'occasion de parler d'un sujet attendu e
 
 ### Browserify
 
-<a href="http://lilleweb.fr/team/"> Thomas DECONINCK </a> aura l'occasion de vous présenter Browserify BLABLABLA
+<a href="http://lilleweb.fr/team/"> Thomas DECONINCK </a> aura l'occasion de vous présenter Browserify, un outil devenu indispensable. En effet, celui-ci nous permet d'avoir un projet structuré grâce à l'apport des modules basés sur CommonJS.
+
+Thomas vous expliquera donc comment l'installer et l'utiliser dans vos projets accompagné de petits retours d'expériences.
+
 
 ### Les iBeacons
 
