@@ -21,3 +21,11 @@ flo:
   description: "Professeur des écoles pour le moment en maternelle, Floriane a toujours eu à coeur de transmettre ses connaissances. Elle a pour rôle de corriger les différents textes de Lille Web (articles, conférences, communication, ...). <br> Passionnée de lecture et de musique, elle est friande de toutes nouvelles technologies. Elle pourra vous proposer des avis concernant ses lectures durant les pauses café du vendredi !"
   twitter: gfloriane59
   github: false
+jo:
+  name: Jonathan GUÉLOU
+  image: "/src/img/members/jo.jpg"
+  poste: Auteur - Membre du labo web de SUPINFO
+  description: "Passionné du web et de l'univers Microsoft, Jonathan est actuellement développeur .NET chez UNIS.
+Il saura vous partager ce qu'il connait des dernières nouveautés que proposent HTML5 et CSS3 couplé à des astuces liées à l'univers .NET."
+  twitter: false
+  github: false

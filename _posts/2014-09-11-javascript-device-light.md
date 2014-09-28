@@ -8,7 +8,7 @@ author: john
 description : Aujourd'hui je vais vous faire découvrir comment récupérer la luminosité ambiante afin de rendre vos sites plus accessibles.
 ---
 
-*Cette article a déjà été écrit sur mon blog personnel. Ayant subi un problème technique et n'ayant pas encore eu le temps de le remettre en ligne, je vous poste de nouveau l'article ici car j'ai trouvé cette découverte vraiment intéressante et elle fait suite à l'article sur <a href="/js/2014/09/02/web-notification-mobile/">les web notifications mobile </a>.*
+*Cet article a déjà été écrit sur mon blog personnel. Ayant subi un problème technique et n'ayant pas encore eu le temps de le remettre en ligne, je vous poste de nouveau l'article ici car j'ai trouvé cette découverte vraiment intéressante et elle fait suite à l'article sur <a href="/js/2014/09/02/web-notification-mobile/">les web notifications mobile </a>.*
 
 Aujourd'hui, je vais vous faire découvrir comment récupérer la luminosité ambiante afin de rendre vos sites plus accessibles; c'est-à-dire que vous serez capable de déterminer si l'utilisateur se trouve dans un lieu sombre ou clair, et donc interagir avec la page en fonction : si l'utilisateur lit dans son lit dans le noir, vous pouvez inverser les couleurs de votre site pour qu'il lise en blanc sur fond noir.
 
