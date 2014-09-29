@@ -3,7 +3,7 @@ john:
   image: "/src/img/members/john.png"
   poste: Fondateur
   site: johnathan.fr
-  description: "Développeur front-end à Altima° dans le pôle optimisation et offre innovantes, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
+  description: "Développeur front-end à altima° dans le pôle optimisation et offres innovantes, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
   twitter: johnathanSUP
   github: johnathanSUP
 dck:
@@ -11,7 +11,7 @@ dck:
   image: "/src/img/members/dck.png"
   poste: Fondateur
   site: thomasdeconinck.fr
-  description: "Développeur front-end à Altima°, Thomas est un grand passionné de JavaScript mais également de nouvelles technologies ! Il aime participer à des débats sensibles comme la supériorité d'Ember face à Angular ou encore l'indentation avec des espaces plutôt que des tabulations. <br> C'est également un grand fan de manga qui n'hésitera pas à vous parler de ses dernières découvertes ! "
+  description: "Développeur front-end à altima°, Thomas est un grand passionné de JavaScript mais également de nouvelles technologies ! Il aime participer à des débats sensibles comme la supériorité d'Ember face à Angular ou encore l'indentation avec des espaces plutôt que des tabulations. <br> C'est également un grand fan de manga qui n'hésitera pas à vous parler de ses dernières découvertes ! "
   twitter: DCK__
   github: DCKT
 flo:
@@ -27,5 +27,5 @@ jo:
   poste: Auteur - Membre du labo web de SUPINFO
   description: "Passionné du web et de l'univers Microsoft, Jonathan est actuellement développeur .NET chez UNIS.
 Il saura vous partager ce qu'il connait des dernières nouveautés que proposent HTML5 et CSS3 couplé à des astuces liées à l'univers .NET."
-  twitter: false
+  twitter: jonathanguelou
   github: false

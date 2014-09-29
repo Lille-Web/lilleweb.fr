@@ -199,44 +199,6 @@ L’ensemble du CSS :
   }
 }
 
-@-webkit-keyframes slideAnimation {
-  0% {
-    transform: translateX(0%);
-  }
-
-  12.5% {
-    transform: translateX(0%);
-  }
-
-  25% {
-    transform: translateX(-25%);
-  }
-
-  37.5% {
-    transform: translateX(-25%);
-  }
-
-  50% {
-    transform: translateX(-50%);
-  }
-
-  62.5% {
-    transform: translateX(-50%);
-  }
-
-  75% {
-    transform: translateX(-75%);
-  }
-
-  87.5% {
-    transform: translateX(-75%);
-  }
-
-
-  100% {
-    transform: translateX(0);
-  }
-}
 
 {% endhighlight %}
 

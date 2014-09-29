@@ -14,6 +14,7 @@ L'API permet de récupérer les trois éléments nécessaires à la géolocalisa
 - la Latitude
 - la Longitude
 - l'altitude
+
 Les navigateurs utilisent différentes techniques selon si l'on est sur mobile ou desktop :
 - l'adresse IP
 - la triangulation (3/4G ou wifi)
@@ -24,7 +25,7 @@ Les navigateurs utilisent différentes techniques selon si l'on est sur mobile o
 L'API repose sur la classe `geolocation` de `navigator`.
 
 Cette classe propose 3 méthodes :
-- `getCurrentPosition()` permet de connaitre la position de l'utilisateur.
+- `getCurrentPosition()` permet de connaître la position de l'utilisateur.
 - `watchPosition()` permet de suivre la position de l'utilisateur.
 - `clearWatch()` permet de couper la localisation (pour épargner la batterie).
 
@@ -64,6 +65,10 @@ img.src = "http://maps.googleapis.com/maps/api/staticmap?center=" + position.coo
 result.appendChild(img);
 
 {% endhighlight %}
+
+Voici le résultat :
+
+<img src="/src/articles/apiGeoloc/résultat%20api%20geoloc.png" style="width:350px;">
 
 ### watchPosition()
 La méthode `watchPosition()` récupère la position actuelle de l'utilisateur tout comme la méthode `getPosition()` sauf qu'ici cette position est actualisée lorsque l'utilisateur se déplace. Son implémentation est la même :
@@ -114,7 +119,7 @@ function stopGeolocalisation(){
 ## Callbacks
 
 Les méthodes `getPosition()` et `watchPosition()` possèdent en réalité 3 arguments : getPosition(succes, error, option) / watchPosition(succes, error, option)
-- succes : Fonction appelée en cas de succès ("writeResult()" dans notre précedent exemple)
+- succes : Fonction appelée en cas de succès ("writeResult()" dans notre précédent exemple)
 - error : Fonction appelée en cas d'échec (facultatif)
 - option : Permet par exemple d'activer ou non le GPS / de déterminer combien de temps les données sont valables
 
