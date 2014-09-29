@@ -68,7 +68,7 @@ result.appendChild(img);
 
 Voici le résultat :
 
-<img src="/src/articles/apiGeoloc/résultat%20api%20geoloc.png" style="width:350px;">
+<img src="/src/articles/apiGeoloc/r%C3%A9sultat%20api%20geoloc.png" style="width:350px;">
 
 ### watchPosition()
 La méthode `watchPosition()` récupère la position actuelle de l'utilisateur tout comme la méthode `getPosition()` sauf qu'ici cette position est actualisée lorsque l'utilisateur se déplace. Son implémentation est la même :
