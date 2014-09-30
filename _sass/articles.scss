@@ -50,6 +50,12 @@
       height: 30px;
       background-size: 100%;
     }
+    &.EVENT {
+      font-size: 11px;
+      padding: 5px;
+      background: $red;
+    }
+
   }
   #listContent{
     padding-left:  10px;
