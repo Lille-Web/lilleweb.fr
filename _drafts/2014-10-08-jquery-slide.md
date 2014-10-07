@@ -3,14 +3,14 @@ layout: post
 title:  "Créer un menu responsive avec PageSlide"
 date:   2014-09-28
 category:
-tags :
+tags : jQuery slider responsive menu mobile
 author: henri
 description : "Tutoriel : créer un menu responsive avec le plugin jQuery PageSlide"
 ---
 
-Ce tuto vous permettra de mettre en place un menu qui apparait sur le coté de l'écran avec un effet de slide.
+Ce tuto vous permettra de mettre en place un menu qui apparaîtra sur le coté de l'écran avec un effet de slide.
 
-### Ressources nécéssaire
+### Ressources nécéssaires
 
 Pour réaliser ce menu, il nous faut :
 
@@ -77,7 +77,7 @@ Suivi de l'appel pour activer le plugin
 
 ### Troisième étape
 
-Mise en place du style css de notre page
+Mise en place du style de notre page
 
 Dans notre fichier style.css, on commence par les éléments de base
 
@@ -151,7 +151,7 @@ a:hover {
 
 ### Pour finir
 
-Mise en place des media queries pour le menu en version mobile ou ordinateur.
+Mise en place des media-queries pour le menu en version mobile ou ordinateur.
 
 {% highlight css %}
 
