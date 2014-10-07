@@ -5,7 +5,11 @@ date:   2014-09-30
 category: EVENT
 tags : chtijs mutualab conférences Browserify ibeacon javascript
 author: john
+<<<<<<< HEAD
+description: Le CchtiJS #9 a une date et parlera de Browserify et d'iBeacon !
+=======
 description: Le ChtiJS 9 a une date et parlera de Browserify et d'iBeacon !
+>>>>>>> cb78a994fb09adac0d38ef95127b2194a6c0bb09
 icon: "/src/articles/chtijs/chtijs.png"
 ---
 

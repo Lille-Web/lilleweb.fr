@@ -5,5 +5,14 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-53249348-1', 'auto');
+  
+  try{if(document.URL.match("utm_expid")){
+    if(document.URL.match("axelle=red")){
+      ga('set', 'dimension1', 'TestContentPages versionRed');
+    }else{  
+      ga('set', 'dimension1', 'TestContentPages versionOriginale');
+    }
+  }}catch(e){}
+  
   ga('send', 'pageview');
 </script>
