@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Créer un menu responsive avec PageSlide"
-date:   2014-09-28
-category:
+date:   2014-10-08
+category: JS
 tags : jQuery slider responsive menu mobile
 author: henri
 description : "Tutoriel : créer un menu responsive avec le plugin jQuery PageSlide"
