@@ -13,7 +13,6 @@ ChtiJS se réunit plusieurs fois par an pour parler de web et surtout de Javascr
 
 <img src="/src/articles/chtijs/chtijs.png" style="width:150px;">
 
-
 ## Programme
 
 La neuvième édition du ChtiJS est l'occasion de parler d'un sujet attendu et d'un autre qui l'est beaucoup moins dans une réunion sur le javascript.
