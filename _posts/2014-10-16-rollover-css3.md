@@ -3,7 +3,7 @@ layout: post
 title:  "Effet de rollover sur une image en CSS3"
 date:   2014-10-16
 category: CSS
-tags : rollover, css3, survol
+tags : rollover css3 survol
 author: henri
 description : "Tutoriel : créer un menu responsive avec le plugin jQuery PageSlide"
 ---
