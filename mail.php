@@ -16,7 +16,7 @@
 			$content = $_POST['content'];
 		}
 
-		$to = 'contact@lille-web.fr';
+		$to = 'contact@lilleweb.fr';
 		$object = '[Contact-LilleWeb] from '.$name.' about : '. $object;
 
 		$msg .= 'Message recu de '.$name."\r\n";
@@ -36,9 +36,9 @@
 			$name = $_POST['name'];
 			$content = $_POST['content'];
 		}
-		$mail = "unknown@lille-web.fr";
+		$mail = "unknown@lilleweb.fr";
 		$object = "[Lille-Web] Article partagé";
-		$to = 'contact@lille-web.fr';
+		$to = 'contact@lilleweb.fr';
 		$object = '[Article-LilleWeb] from '.$name;
 
 		$msg .= 'Article partagé par '.$name."\r\n";
