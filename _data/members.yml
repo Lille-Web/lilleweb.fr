@@ -25,7 +25,15 @@ jo:
   name: Jonathan GUÉLOU
   image: "/src/img/members/jo.jpg"
   poste: Auteur - Membre du labo web de SUPINFO
-  description: "Passionné du web et de l'univers Microsoft, Jonathan est actuellement développeur .NET chez UNIS.
+  description: "Passionné du web et de l'univers Microsoft, Jonathan est actuellement développeur .NET chez UNIS. <br>
 Il saura vous partager ce qu'il connait des dernières nouveautés que proposent HTML5 et CSS3 couplé à des astuces liées à l'univers .NET."
   twitter: jonathanguelou
+  github: false
+henri:
+  name: Henri TOURNOYS
+  image: "/src/img/members/henri.jpg"
+  poste: Auteur - Membre du labo web de SUPINFO
+  site: http://htournoys.com
+  description: "Webdesigner freelance et intégrateur/développeur web chez Dista, Henri est un passionné de web et de high-tech en particulier dans le domaine de la téléphonie mobile. Il aime le design et la communication et sera ravi de partager avec la communauté."
+  twitter: htournoys
   github: false
