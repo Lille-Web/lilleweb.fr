@@ -1,7 +1,7 @@
 ---
 ---
 
-$red: #B64747;
+$red: #d95f49;
 $grey : #585858;
 $black : #384047;
 $white : #FFF;
@@ -43,7 +43,7 @@ a:hover {
 }
 
 .btn.btn-event{
-  background-color: #B64747;
+  background-color: $red;
   color : #FFF;
 
   &:hover {
@@ -145,7 +145,7 @@ a:hover {
         margin-right : 10px;
         &:hover{
           text-decoration : none;
-          background-color : #B64747;
+          background-color : $red;
           color :#FFF;
         }
       }
@@ -167,7 +167,7 @@ a:hover {
       text-align: center;
     }
     .btn.btn-event{
-      background-color: #B64747;
+      background-color: $red;
       color : #FFF;
 
       &:hover {
