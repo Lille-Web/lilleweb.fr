@@ -22,11 +22,13 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
             <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
           </div>
           <p class="desc">{{post.description}}</p>
-          {% for tag in post.tags %}
-            <a class="tag">
-              {{ tag }}
-            </a>
-          {% endfor %}
+          <div class="tags">
+            {% for tag in post.tags %}
+              <a class="tag">
+                {{ tag }}
+              </a>
+            {% endfor %}
+          </div>
         </article>
       {% endfor %}
     </div>

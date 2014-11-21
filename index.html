@@ -1,5 +1,6 @@
 ---
 description: "Articles, conférences, formations, retrouvez tout ce dont vous avez besoin, pour et par des passionnés du web !"
+
 ---
 <!DOCTYPE html>
 <html>
@@ -45,12 +46,20 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
       <div class="row">
         <div class="col-md-10 col-md-offset-1 ">
           <h2>Événements</h2>
-          <div class="content col-md-8 col-md-offset-2">
-            <h3 class="title"> À venir</h3>
-            <!-- <h4 class="date"> Mardi 7 juillet 2014 </h4>
-            <button class="btn btn-event">
-              Participer
-            </button> -->
+          <div class="row">
+            <div class="col-md-4 hidden-xs hidden-sm">
+              <img src="src/img/illustration_events.png" alt="Retrouvez les différents articles">
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              {% for event in site.data.events limit:6 %}
+                <article class="col-md-4">
+                  <h3><a class="post-link" href="{{ event[1].link | prepend: site.baseurl }}">{{event[1].name}}</a></h3>
+                  <h5>{{event[1].date}}</h5>
+                  <a href="https://www.google.fr/maps/place/{{ event[1].location }}" class="date" target="_blank" class="location"> {{ event[1].location }} </a>
+                </article>
+              {% endfor %}
+              <a class="col-md-12" href="evenements"> Plus d'événements </a>
+            </div>
           </div>
         </div>
       </div>
