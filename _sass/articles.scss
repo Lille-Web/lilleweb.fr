@@ -1,14 +1,3 @@
-.btn-event{
-  background-color: $red;
-  color : #FFF;
-}
-.article-content {
-  #option {
-    padding-top: 20px;
-    margin-top: 20px;
-    background: white;
-  }
-}
 #contents{
   background-color : rgba(245, 245, 245, 1);
   width: 100%;
@@ -20,52 +9,50 @@
     margin-top: 0px;
   }
 
-
-  .categorie{
-    color: #FFF;
-    text-align: center;
-    border-radius: 4px;
-    font-weight: 900;
-    padding: 4px 5px;
-    vertical-align: middle;
-    margin-bottom: 14px;
-    margin-right: 10px;
-    float: left;
-    &.Ruby {
-      background: #e74c3c;
-    }
-    &.JS {
-      background-color: #F1BF26;
-    }
-    &.CSS{
-      background-color : #2AA9E0;
-    }
-    &.HTML{
-      background-color: #F1652A;
-    }
-    &.COFFEE{
-      background: url("/src/img/pictos/icon_coffee.png") no-repeat;
-      font-size: 0px;
-      width: 47px;
-      height: 30px;
-      background-size: 100%;
-    }
-    &.EVENT {
-      font-size: 11px;
-      padding: 5px;
-      background: $red;
-    }
-
-  }
   #listContent{
     padding-left:  10px;
-
     article{
       background-color :#FFF;
       padding : 35px;
       margin-bottom : 50px;
       font-size: 16px;
       line-height: 25px;
+      .categorie{
+        color: #FFF;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: 900;
+        padding: 4px 5px;
+        vertical-align: middle;
+        margin-bottom: 14px;
+        margin-right: 10px;
+        float: left;
+        &.Ruby {
+          background: #e74c3c;
+        }
+        &.JS {
+          background-color: #F1BF26;
+        }
+        &.CSS{
+          background-color : #2AA9E0;
+        }
+        &.HTML{
+          background-color: #F1652A;
+        }
+        &.COFFEE{
+          background: url("/src/img/pictos/icon_coffee.png") no-repeat;
+          font-size: 0px;
+          width: 47px;
+          height: 30px;
+          background-size: 100%;
+        }
+        &.EVENT {
+          font-size: 11px;
+          padding: 5px;
+          background: $red;
+        }
+
+      }
       h2, h3, h4{
         clear: both;
       }
@@ -76,6 +63,7 @@
       img{
         margin:auto;
         text-align : center;
+        max-width : 100%;
         &.left{
           float: left;
           width: 100px;
@@ -104,17 +92,20 @@
       .desc{
         margin : 20px 0px;
       }
-      .tag{
-        border : 1px solid #A6A6A6;
-        color : #A6A6A6;
-        border-radius : 4px;
-        padding : 4px 12px;
-        margin-right : 10px;
-        &:hover{
-          text-decoration : none;
-          background-color : $red;
-          color :#FFF;
-          border-color : transparent;
+      .tags{
+        .tag{
+          border : 1px solid #A6A6A6;
+          color : #A6A6A6;
+          border-radius : 4px;
+          padding : 4px 12px;
+          margin-right : 10px;
+          line-height: 37px;
+          &:hover{
+            text-decoration : none;
+            background-color : $red;
+            color :#FFF;
+            border-color : transparent;
+          }
         }
       }
     }
@@ -124,8 +115,9 @@
     }
   }
   #option{
-
-
+    padding-top: 20px;
+    margin-top: 20px;
+    background: white;
     h3 {
       border-bottom: 1px solid #ccc;
       padding-bottom: 10px;
@@ -198,27 +190,6 @@
       }
     }
   }
-
-body.zen{
-  header{
-    display : none;
-  }
-  #contents{
-    background-color : transparent;
-    #listContent{
-      input.btn-event{
-        background : transparent;
-        color: $grey;
-      }
-    }
-    #option{
-      opacity : 0.1;
-      &:hover{
-        opacity : 1;
-      }
-    }
-  }
-}
 
 #articles {
   h2.title {
