@@ -1,4 +1,4 @@
-#contact{
+#contact {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -7,21 +7,23 @@
   background: rgba(0,0,0,0.7);
   display : none;
   z-index : 1;
-  h3{
+
+  h3 {
     margin-top : 0px;
   }
-  .overlay{
+  .overlay {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
   }
-  .contactContent{
+
+  .contactContent {
     padding: 30px;
     background: rgba(255,255,255,1);
     border-radius: 10px;
-    top : 50px;
+    top: 50px;
     animation: slideTop .4s ease;
     -webkit-animation: slideTop .4s ease;
   }
@@ -35,6 +37,7 @@
     top : 50px;
   }
 }
+
 @-webkit-keyframes slideTop {
   from {
     top : -500px;

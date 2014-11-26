@@ -1,19 +1,23 @@
-body.zen{
-  header{
+.zen {
+
+  header {
     display : none;
   }
-  #contents{
-    background-color : transparent;
-    #listContent{
-      input.btn-event{
-        background : transparent;
+
+  #contents {
+    background-color: transparent;
+
+    #listContent {
+      input.btn-event {
+        background: transparent;
         color: $grey;
       }
     }
-    #option{
-      opacity : 0.1;
-      &:hover{
-        opacity : 1;
+    #option {
+      opacity: 0.1;
+
+      &:hover {
+        opacity: 1;
       }
     }
   }
