@@ -1,25 +1,26 @@
-#contents #listContent #events{
-  h1{
+#listContent #events {
+
+  h1 {
     margin-bottom : 50px;
   }
-  article{
-    padding : 20px;
-    text-align : center;
-    a.location{
+  article {
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    position: relative;
+
+    .location{
       display : block;
+      height: 30px;
+      overflow: hidden;
     }
-    a.btn-red{
-      background-color: $red;
-      color: #FFF;
-      display : block;
-      padding : 10px 0px;
-      margin-top : 10px;
-      border-radius : 4px;
+
+    .btn-red{
       font-size : 18px;
-      &:hover{
-        background-color : #CC6161;
-        text-decoration : none;
-      }
+      position: absolute;
+      bottom: 10px;
+      left: 14px;
+      width: 90%;
     }
   }
 }

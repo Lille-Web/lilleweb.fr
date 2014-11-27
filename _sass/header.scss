@@ -4,51 +4,62 @@ header.hd-index{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
   .navbar-default{
     background: none;
     border: none;
     box-shadow: none;
-    h1{
-      margin : 0px;
+
+    h1 {
+      margin: 0px;
     }
-    .navbar-brand{
-      img{
-        width : 250px;
+    .navbar-brand {
+      img {
+        width: 250px;
       }
     }
-    .navbar-toggle .icon-bar{
-      background-color : $white;
+
+    .navbar-toggle .icon-bar {
+      background-color: $white;
     }
-    a{
-      color : $white !important;
+
+    a {
+      color: $white !important;
 
       &:hover {
         text-decoration: underline;
       }
     }
   }
-  .header-content{
+  .header-content {
     margin: 90px 0px;
+
     h1 {
       font-size: 36px;
     }
-    h2{
+
+    h2 {
       font-size: 24px;
     }
-    button{
-      background : none;
-      border : 1px solid $white !important;
-      margin-top : 40px;
-      a{
-        color : #FFF;
-        &:hover{
-          color : $red;
+
+    button {
+      background: none;
+      border: 1px solid $white !important;
+      margin-top: 40px;
+
+      a {
+        color: #FFF;
+
+        &:hover {
+          color: $red;
         }
       }
-      &:hover{
-        background-color : $white;
+      &:hover {
+        background-color: $white;
 
-        a { color: $red; }
+        a {
+          color: $red;
+        }
       }
     }
   }
@@ -60,45 +71,52 @@ header.side {
   position: fixed;
   height: 100%;
 
-  nav{
-    background : $black;
+  nav {
+    background: $black;
     height: 100%;
-    width : 70px;
-    position : absolute;
+    width: 70px;
+    position: absolute;
 
-    ul{
-      list-style:none;
-      padding : 0px;
-      .bottom{
+    ul {
+      list-style: none;
+      padding: 0px;
+
+      .bottom {
         position: absolute;
-        bottom : 30px;
-        width : 100%;
+        bottom: 30px;
+        width: 100%;
       }
+
       li {
         text-align: center;
         margin-top: 30px;
 
         position: relative;
 
-        &:first-child{
+        &:first-child {
           margin-top: 10px;
         }
+
         img {
           width: 35px;
           opacity: 0.5;
-          transition : opacity 0.2s ease;
+          transition: opacity 0.2s ease;
 
           &.twitter {
             width: 45px;
           }
-          &:hover{
-            opacity : 1;
-            transition : opacity 0.2s ease;
+
+          &:hover {
+            opacity: 1;
+            transition: opacity 0.2s ease;
           }
         }
 
-        &.index{
-          img{width : 40px; opacity: 1;}
+        &.index {
+          img {
+            width: 40px;
+            opacity: 1;
+          }
           margin-bottom: 50px;
         }
 
@@ -144,7 +162,7 @@ header.side {
         }
       }
     }
-    >a{
+    >a {
       position: absolute;
       bottom: 0px;
       margin: 50%;
