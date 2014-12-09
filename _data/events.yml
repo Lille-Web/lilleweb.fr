@@ -1,4 +1,11 @@
 gdg1:
+  name: "2 projets Neo4j"
+  date: "11 décembre 2014"
+  time: "19h30"
+  location: "Euratechologie"
+  organisateur: "Graph Database Lille"
+  link: "http://www.meetup.com/graphdb-lille/events/185374082/"
+gdg1:
   name: "Soirée Firebase et Web component"
   date: "11 décembre 2014"
   time: "19h"
