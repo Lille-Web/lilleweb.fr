@@ -1,4 +1,12 @@
-gdl1:
+
+welshdesign:
+  name: "Welsh Design"
+  date: "15 janvier 2015"
+  time: "19h00"
+:  location: "Mutualab"
+  organisateur: "WelshDesign"
+  link: "http://www.meetup.com/WelshDesign/events/218764025/"
+gdlg1:
   name: "2 projets Neo4j"
   date: "11 décembre 2014"
   time: "19h30"
