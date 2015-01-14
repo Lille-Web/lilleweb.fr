@@ -5,6 +5,7 @@ date:   2015-01-14
 category: OUTILS
 tags : git gestion projet add pull push commit
 author: john
+navigationMenu : true
 description : Découvrez et comprenez les bases de Git.
 ---
 
@@ -20,7 +21,7 @@ Après cette article, si vous ne connaissiez pas ce genre d'outils, vous serrez 
 Git est présenté par Wikipedia comme un " logiciel de gestions de versions décentralisé ". Développé par Junio Hamano et Linus Torvalds, la communauté y contribue beaucoup car Git est sous licence libre.  
 
 Concrètement, Git permet de nombreuses choses :
- 
+
 - Héberger un projet
 - Contribuer à plusieurs sur le même projet en gérant les conflits
 - Créer différentes " branches " afin de développer des fonctionnalités sans altérer le comportement principal
@@ -125,3 +126,8 @@ private/
 {% endhighlight %}
 
 Cet exemple de `.gitignore` permet de ne pas tracker (et donc de ne pas partager) le fichier conf.php et le dossier private. Vous devez donc renseigner par ligne vos chemins de fichiers et de dossier que vous souhaitez ignorer. 
+
+
+## Allons plus loin
+
+Vous pouvez trouver une explication complète des commandes présentées ici et de bien d'autres sur la <a href="http://git-scm.com/doc"> doc de Git</a>.
