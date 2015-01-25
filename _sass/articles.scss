@@ -46,14 +46,15 @@
           height: 30px;
           background-size: 100%;
         }
-        &.EVENT {
+        &.EVENT{
           font-size: 11px;
           padding: 5px;
-          background: $red;
+          background-color: $red;
         }
-        &.OUTIL {
-          background: #795548;
-          font-size: 11px;
+        &.OUTILS{
+          background-color: #795548;
+          font-size: 9px;
+          padding: 5px;
         }
 
       }
