@@ -123,6 +123,10 @@
     padding-top: 20px;
     margin-top: 20px;
     background: white;
+    @media(max-width : 992px){
+      margin-left: 20%;
+      width: 77%;
+    }
     h3 {
       border-bottom: 1px solid #ccc;
       padding-bottom: 10px;

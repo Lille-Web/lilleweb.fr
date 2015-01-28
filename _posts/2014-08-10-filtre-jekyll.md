@@ -37,7 +37,7 @@ Comme vous le savez sûrement, il est très simple et très rapide d’intégrer
 Dans un premier temps, il suffit de rajouter la directive `ng-app` sur une balise englobant votre contenu que vous voulez dynamique.
 
 Exemple :
-{% highlight js %}
+{% highlight html %}
 
 <div id="contents" ng-app="contentsApp">
 
