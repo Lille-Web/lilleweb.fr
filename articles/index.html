@@ -5,7 +5,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
 ---
 
 
-<div id="contents" ng-app="contentsApp">
+<div id="contents" ng-app="contentsApp" ng-controller="searchController">
   <div id="listContent" class="col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-2">
     <div id="articles">
       <h1> Articles </h1>
@@ -32,7 +32,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
         </article>
       {% endfor %}
     </div>
-    <div id="searchResults" ng-controller="searchController">
+    <div id="searchResults">
       <h1> Recherche </h1>
       <article>
         <h4> Articles </h4>
