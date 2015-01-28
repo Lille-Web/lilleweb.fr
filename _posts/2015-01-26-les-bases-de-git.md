@@ -95,7 +95,7 @@ Comme vous pouvez le voir, Git a créé un dossier caché nommé `.git`. Votre p
 
 Vous devez maintenant enregistrer le serveur distant grâce à `remote`.
 
-`git remote add origin master https://github.com/JohnathanSUP/deviceLight.git`
+`git remote add origin https://github.com/JohnathanSUP/deviceLight.git`
 
 Vous pouvez vérifier grâce à `git remote -v` que votre serveur a bien été enregistré.
 

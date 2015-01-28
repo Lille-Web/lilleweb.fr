@@ -183,3 +183,7 @@ Je vous ai remis l'exemple pour un `input[type="radio"]` même si le principe es
 {% endhighlight %}
 
 J'ai juste ici changer chaque référence à `checkbox` pour `radio` et j'ai augmenté la valeur du `border-radius` afin de rentre le "faux" input rond.  
+
+## Conclusion
+
+Un exemple concret est dispo sur mon [GitHub](https://github.com/JohnathanSUP/hack-input)
