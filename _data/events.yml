@@ -1,10 +1,17 @@
-chtijs9:
+chtijs10:
   name: "ChtiJS #10"
   date: "5 février 2014"
   time: "19h"
   location: "Mutualab Lille"
   organisateur: "ChtiJS"
   link: "http://www.meetup.com/FranceJS/events/219801991/"
+takeOffTalkjanvier2015:
+  name: "TakeOff Talk Janvier"
+  date: "27 janvier 2015"
+  time: "19h"
+  location: "L'hybride Lille"
+  organisateur: "TakeOff"
+  link: "http://www.meetup.com/takeoff/events/219877171/"
 welshdesignjanvier2015:
   name: "Welsh Design"
   date: "15 janvier 2015"
