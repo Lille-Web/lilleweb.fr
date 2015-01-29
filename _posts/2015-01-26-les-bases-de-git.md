@@ -10,7 +10,7 @@ description : Découvrez et comprenez les bases de Git.
 ---
 
 Nous avons jugé intéressant de faire un ensemble d'articles assez complets sur les outils indispensables. Nous balaierons aussi bien les outils de versioning (sujet de cet article) que des éditeurs de texte, ou même des extensions pour votre navigateur !
-Si vous souhaitez des conseils sur certains types d’outils, des applications, des extensions ou tout autre chose, n’hésitez pas à nous le dire en commentaire ou sur <a href="https://twitter.com/lille_web">Tiwiter</a> ! 
+Si vous souhaitez des conseils sur certains types d’outils, des applications, des extensions ou tout autre chose, n’hésitez pas à nous le dire en commentaire ou sur <a href="https://twitter.com/lille_web">Twitter</a> ! 
 
 Dans ce premier article, nous verrons les bases de Git, nous vulgariserons certains concepts.
 
