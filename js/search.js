@@ -13,6 +13,14 @@ function inputChange(){
   }
 }
 
+document.querySelector('#contents #searchResults article .closeSearch').addEventListener('click', function(){
+    document.getElementById('articles').style.display = "block";
+    document.getElementById('searchResults').style.display = "none";
+    document.querySelector('ul.pagination').style.display = "block";
+    window.location.hash = "";
+    document.getElementById('searchBox').value = "";
+});
+
 
 var contentsApp = angular.module('contentsApp', []);
 contentsApp.config(['$interpolateProvider', function ($interpolateProvider) {
@@ -27,4 +35,9 @@ contentsApp.controller('searchController', function ($scope, $http) {
   $http.get('/data.json').success(function(data) {
     $scope.results = data;
   });
+  $scope.searchTag = function(theTag){
+    $scope.searchValue = theTag;
+    document.getElementById('searchBox').value = theTag
+    inputChange();
+  };
 });

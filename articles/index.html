@@ -24,7 +24,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
           <p class="desc">{{post.description}}</p>
           <div class="tags">
             {% for tag in post.tags %}
-              <a class="tag">
+              <a class="tag" ng-click="searchTag('{{ tag }}')">
                 {{ tag }}
               </a>
             {% endfor %}
@@ -35,6 +35,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
     <div id="searchResults">
       <h1> Recherche </h1>
       <article>
+        <div class="closeSearch"> &times; </div>
         <h4> Articles </h4>
         <ul>
           <li ng-repeat="result in results.articles | filter: searchValue">
