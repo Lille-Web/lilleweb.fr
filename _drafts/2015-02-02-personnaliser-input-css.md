@@ -1,20 +1,20 @@
 ---
 layout: post
 title:  "Tuto - Personnaliser vos inputs en CSS"
-date:   2015-01-28
+date:   2015-02-02
 category: CSS
 tags : tips tuto personnaliser input checkbox radio text form
 author: john
 description : "Une manière simple de personnaliser vos inputs (checkbox, radio, text, ...) simplement en CSS"
 ---
 
-Aujourd'hui nous allons aborder un élément redondants et souvent contraignants pour les intégrateurs : la personnalisation d'input, et surtout de checkbox ou de bouton radio.
+Aujourd'hui nous allons aborder un élément redondant et souvent contraignant pour les intégrateurs : la personnalisation d'input, et surtout de checkbox ou de bouton radio.
 
-L'idée est de parcourir les inputs les plus communs et les plus compliqué à personnaliser afin d'avoir une base facilement répétable pour d'autres type.
+L'idée est de parcourir les inputs les plus communs et les plus compliqués à personnaliser afin d'avoir une base facilement répétable pour d'autres types.
 
 ## input[type="text"]
 
-![rendu iinput[type="text"] personnalisé](/src/articles/tuto-input/input-text.png)
+![rendu input[type="text"] personnalisé](/src/articles/tuto-input/input-text.png)
 
 Les champs text sont de loin les plus faciles à personnaliser. Dans un premier temps voici le html, très simple, d'un champ text basique sans attribut.
 
@@ -24,7 +24,7 @@ Les champs text sont de loin les plus faciles à personnaliser. Dans un premier 
 
 {% endhighlight %}
 
-Il n'y a aucune astuce particulière pour personnaliser un `input[type="text"]`, ici on va juste jouer sur sa taille, la police du contenu du champs et personnaliser un peu la bordure. 
+Il n'y a aucune astuce particulière pour personnaliser un `input[type="text"]`, ici on va juste jouer sur sa taille, la police du contenu du champ et personnaliser un peu la bordure. 
 
 {% highlight css %}
 
@@ -44,7 +44,7 @@ input[type="text"]{
 
 ![rendu iinput[type="checkbox"] personnalisé](/src/articles/tuto-input/input-checkbox.png)
 
-Soyons clair, les input checkable (aka checkbox, radio) sont les plus contraignants à personnaliser. En effet il n'est pas possible de vraiment personnaliser ces éléments de base, car chaque navigateur va avoir son propre style pour les gérer et il sera donc difficile d'avoir le même rendu partout. 
+Soyons clair, les inputs checkables (aka checkbox, radio) sont les plus contraignants à personnaliser. En effet il n'est pas possible de vraiment personnaliser ces éléments de base, car chaque navigateur va avoir son propre style pour les gérer et il sera donc difficile d'avoir le même rendu partout. 
 
 L'astuce sera donc de remplacer l'input basique pour recréer une version personnalisée.
 
@@ -182,7 +182,7 @@ Je vous ai remis l'exemple pour un `input[type="radio"]` même si le principe es
 
 {% endhighlight %}
 
-J'ai juste ici changer chaque référence à `checkbox` pour `radio` et j'ai augmenté la valeur du `border-radius` afin de rentre le "faux" input rond.  
+J'ai juste ici changé chaque référence à `checkbox` pour `radio` et j'ai augmenté la valeur du `border-radius` afin de rendre le "faux" input rond.  
 
 ## Conclusion
 
