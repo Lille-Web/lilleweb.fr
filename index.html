@@ -6,7 +6,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
 <html>
 {% include head.html %}
 
-{% include headerPage.html %}
+{% include headerPage3.html %}
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <div id="content">
@@ -52,7 +52,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
             </div>
             <div class="col-md-7 col-md-offset-1">
               {% for event in site.data.events limit:6 %}
-                <article class="col-md-4">
+                <article class="col-md-4 col-sm-6">
                   <h3><a class="post-link" href="{{ event[1].link | prepend: site.baseurl }}">{{event[1].name}}</a></h3>
                   <h5>{{event[1].date}}</h5>
                   <a href="https://www.google.fr/maps/place/{{ event[1].location }}" class="date" target="_blank" class="location"> {{ event[1].location }} </a>
@@ -84,7 +84,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
         <div class="col-md-10 col-md-offset-1 col-xs-12">
           <h2>Team</h2>
           <div class="row">
-            <div class="col-md-5 col-md-offset-1 col-xs-12">
+            <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1" style="margin-bottom : 20px;">
               {% assign team = site.data.members['john'] %}
               <div class="row">
                 <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Jonhathan Meunier">
@@ -95,7 +95,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
                 </div>
               </div>
             </div>
-            <div class="col-md-5 col-md-offset-1 col-xs-12">
+            <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
               {% assign team = site.data.members['dck'] %}
               <div class="row">
                 <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Thomas Deconinck">

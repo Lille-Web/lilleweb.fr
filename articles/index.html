@@ -6,9 +6,16 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
 
 
 <div id="contents" ng-app="contentsApp" ng-controller="searchController">
-  <div id="listContent" class="col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-2">
+  <div id="listContent" class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
     <div id="articles">
-      <h1> Articles </h1>
+      <div class="row">
+        <div class="col-xs-2 visible-xs-inline-block open-nav">
+          <img src="../src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
+        </div>
+        <div class="col-xs-9">
+          <h1> {{ page.title }} </h1>
+        </div>
+      </div>
       {% for post in paginator.posts %}
         <article>
           <span class="categorie {{post.category}}">{{post.category}}</span>
@@ -39,6 +46,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
         <h4> Articles </h4>
         <ul>
           <li ng-repeat="result in results.articles | filter: searchValue">
+            <em> [[result.date | limitTo : 10]] </em> -
             <a href="[[result.url]]">[[result.title]]</a>
           </li>
         </ul>
@@ -85,7 +93,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
     {% endif %}
 
   </div>
-  <div id="option" class="col-md-2 hidden-xs hidden-sm">
+  <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
     <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
     <h3> Recherche </h3>
     <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">

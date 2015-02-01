@@ -24,7 +24,10 @@ body,
   height: 100%;
   width: 100%;
 }
-
+.page-content{
+  margin-left : 0px;
+  transition : margin-left 0.1s ease;
+}
 
 .thumbnail{
   img{
@@ -306,6 +309,19 @@ ul.specialFloat li {
     overflow-x: scroll;
   }
 
+}
+
+@media (max-width: 991px){
+  #content{
+    #events{
+      .col-md-7{
+        article{
+          height : auto;
+        }
+      }
+    }
+  }
+  
 }
 
 .bs-callout {

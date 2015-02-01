@@ -8,10 +8,18 @@ layout: default
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<div id="contents" class="article-content zen">
-    <div id="listContent" class="col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-2">
+<div id="contents" style="padding-top : 20px;"class="article-content zen">
+    <div id="listContent" class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
       <div id="articles">
-        <input type="button" class="btn btn-event" id="backToArticles" value="&larr; Articles" style="margin-top : -50px;" />
+        <div class="row" style="margin-bottom : 20px;">
+          <div class="col-xs-2 visible-xs-inline-block open-nav">
+            <img src="/src/img/pictos/hamburger.jpg" style="width: 40px;">
+          </div>
+          <div class="col-xs-9">
+            <input type="button" class="btn btn-event" id="backToArticles" value="&larr; Articles" />
+          </div>
+        </div>
+
         <article class="post">
           <div class="page-header">
               <h1 class="title">
@@ -44,7 +52,7 @@ layout: default
         </article>
         {% include disqus.html %}
     </div>
-    <div id="option" class="col-md-2 col-xs-10 col-sm-offset-0 col-xs-offset-2">
+    <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
       <button id="toggleZen" class="btn btn-block btn-event hidden-xs"> Lecture Zen </button>
       <div id="share">
         <h3> Partager </h3>

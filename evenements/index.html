@@ -5,10 +5,17 @@ title: "Événements"
 
 
 <div id="contents" ng-app="contentsApp">
-  <div id="listContent" class="col-md-9 col-md-offset-1 col-xs-10 col-xs-offset-2">
+  <div id="listContent" class="col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
     <div id="events">
       <base target="_blank">
-      <h1> Événements </h1>
+        <div class="row">
+          <div class="col-xs-2 visible-xs-inline-block open-nav">
+            <img src="../src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
+          </div>
+          <div class="col-xs-9">
+            <h1> {{ page.title }} </h1>
+          </div>
+        </div>
       {% for event in site.data.events %}
         <article class="col-md-3 col-md-offset-1">
           <h2> {{ event[1].name }} </h2>

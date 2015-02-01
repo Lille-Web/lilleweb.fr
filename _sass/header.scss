@@ -74,7 +74,7 @@ header.side {
   nav {
     background: $black;
     height: 100%;
-    width: 70px;
+    width: 100%;
     position: absolute;
 
     ul {
@@ -170,6 +170,23 @@ header.side {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  header.side{
+    left : -70px;
+    transition : left 0.1s ease;
+  }
+  body.nav-expand{
+    header.side{
+      left : 0px;
+      transition : left 0.1s ease;
+    }
+    .page-content{
+      margin-left : 70px;
+      transition : margin-left 0.1s ease;
+    }
+  }
+}
+
 
 @keyframes slide {
   from {
@@ -178,9 +195,9 @@ header.side {
   }
   to {
     right: -110px;
-    opacity: 1
+    opacity: 1;
   }
-;}
+}
 @-webkit-keyframes slide {
   from {
     right: -70px;

@@ -145,9 +145,8 @@
     padding-top: 20px;
     margin-top: 20px;
     background: white;
-    @media(max-width : 992px){
-      margin-left: 20%;
-      width: 77%;
+    @media screen and (max-width: 768px){
+      text-align: center;
     }
     h3 {
       border-bottom: 1px solid #ccc;
