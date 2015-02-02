@@ -8,6 +8,7 @@ author: dck
 description : "Nous avons le plaisir de vous annoncer un nouveau type de contenu sur Lille Web, les screencasts"
 ---
 
+<img src="/src/articles/screencasts/video.png" class="pull-left" alt="Les screencasts" style="margin-bottom: 20px; position:relative; top: -20px; left:-20px;"/>
 Comme vous le savez, Lille Web a été crée dans le but de favoriser le partage de connaissance à travers ce site. Aujourd'hui, nous souhaitons
 mettre en avant un nouveau type de contenu dans un format différent des articles que vous avez sans doute l'habitude de voir sur le site : **les screencasts**.
 
@@ -18,7 +19,7 @@ ce qui est expliquer en live. De plus, de nombreuses personnes dont moi notammen
 prendre le temps de lire en profondeur et risquant d'omettre certains détails pouvant être intéressant.
 
 Les vidéos seront censées durer environ 10 minutes en fonction du sujet et éviterons au maximum les coupures afin de centraliser les
-informations en une seule vidéo.
+informations en une seule vidéo. Celle-ci seront présente sur notre chaine Youtube.
 
 ### Pour mieux s'élancer
 
