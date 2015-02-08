@@ -34,10 +34,13 @@ livre:
     javascriptTheDefinitiveGuide:
       name : "JavaScript: The Definitive Guide 6e"
       link: "http://www.amazon.fr/gp/product/0596805527/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=0596805527&linkCode=as2&tag=johnathan-21"
+    weavingTheWeb:
+      name : "Weaving the Web: Origins and Future of the World Wide Web"
+      link: "http://www.amazon.fr/gp/product/0752820907?ie=UTF8&camp=3210&creative=21458&creativeASIN=0752820907&linkCode=shr&tag=johnathan-21&linkId=HVXLIUPIQ3DFJ7UU&sr=8-1&qid=1423406565"
 
 cours:
   name: Cours
-  content : 
-    soon: 
+  content :
+    soon:
       name: "A venir"
       link: "#"

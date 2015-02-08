@@ -132,6 +132,13 @@ a:hover {
             font-size: 8px;
             padding: 5px;
           }
+          &.LW{
+            background: url("/src/img/pictos/icon_lw.png") no-repeat;
+            font-size: 0px;
+            width: 47px;
+            height: 30px;
+            background-size: 100%;
+          }
         }
 
         p.date{
@@ -184,7 +191,7 @@ a:hover {
 
         .date{
           float : none;
-        } 
+        }
       }
       a{
         margin-top : 30px;
@@ -321,7 +328,7 @@ ul.specialFloat li {
       }
     }
   }
-  
+
 }
 
 .bs-callout {

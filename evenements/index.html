@@ -17,10 +17,12 @@ title: "Événements"
           </div>
         </div>
       {% for event in site.data.events %}
+        {% assign placeID = event[1].location %}
+        {% assign place = site.data.places.[placeID] %}
         <article class="col-md-3 col-md-offset-1">
           <h2> {{ event[1].name }} </h2>
           <span class="info"> {{ event[1].date}} - {{ event[1].time }} </span>
-          <a href="https://www.google.fr/maps/place/{{ event[1].location }}" target="_blank" class="location"> {{ event[1].location }} </a>
+          <a class="openMarker" href="#{{placeID}}"> {{ place.name }}</a>
           <span> par {{ event[1].organisateur }} </span>
           <a href="{{ event[1].link }}" class="btn-red">En savoir plus</a>
         </article>
