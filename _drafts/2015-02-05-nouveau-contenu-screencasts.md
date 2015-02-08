@@ -27,8 +27,10 @@ Comme il a déjà été glissé dans quelques articles, nous sommes actuellement
 la formation sur le web. Ce projet étant particulièrement ambitieux et long à mettre en place, une phase de beta sera mise en place
 afin de faire profiter une partie de la communauté avant le lancement officiel.
 
+Sur le long terme, tous les prochains articles seront présentés sur ce site afin de laisser la place principalement aux events sur Lille Web.
+
 ### Une phase de rodage
 
-Evidemment, nous venons d'acheter le matériel nécessaire à l'enregistrement et nos connaissances en montage vidéo reste assez limité c'est
+Evidemment, nous venons de faire l'acquisition de notre nouveau matériel qui est nécessaire à l'enregistrement et nos connaissances en montage vidéo reste assez limité c'est
 pourquoi nous sommes totalement à l'écoute de vos remarques et de vos idées d'améliorations.
 Chaque avis a son importance, n'ayez pas peur d'indiquer en commentaire ou sur Twitter vos impressions !
