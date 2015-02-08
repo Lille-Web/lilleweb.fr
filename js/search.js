@@ -32,7 +32,7 @@ contentsApp.controller('searchController', function ($scope, $http) {
   $scope.searchValue = window.location.hash.replace("#","");
   document.getElementById('searchBox').value = $scope.searchValue;
   inputChange();
-  $http.get('/data.json').success(function(data) {
+  $http.get('/API/data.json').success(function(data) {
     $scope.results = data;
   });
   $scope.searchTag = function(theTag){

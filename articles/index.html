@@ -94,7 +94,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
 
   </div>
   <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
-    <a href="proposer"><button class="btn btn-event"> Proposer un article </button></a>
+    <a href="/articles/proposer"><button class="btn btn-event"> Proposer un article </button></a>
     <h3> Recherche </h3>
     <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
     <!-- <<div id="categories">
@@ -117,3 +117,4 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
     </div>
   </div>
 </div>
+<script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>

@@ -1,0 +1,19 @@
+---
+
+---
+{
+  "places" : [
+    {% for place in site.data.places %}
+      {
+        "id" : "{{ place[1].id }}",
+        "name" : "{{ place[1].name | escape }}",
+        "adress" : "{{ place[1].adress }}",
+        "city" : "{{ place[1].city }}",
+        "zip" : "{{ place[1].zip }}",
+        "lat" : "{{ place[1].lat  }}",
+        "lng" : "{{ place[1].lng }}",
+        "maps" : "{{ place[1].maps }}"
+      }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+  ]
+}
