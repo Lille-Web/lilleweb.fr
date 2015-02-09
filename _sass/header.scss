@@ -230,3 +230,29 @@ header.side {
     opacity: 1;
   }
 }
+
+
+#cnil {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background: white;
+  display: none;
+  z-index: 4;
+
+  p {
+    width: 960px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+  }
+  .cross {
+    position: absolute;
+    right: 0px;
+    color: #242424;
+    opacity: 1;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
