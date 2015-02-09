@@ -20,7 +20,7 @@ initialize = function(){
 
   map = new google.maps.Map(document.getElementById('map'), myOptions);
 
-  nanoajax.ajax('/api/places.json', function (code, responseText) {
+  nanoajax.ajax('/API/places.json', function (code, responseText) {
     var places = JSON.parse(responseText).places;
     places.forEach(function(place){
         var latLng = new google.maps.LatLng(place.lat, place.lng)
