@@ -4,7 +4,7 @@ var places;
 var getPlaces;
 
 getPlaces = function(){
-  nanoajax.ajax('/api/places.json', function(code, responseText){
+  nanoajax.ajax('/API/places.json', function(code, responseText){
     return places = JSON.parse(responseText);
   });
 }
