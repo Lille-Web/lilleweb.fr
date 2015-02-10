@@ -16,6 +16,6 @@ Qui n'a jamais eu à recetter son site web ou même à corriger un bug sur un de
 
 Comme vous avez pu le comprendre, cette vidéo est la première d'une longue série sur notre chaîne, comme nous vous l'évoquions dans un précédent article. Dans ce sens, nous aimerions que vous donniez votre avis aussi bien sur la forme que le contenu. Le sujet était-il intéressant ? L'incrustation de la vidéo était-elle bonne ? Le son était-il de qualité ? Merci d'avance !
 
-[![I need you benedict Cumberbatch](/src/articles/screencastSafariDevTools/IWantYou.jpg)](http://arbrenoir.deviantart.com/art/WE-NEED-YOU-296060423)
+[![I need you benedict Cumberbatch](/src/articles/screencastSafariDevTools/IwantYou.jpg)](http://arbrenoir.deviantart.com/art/WE-NEED-YOU-296060423)
 
 Et sinon, connaissiez-vous cette technique ? En avez-vous trouvé une meilleure ?
