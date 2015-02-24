@@ -12,7 +12,7 @@ J’avais déjà entendu parler des Startup Weekend sans vraiment m’y intéres
 
 L’idée est de développer un projet en 54h à travers un budget fixé. Toutes les facettes doivent être présentes telles que la gestion du budget, les bénéfices à long-terme, la prospection vers les futurs clients, ect …
 
-![scène ieseg startup weekend lille](/src/articles/SWLilleFevrier/scene.jpg)
+![scène ieseg startup weekend lille](/src/articles/SWLilleFevrier/scene.JPG)
 
 Le projet est ensuite présenté devant un jury composé devant de chefs d’entreprise, de managers, de responsable IT, de blogeurs, d’entrepreneurs, ect
 
@@ -43,7 +43,7 @@ Beaucoup d'améliorations peuvent être faites surtout pour répondre à un prob
 
 Cette fois on surf sur deux modes : le recyclage de container maritime et les fablabs.
 
-![Moovlab fanlab mobile](/src/articles/SWLilleFevrier/moovlab.jpg)
+![Moovlab fanlab mobile](/src/articles/SWLilleFevrier/moovlab.JPG)
 
 Ici, on apporte un fablab de façon périodique au forfait ou par abonnement directement dans la ville ou le village, un peu à la manière des bibliobus.
 
@@ -57,7 +57,7 @@ Il pourrait également y avoir un système de récompense nommé Candy Trash pou
 
 Encore dans un souci écologique (mais également financier), Ec'eau vous fait la promesse d’économiser environ 30% sur votre facture d'eau grâce à la présence d'un adaptateur qui va calculer intelligemment la consommation d'eau mais également l'énergie utilisée pour la chauffer ! L'adaptateur est auto-alimenté.
 
-![ec'eau économiser eau connecté](/src/articles/SWLilleFevrier/eceau.jpg)
+![ec'eau économiser eau connecté](/src/articles/SWLilleFevrier/eceau.JPG)
 
 Le tout est accompagné par une interface Web pour suivre en temps réel sa conso !
 
@@ -67,7 +67,7 @@ Qui n’a jamais rêvé d’avoir sa propre flotte de drones ? DronIt permet cel
 
 On peut imaginer énormément d’utilité comme le déploiement d’une dizaine de drones sur les lieux d’un accident pour retrouver des rescapés par exemple.
 
-![flotte drone connecté dronit](/src/articles/SWLilleFevrier/dronit.jpg)
+![flotte drone connecté dronit](/src/articles/SWLilleFevrier/dronit.JPG)
 
 Le coût est élevé : 1 000 € la carte + 350 / mois d’abonnement au service.
 
@@ -91,7 +91,7 @@ Le prix ? 130 €.
 
 J’ai eu un peu de mal à comprendre le concept, l’idée est de proposer des éléments en carton, imbriquable, encastrable, personnalisable, modulable et également éco-logique pour construire votre propre bureau.
 
-![hack'arton meuble modulable bureau](/src/articles/SWLilleFevrier/hackarton.jpg)
+![hack'arton meuble modulable bureau](/src/articles/SWLilleFevrier/hackarton.JPG)
 
 Ce produit répond à un besoin : pouvoir facilement modifier et personnaliser son espace de travail (dans un premier temps).
 
@@ -107,7 +107,7 @@ Lora est une garde-robe intelligente. Cette aplication mobile vous demandera une
 
 L'application vous proposera ensuite de vous habiller virtuellement d'habits provenant des partenaires de l'application afin de pouvoir vous créer très facilement un nouveau look. Vos nouveaux vêtements choisis, il ne vous restera plus qu'à les acheter en passant directement par le lien fourni dans l'application.
 
-![Lora garde robe intelligente vétêments connecte](/src/articles/SWLilleFevrier/Lora.jpg)
+![Lora garde robe intelligente vétêments connecte](/src/articles/SWLilleFevrier/Lora.JPG)
 
 On résout ici plusieurs problèmes : facilement pouvoir se créer de nouveaux looks mais également pouvoir essayer directement des habits sur sa propre morphologie.
 
@@ -117,7 +117,7 @@ On résout ici plusieurs problèmes : facilement pouvoir se créer de nouveaux l
 Parler de nourriture en fin d'après-midi à un Startup Week-end ? Quelle bonne idée !
 La petite équipe derrière Numéria se présente comme étant des architectes culinaires, de quoi éveiller notre curiosité. Surtout quand ils nous disent qu'ils sont geeks, amateurs de cinéma, gamers, etc.
 
-![Nymeria architecture culinaira](/src/articles/SWLilleFevrier/Nymeria.jpg)
+![Nymeria architecture culinaira](/src/articles/SWLilleFevrier/Nymeria.JPG)
 
 Nymeria vous propose de créer une expérience culinaire enrichie dans un univers, un thème existant.
 
@@ -127,7 +127,7 @@ Ils nous ont par exemple présenté une "soupe Titanic" où en l'avalant, on dé
 
 Un constat simple ? La gestion des notes de frais peut très rapidement devenir un casse-tête pour l'employé mais aussi pour l'employeur. Une solution est ici proposée : l'employé flash un QR Code généré par le restaurateur directement à la caisse lors du paiement, ce QR Code est envoyé directement à une plateforme qui traitera toutes les notes de frais en y agrémentant l'employé, le montant, le lieux, ect.
 
-![solunote note de frais centralisé](/src/articles/SWLilleFevrier/solunote.jpg)
+![solunote note de frais centralisé](/src/articles/SWLilleFevrier/solunote.JPG)
 
 Ce genre d'expérience a déjà été tenté et a rarement été fructueux car les restaurateurs doivent implémenter un nouvel élément en caisse. Ce nouvel élément, en plus de leur faire perdre du temps, leur sera coûteux.
 
@@ -143,7 +143,7 @@ Sezam a été notre gros coup de coeur, et aussi celui du jury apparemment.
 
 A côté de la mode du tout connecté, on voit aussi la mode du tout modulable. La petite équipe derrière Sezam l'a bien compris, ils ont également compris que l'une des clés du succès est la logique du premier. Remanier un produit que l'utilisateur connaît marche souvent assez bien. Surtout quand on parle d'un produit que l'on doit subir, qui est très utile mais qui a rarement beaucoup de fonctionnalités, et qui ne fait pas en lui-même gagner de l'espace. On parle ici de la porte.
 
-![sezam porte connecté modulable](/src/articles/SWLilleFevrier/sezam.jpg)
+![sezam porte connecté modulable](/src/articles/SWLilleFevrier/sezam.JPG)
 
 En effet, une porte c'est une porte. Il en existe des jolies, des plus sécurisées que d'autres, de différentes tailles ect, mais aucune n'a encore cherché à être totalement modulable en pouvant y apporter de nouvelles briques de fonctionnalités. C'est ce que promet Sezam.
 
@@ -174,4 +174,4 @@ Comme vous avez pu le voir, les projets sont vraiment hétéroclites ! Chaque pr
 
 Un des intérêts majeurs des Startup Weekend est de présenter son idée devant un parterre de personnes qui serait susceptible de pouvoir s’y intéresser, financièrement par exemple.
 
-![startup weekend lille participants](/src/articles/SWLilleFevrier/end.jpg)
+![startup weekend lille participants](/src/articles/SWLilleFevrier/end.JPG)
