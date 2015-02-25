@@ -14,8 +14,14 @@ initialize = function(){
   var myOptions = {
     zoom      : 13,
     center    : latLng,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DEFAULT,
+    },
+    zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.SMALL
+    },
     mapTypeId : google.maps.MapTypeId.ROADMAP, // Type de carte, différentes valeurs possible HYBRID, ROADMAP, SATELLITE, TERRAIN
-    maxZoom   : 20
   };
 
   map = new google.maps.Map(document.getElementById('map'), myOptions);
@@ -34,7 +40,6 @@ initialize = function(){
           <div class="contentMarker" id="contentMarker-'+place.id+'"> \
             <h4>' + place.name + '</h4> \
             <p class="adress">' + place.adress + ', ' + place.zip + place.city + '</p> \
-            <h5> Prochains événements : </h5> \
             <a href="'+place.maps+'"> Ouvrir dans ma Google Maps </a> \
           </div>';
 
@@ -46,8 +51,17 @@ initialize = function(){
         google.maps.event.addListener(marker, 'click', function() {
             infoWindow.open(map,marker);
         });
+        var placeLinkElements = document.querySelectorAll('.openMarker[href="#'+place.id+'"]');
+
+        $('.openMarker[href="#'+place.id+'"]').click(function(){
+          $('html, body').animate({
+            scrollTop:$('body').offset().top
+          }, 'slow');
+          infoWindow.open(map,marker);
+        });
     });
   });
+
 };
 
 initialize();

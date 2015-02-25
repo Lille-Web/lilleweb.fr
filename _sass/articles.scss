@@ -20,6 +20,7 @@
       margin-bottom : 50px;
       font-size: 16px;
       line-height: 25px;
+      border: 1px solid #ddd;
       .categorie{
         color: #FFF;
         text-align: center;
@@ -152,11 +153,12 @@
     padding-top: 20px;
     margin-top: 20px;
     background: white;
+    border: 1px solid #ddd;
     @media screen and (max-width: 768px){
       text-align: center;
     }
     h3 {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
     }
     .search{

@@ -38,7 +38,7 @@ lille1:
   id: "lille1"
   name : "Université Lille 1"
   adress : "Cité Scientifique"
-  city: Villeneuve d'Ascq
+  city: "Villeneuve d'Ascq"
   zip: 59650
   lat: 50.6104842
   lng: 3.1395472
@@ -52,3 +52,12 @@ theatreVariete:
   lat: 48.871475
   lng: 2.342178
   maps: "https://www.google.fr/maps/place/Th%C3%A9%C3%A2tre+des+vari%C3%A9t%C3%A9s/@48.871475,2.342178,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66e3c248316a3:0x9c879d0f3e6010fa"
+imaginarium:
+  id: "imaginarium"
+  name : "Imaginarium – Plaine Images"
+  adress : "99 A Boulevard Constantin Descat"
+  city: Tourcoing
+  zip: 59200
+  lat: 50.7005965
+  lng: 3.1572908
+  maps: "https://www.google.com/maps/place/99+Boulevard+Constantin+Descat,+59200+Tourcoing,+France/@50.7005965,3.1572908,17z/data=!3m1!4b1!4m2!3m1!1s0x47c328dfb1eced49:0x6863761c4d811c0f?hl=en"
