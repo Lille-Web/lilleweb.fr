@@ -4,13 +4,30 @@ title: "Événements"
 ---
 
 
+<div id="container">
+    <div id="map">
+        <p>Chargement de la carte</p>
+    </div>
+    <!-- <div id="nextEvent">
+      {% for event in site.data.events %}
+        {% if forloop.index0 < 1 %}
+          <h5> Prochain événement : </h5>
+          <p> {{ event[1].name }} </p>
+        {% endif %}
+      {% endfor %}
+    </div> -->
+</div>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="/js/nanoajax.js"></script>
+<script type="text/javascript" src="maps.js"></script>
+<link rel="stylesheet" href="maps.css">
+
 <div id="contents" ng-app="contentsApp">
   <div id="listContent" class="col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
     <div id="events">
-      <base target="_blank">
         <div class="row">
           <div class="col-xs-2 visible-xs-inline-block open-nav">
-            <img src="../src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
+            <img src="/src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
           </div>
           <div class="col-xs-9">
             <h1> {{ page.title }} </h1>
@@ -22,7 +39,7 @@ title: "Événements"
         <article class="col-md-3 col-md-offset-1">
           <h2> {{ event[1].name }} </h2>
           <span class="info"> {{ event[1].date}} - {{ event[1].time }} </span>
-          <a class="openMarker" href="#{{placeID}}"> {{ place.name }}</a>
+          <a class="openMarker" href="#{{placeID}}" > {{ place.name }}</a>
           <span> par {{ event[1].organisateur }} </span>
           <a href="{{ event[1].link }}" class="btn-red">En savoir plus</a>
         </article>
