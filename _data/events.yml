@@ -5,9 +5,16 @@ salonIdemm15:
   location: "euratechnologie"
   organisateur: "idemm"
   link: "/event/2015/02/11/salon-idemm-2015/"
-salonIdemm15:
-  name: "Hack your screens with Cardboard & Chromecast"
-  date: "100 mars 2015"
+chtijs11:
+  name: "ChtiJS #11"
+  date: "19 mars 2015"
+  time: "19h"
+  location: "mutualab"
+  organisateur: "ChtiJS"
+  link: "http://www.meetup.com/FranceJS/events/220879447/"
+gdgMars2015:
+  name: "Cardboard & Chromecast"
+  date: "10 mars 2015"
   time: "19h à 21h30"
   location: "imaginarium"
   organisateur: "GDG Lille"
