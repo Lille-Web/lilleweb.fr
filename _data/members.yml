@@ -1,0 +1,39 @@
+john:
+  name: Johnathan MEUNIER
+  image: "/src/img/members/john.png"
+  poste: Fondateur
+  site: johnathan.fr
+  description: "Développeur front-end à altima° dans le pôle optimisation et offres innovantes, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
+  twitter: johnathanSUP
+  github: johnathanSUP
+dck:
+  name: Thomas DECONINCK
+  image: "/src/img/members/dck.png"
+  poste: Fondateur
+  site: thomasdeconinck.fr
+  description: "Développeur front-end à altima°, Thomas est un grand passionné de JavaScript mais également de nouvelles technologies ! Il aime participer à des débats sensibles comme la supériorité d'Ember face à Angular ou encore l'indentation avec des espaces plutôt que des tabulations. <br> C'est également un grand fan de manga qui n'hésitera pas à vous parler de ses dernières découvertes ! "
+  twitter: DCK__
+  github: DCKT
+flo:
+  name: Floriane GHISLAIN
+  image: "/src/img/members/flo.jpg"
+  poste: Correctrice
+  description: "Professeur des écoles pour le moment en maternelle, Floriane a toujours eu à coeur de transmettre ses connaissances. Elle a pour rôle de corriger les différents textes de Lille Web (articles, conférences, communication, ...). <br> Passionnée de lecture et de musique, elle est friande de toutes nouvelles technologies. Elle pourra vous proposer des avis concernant ses lectures durant les pauses café du vendredi !"
+  twitter: gfloriane59
+  github: false
+jo:
+  name: Jonathan GUÉLOU
+  image: "/src/img/members/jo.jpg"
+  poste: Auteur - Membre du labo web de SUPINFO
+  description: "Passionné du web et de l'univers Microsoft, Jonathan est actuellement développeur .NET chez UNIS. <br>
+Il saura vous partager ce qu'il connait des dernières nouveautés que proposent HTML5 et CSS3 couplé à des astuces liées à l'univers .NET."
+  twitter: jonathanguelou
+  github: false
+henri:
+  name: Henri TOURNOYS
+  image: "/src/img/members/henri.jpg"
+  poste: Auteur - Membre du labo web de SUPINFO
+  site: htournoys.com
+  description: "Webdesigner freelance et intégrateur/développeur web chez Ikomobi, Henri est un passionné de web et de high-tech en particulier dans le domaine de la téléphonie mobile. Il aime le design et la communication et sera ravi de partager avec la communauté."
+  twitter: htournoys
+  github: false

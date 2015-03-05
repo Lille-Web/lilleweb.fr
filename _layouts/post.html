@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<script src="{{ "/js/navigationMenu.js" | prepend: site.baseurl }}"></script>
+
+{% assign author = site.data.members[page.author] %}
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div id="contents" style="padding-top : 20px;"class="article-content zen">
+    <div id="listContent" class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
+      <div id="articles">
+        <div class="row" style="margin-bottom : 20px;">
+          <div class="col-xs-2 visible-xs-inline-block open-nav">
+            <img src="/src/img/pictos/hamburger.jpg" style="width: 40px;">
+          </div>
+          <div class="col-xs-9">
+            <input type="button" class="btn btn-event" id="backToArticles" value="&larr; Articles" />
+          </div>
+        </div>
+
+        <article class="post">
+          <div class="page-header">
+              <h1 class="title">
+                  {{ page.title }}
+                  <small>
+                      <span class="date"> ajouté le {{ page.date | date: "%d/%m/%Y" }} </span>
+                  </small>
+              </h1>
+          </div>
+
+          {{ content }}
+
+          {% if author %}
+          <div class="author row">
+            <img src="{{ author.image }}" class="img-circle col-md-2" alt="{{ author.name }}">
+            <strong>
+              {{author.name}}
+              {% assign github = author.github | downcase %}
+              {% if github != 'false' %}
+                <span class="github"> <a href="http://github.com/{{github}}"> <img src="/src/img/pictos/github.png" alt="Profil Github de {{author.name}}"> </a> </span>
+              {% endif %}
+              {% assign twitter = author.twitter | downcase %}
+              {% if twitter != 'false'%}
+                <span class="twitter"> <a href="http://twitter.com/{{twitter}}"> <img src="/src/img/pictos/twitter_blue.png" alt="Profil Twitter de {{author.name}}"> </a> </span>
+              {% endif %}
+            </strong>
+            <p class="col-md-10">{{author.description}}</p>
+          </div>
+          {% endif %}
+        </article>
+        {% include disqus.html %}
+    </div>
+    <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
+      <button id="toggleZen" class="btn btn-block btn-event hidden-xs"> Lecture Zen </button>
+      <div id="share">
+        <h3> Partager </h3>
+          <a href="https://twitter.com/share"
+              data-url="{{ post.url | prepend: site.baseurl }}"
+              class="twitter-share-button"
+              data-text="{{page.title}} by {{author.name}}"
+              data-via="Lille_web"
+              data-related="JohnathanSUP: The author"
+              data-count="horizontal"
+              data-size="large"
+              data-lang="en">Tweet</a>
+      </div>
+      <div id="relatedArticles">
+        <h3> Articles relatifs </h3>
+        <ul>
+          {% assign cat = page.category | downcase %}
+
+          {% for post  in site.categories.[cat] %}
+            {% if post.title != page.title and forloop.index0 < 4 %}
+              <li>
+                <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% assign navigationMenu = page.navigationMenu | downcase %}
+      {% if navigationMenu == 'true' %}
+        <div id="navigationMenu">
+          <h3> Sommaire </h3>
+          <div class="navigationMenuEntries"><script>createNavigationMenu();</script></div>
+        </div>
+      {% endif %}
+    </div>
+</div>
+
+<script src="{{ "/js/zen.js" | prepend: site.baseurl }}"></script>

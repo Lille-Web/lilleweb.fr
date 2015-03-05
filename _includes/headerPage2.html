@@ -1,0 +1,72 @@
+<header class="hd-index">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/articles">Articles</a></li>
+            <li><a href="/evenements">Événements</a></li>
+            <li><a href="/ressources">Ressources</a></li>
+            <!-- <li><a href="/lille">Lille</a></li> -->
+            <li><a href="/team">L'équipe</a></li>
+            <li class="toggleContact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <a href="/"><img src="/src/img/Logo/Large/large-sans-fond-white.png" alt="Lille Web"></a>
+  </div>
+</header>
+
+
+<style>
+  header {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  }
+  header .container > a{
+    width: 50%;
+    display: block;
+    margin: 50px auto;
+  }
+  header .container > a img{
+    width: 100%;
+  }
+  .navbar-default .navbar-collapse{
+    text-align : center;
+  }
+  .navbar-nav{
+    display: inline-block;
+    float: none;
+  }
+  .navbar-nav>li{
+    float: left;
+    margin: 0px 20px;
+    background-color: rgba(217,95,73,0.7);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Roboto;
+  }
+  .navbar-nav>li:hover{
+    background-color: #FFF;
+  }
+  .navbar-nav>li:hover a{
+    color: #d95f49 !important;
+  }
+  .navbar-nav>li a{
+    padding: 10px 15px;
+  }
+  .navbar-nav>li a:hover{
+    text-decoration: none !important;
+  }
+</style>
+
+{% include contact.html %}

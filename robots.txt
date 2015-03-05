@@ -1,0 +1,4 @@
+User-agent: *
+  Allow: /
+  Disallow: /data.json
+  Sitemap: http://www.lilleweb.fr/sitemap.xml

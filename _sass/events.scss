@@ -1,0 +1,26 @@
+#listContent #events {
+
+  h1 {
+    margin-bottom : 50px;
+  }
+  article {
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    position: relative;
+
+    .location{
+      display : block;
+      height: 30px;
+      overflow: hidden;
+    }
+
+    .btn-red{
+      font-size : 18px;
+      position: absolute;
+      bottom: 10px;
+      left: 14px;
+      width: 90%;
+    }
+  }
+}

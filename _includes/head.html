@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <![endif]-->
+  <title>
+      {% if page.title %}
+          {{ page.title }} - Lille Web
+      {% else %}
+        Lille Web - La communauté du web lillois
+      {% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ page.description }}">
+  {% if page.icon %}
+      <link rel="icon" type="image/png" href="{{ page.icon | prepend: site.baseurl }}">
+  {% else %}
+      <link rel="icon" type="image/png"  href="{{ "/src/img/logo.png" | prepend: site.baseurl }}">
+  {% endif %}
+
+<!-- Google Analytics Content Experiment code -->
+<script>if(document.URL.match(/.*lilleweb\.fr\/.*\/2014\/.*\/.*\/.*\/.*/)||document.URL.match(/.*lilleweb\.fr\/articles\//)){
+function utmx_section(){}function utmx(){}(function(){var
+k='89111965-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+}
+</script><script>if(document.URL.match(/.*lilleweb\.fr\/.*\/2014\/.*\/.*\/.*\/.*/)||document.URL.match(/.*lilleweb\.fr\/articles\//)){utmx('url','A/B');}</script>
+<!-- End of Google Analytics Content Experiment code -->
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/app.js"></script>
+    {% include analytics.html %}
+
+    <div id="cnil">
+      <p>
+        En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour réaliser des statistiques de visites.
+        <span class="cross">
+          X
+        </span>
+      </p>
+    </div>
+</head>

@@ -1,0 +1,120 @@
+---
+layout: default
+title: "Articles"
+description: "Découvrez les dernières tendances du web ainsi que de nombreux conseils, astuces et tutoriels !"
+---
+
+
+<div id="contents" ng-app="contentsApp" ng-controller="searchController">
+  <div id="listContent" class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
+    <div id="articles">
+      <div class="row">
+        <div class="col-xs-2 visible-xs-inline-block open-nav">
+          <img src="/src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
+        </div>
+        <div class="col-xs-9">
+          <h1> {{ page.title }} </h1>
+        </div>
+      </div>
+      {% for post in paginator.posts %}
+        <article>
+          <span class="categorie {{post.category}}">{{post.category}}</span>
+          <h2 class="title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <div class="info">
+            {% if site.data.members[post.author].name %}
+              par <span class="author"> {{ site.data.members[post.author].name }} </span> -
+            {% endif %}
+            <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
+          </div>
+          <p class="desc">{{post.description}}</p>
+          <div class="tags">
+            {% for tag in post.tags %}
+              <a class="tag" ng-click="searchTag('{{ tag }}')">
+                {{ tag }}
+              </a>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    <div id="searchResults">
+      <h1> Recherche </h1>
+      <article>
+        <div class="closeSearch"> &times; </div>
+        <h4> Articles </h4>
+        <ul>
+          <li ng-repeat="result in results.articles | filter: searchValue">
+            <em> [[result.date | limitTo : 10]] </em> -
+            <a href="[[result.url]]">[[result.title]]</a>
+          </li>
+        </ul>
+        <h4> Ressources </h4>
+        <ul>
+          <li ng-repeat="result in results.ressources | filter: searchValue">
+            <a href="[[result.url]]">[[result.name]]</a>
+          </li>
+        </ul>
+        <h4> Membres </h4>
+        <ul>
+          <li ng-repeat="result in results.members | filter: searchValue">
+            <a href="#">[[result.name]]</a>
+          </li>
+        </ul>
+      </articles>
+    </div>
+
+
+    {% if paginator.total_pages > 1 %}
+      <ul class="pagination">
+        {% if paginator.previous_page %}
+          <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Précédent</a>
+          </li>
+        {% endif %}
+
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <li class="active"><a href="#">{{ page }}</a></li>
+            {% elsif page == 1 %}
+              <li><a href="/articles/">{{ page }}</a></li>
+            {% else %}
+              <li><a href="/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+            {% endif %}
+          {% endfor %}
+
+        {% if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Suivant &raquo;</a>
+        </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+
+  </div>
+  <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
+    <a href="/articles/proposer"><button class="btn btn-event"> Proposer un article </button></a>
+    <h3> Recherche </h3>
+    <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
+    <!-- <<div id="categories">
+      <h3> Catégories </h3>
+      <span class="categorie"> JS </span> <span class="categorie"> CSS </span> <span class="categorie"> HTML </span> <span class="categorie"> DESIGN </span> <span class="categorie"> UX </span> <span class="categorie"> UI </span> <span class="categorie"> OPTIM </span>
+    </div>
+    <div id="tags">
+      <h3> Tags </h3>
+      <a href="#" class="tag"> Javascript </a><a href="#" class="tag"> CSS </a><a href="#" class="tag"> HTML5 </a><a href="#" class="tag"> API </a><a href="#" class="tag"> Rest </a><a href="#" class="tag"> Light </a><a href="#" class="tag"> SVG </a>
+    </div> -->
+    <div id="authors">
+      <h3> Auteurs </h3>
+      <ul>
+      {% for member in site.data.members %}
+        <li>
+          <a href="/team"><img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>

@@ -1,0 +1,258 @@
+header.hd-index{
+  color : $white;
+  background-image: url(../../src/img/lille-grand-place.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .navbar-default{
+    background: none;
+    border: none;
+    box-shadow: none;
+
+    h1 {
+      margin: 0px;
+    }
+    .navbar-brand {
+      img {
+        width: 250px;
+      }
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: $white;
+    }
+
+    a {
+      color: $white !important;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .header-content {
+    margin: 90px 0px;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    button {
+      background: none;
+      border: 1px solid $white !important;
+      margin-top: 40px;
+
+      a {
+        color: #FFF;
+
+        &:hover {
+          color: $red;
+        }
+      }
+      &:hover {
+        background-color: $white;
+
+        a {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+header.side {
+  z-index: 5;
+  width: 70px;
+  position: fixed;
+  height: 100%;
+
+  nav {
+    background: $black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    ul {
+      list-style: none;
+      padding: 0px;
+
+      .bottom {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+      }
+
+      li {
+        text-align: center;
+        margin-top: 30px;
+
+        position: relative;
+
+        &:first-child {
+          margin-top: 10px;
+        }
+
+        img {
+          width: 35px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+
+          &.twitter {
+            width: 45px;
+          }
+
+          &:hover {
+            opacity: 1;
+            transition: opacity 0.2s ease;
+          }
+        }
+
+        &.index {
+          img {
+            width: 40px;
+            opacity: 1;
+          }
+          margin-bottom: 50px;
+        }
+
+        &:not(.index):hover {
+          opacity: 1;
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -11px;
+            top: 5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+
+            border-right:10px solid $black;
+            z-index: 0;
+            animation: slideArrow .4s ease;
+            -webkit-animation: slideArrow .4s ease;
+          }
+          &:after {
+            content: attr(title);
+            display: block;
+            position: absolute;
+            right: -110px;
+            top: -10px;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background: $black;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: "Roboto";
+            z-index: 3;
+            padding-left: 5px;
+            padding-right: 5px;
+            animation: slide .4s ease;
+            -webkit-animation: slide .4s ease;
+          }
+        }
+      }
+    }
+    >a {
+      position: absolute;
+      bottom: 0px;
+      margin: 50%;
+      left: -17px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header.side{
+    left : -70px;
+    transition : left 0.1s ease;
+  }
+  body.nav-expand{
+    header.side{
+      left : 0px;
+      transition : left 0.1s ease;
+    }
+    .page-content{
+      margin-left : 70px;
+      transition : margin-left 0.1s ease;
+    }
+  }
+}
+
+
+@keyframes slide {
+  from {
+    right: -70px;
+    opacity: 0;
+  }
+  to {
+    right: -110px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    right: -70px;
+    opacity: 0;
+  }
+  to {
+    right: -110px;
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideArrow {
+  from {
+    right: 10px;
+    opacity: 0;
+  }
+  to {
+    right: -11px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes  slideArrow{
+  from {
+    right: 10px;
+    opacity: 0;
+  }
+  to {
+    right: -11px;
+    opacity: 1;
+  }
+}
+
+
+#cnil {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background: white;
+  display: none;
+  z-index: 4;
+
+  p {
+    width: 960px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+  }
+  .cross {
+    position: absolute;
+    right: 0px;
+    color: #242424;
+    opacity: 1;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

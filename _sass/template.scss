@@ -1,0 +1,17 @@
+.btn-event {
+  background-color: $red;
+  color : #FFF;
+}
+
+.btn-red {
+  background-color: $red;
+  color: #FFF;
+  display : block;
+  padding : 10px 0px;
+  border-radius : 4px;
+
+  &:hover{
+    background-color : #CC6161;
+    text-decoration : none;
+  }
+}

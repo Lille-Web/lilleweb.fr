@@ -1,0 +1,34 @@
+---
+layout : default
+title: "Team"
+---
+
+    <div id="team-list">
+			<div class="members col-md-8 col-md-offset-2 col-xs-9 col-xs-offset-2">
+        {% for member in site.data.members %}
+          <div class="row member">
+            <div class="memberContent col-md-10 col-md-offset-1 col-xs-12">
+              <div class="row">
+                <img src="{{member[1].image}}" class="photo col-md-3 img-circle col-xs-5">
+                <div class="caption col-md-9 col-xs-5">
+                  <h3>{{member[1].name}} <small>{{member[1].poste}}</small></h3>
+                  <p> {{member[1].description}}</p>
+                  {% assign github = member[1].github | downcase %}
+                  {% if github != 'false' %}
+                    <span class="github"> <a href="http://github.com/{{github}}"> <img src="/src/img/pictos/github.png" alt="Profil Github de {{author.name}}"> </a> </span>
+                  {% endif %}
+                  {% assign twitter = member[1].twitter | downcase %}
+                  {% if twitter != 'false'%}
+                    <span class="twitter"> <a href="http://twitter.com/{{twitter}}"> <img src="/src/img/pictos/twitter_blue.png" alt="Profil Twitter de {{author.name}}"> </a> </span>
+                  {% endif %}
+                  <h4> <a href="http://{{member[1].site}}"> {{member[1].site}} </a>  </h4>
+                </div>
+              </div>
+              <div class="row">
+
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+			</div>
+    </div>

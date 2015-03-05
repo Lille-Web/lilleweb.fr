@@ -1,0 +1,17 @@
+---
+
+---
+{
+  "events" : [
+    {% for event in site.data.events %}
+      {
+        "name" : "{{ event[1].name | escape }}",
+        "date" : "{{ event[1].date }}",
+        "time" : "{{ event[1].time }}",
+        "location" : "{{ event[1].location }}",
+        "organisateur" : "{{ event[1].organisateur  }}",
+        "link" : "{{ event[1].link }}"
+      }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+  ]
+}

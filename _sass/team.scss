@@ -1,0 +1,52 @@
+#team-list {
+  background-color: #f5f5f5;
+  width: 100%;
+  position: absolute;
+  min-height: 100%;
+  padding-top: 40px;
+  font-family: Roboto;
+
+  .members {
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .member {
+      &:nth-child(2n) {
+        img.photo {
+          float : right;
+        }
+      }
+
+      &:last-child {
+        .memberContent {
+          border:none;
+        }
+      }
+
+      .memberContent{
+        padding : 50px 0px;
+        border-bottom : 2px solid #F5F5F5;
+
+        h3 {
+          margin-top : 0px;
+        }
+
+        p {
+          margin-top: 20px;
+        }
+
+        h4 {
+          display: inline-block;
+        }
+
+        .twitter, .github{
+          img {
+            width: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

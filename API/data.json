@@ -1,0 +1,41 @@
+---
+
+---
+{
+  "articles" : [
+    {% for post in site.posts %}
+      {
+        "title" : "{{ post.title | escape }}",
+        "category" : "{{ post.category }}",
+        "url" : "{{ post.url }}",
+        "date" : "{{ post.date }}",
+        "tags" : "{{ post.tags  }}",
+        "author" : "{{ post.author }}"
+      }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+  ],
+  "ressources" : [
+  {% for ressourceType in site.data.ressources %}
+    {% for ressource in ressourceType.[1].content %}
+      {
+        "name" : "{{ressource[1].name}}",
+        "url" : "{{ressource[1].link}}"
+      },
+    {% endfor %}
+  {% endfor %}
+    {
+      "name" : "",
+      "url" : ""
+    }
+  ],
+  "members" : [
+  {% for member in site.data.members %}
+    {
+      "name" : "{{ member[1].name | escape }}",
+      "image" : "{{ member[1].image }}",
+      "poste" : "{{ member[1].poste }}",
+      "site" : "{{ member[1].site }}"
+    }{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+  ]
+}

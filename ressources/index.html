@@ -1,0 +1,39 @@
+---
+layout: default
+title: "Ressources"
+---
+
+<div id="contents">
+  <div id="listContent" class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
+    <div id="ressources">
+      <div class="row">
+        <div class="col-xs-2 visible-xs-inline-block open-nav">
+          <img src="../src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
+        </div>
+        <div class="col-xs-9">
+          <h1> {{ page.title }} </h1>
+        </div>
+      </div>
+      {% for ressourceType in site.data.ressources %}
+        <article id="{{ressourceType[1].name}}">
+
+          <h2>{{ressourceType[1].name}}</h2>
+          <ul>
+            {% for ressource in ressourceType.[1].content %}
+              <li><a href="{{ressource[1].link}}">{{ressource[1].name}}</a></li>
+            {% endfor %}
+          </ul>
+
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+  <div id="option" class="col-md-2 hidden-xs">
+    <h3> Types de ressources </h3>
+    <ul>
+      {% for ressourceType in site.data.ressources %}
+        <li> <a href="#{{ressourceType[1].name}}">{{ressourceType[1].name }}</a> </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

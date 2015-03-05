@@ -1,0 +1,120 @@
+---
+description: "Articles, conférences, formations, retrouvez tout ce dont vous avez besoin, pour et par des passionnés du web !"
+
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+{% include headerPage3.html %}
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<div id="content">
+  <div id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>Articles</h2>
+          <div class="row">
+            <div class="col-md-7">
+              {% for post in site.posts limit:3 %}
+              <article>
+                <div class="col-md-1 col-xs-1">
+                  <strong class="categorie {{post.category}}">
+                    {{post.category}}
+                  </strong>
+                </div>
+                <div class="col-md-11 col-xs-11">
+                  <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
+                  <p> {{post.description}}</p>
+                  <em class="date"> {{ post.date | date: "%-d %B" }}</em>
+                </div>
+              </article>
+              {% endfor %}
+              <a href="articles"> Plus d'articles </a>
+            </div>
+            <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
+              <img src="src/img/illustration_blog.png" alt="Retrouvez les différents articles">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 ">
+          <h2>Événements</h2>
+          <div class="row">
+            <div class="col-md-4 hidden-xs hidden-sm">
+              <img src="src/img/illustration_events.png" alt="Retrouvez les différents articles">
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              {% for event in site.data.events limit:6 %}
+                <article class="col-md-4 col-sm-6">
+                  <h3><a class="post-link" href="{{ event[1].link | prepend: site.baseurl }}">{{event[1].name}}</a></h3>
+                  <h5>{{event[1].date}}</h5>
+                  <a href="https://www.google.fr/maps/place/{{ event[1].location }}" class="date" target="_blank" class="location"> {{ event[1].location }} </a>
+                </article>
+              {% endfor %}
+              <a class="col-md-12" href="evenements"> Plus d'événements </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="lille">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h3> Lille </h3>
+          <h4> Lille est connue pour sa convivialité et sa joie de vivre. Au-delà de ça, Lille est également une ville pour l'informatique et surtout pour le web !</h4>
+          <!-- <a href="/lille"><button class="btn btn-white">
+            Découvrir Lille
+          </button></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-12">
+          <h2>Team</h2>
+          <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1" style="margin-bottom : 20px;">
+              {% assign team = site.data.members['john'] %}
+              <div class="row">
+                <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Jonhathan Meunier">
+                <div class="caption col-md-6 col-xs-5">
+                  <h4>{{team.name}}</h4>
+                  <h5><em>{{team.poste}}</em></h5>
+                  <h5> <a href="http://{{team.site}}"> {{team.site}} </a>  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
+              {% assign team = site.data.members['dck'] %}
+              <div class="row">
+                <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Thomas Deconinck">
+                <div class="caption col-md-6 col-xs-5">
+                  <h4>{{team.name}}</h4>
+                  <h5><em>{{team.poste}}</em></h5>
+                  <h5> <a href="http://{{team.site}}"> {{team.site}} </a>  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footerPage.html %}
+
+</body>
+</html>
