@@ -5,6 +5,13 @@ salonIdemm15:
   location: "euratechnologie"
   organisateur: "idemm"
   link: "/event/2015/02/11/salon-idemm-2015/"
+livr1:
+  name: "LIVR #1"
+  date: "19 mars 2015"
+  time: "19h"
+  location: "imaginarium"
+  organisateur: "LIVR"
+  link: "http://www.meetup.com/LIVR-Lille-Virtual-Reality/events/220969291/"
 chtijs11:
   name: "ChtiJS #11"
   date: "19 mars 2015"
