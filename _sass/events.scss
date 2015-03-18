@@ -39,12 +39,15 @@
       padding-left: 25px;
       margin-bottom: 5px;
     }
-    .addthisevent-drop{
+    .addThisEventContainer{
       position: absolute;
       bottom: 64px;
-      width: 90%;
       left: 14px;
-      text-align: center;
+      width: 90%;
+      .addthisevent-drop{
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .btn-red{
