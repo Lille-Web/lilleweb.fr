@@ -7,6 +7,15 @@ euratechnologie:
   lat: 50.634014
   lng: 3.021058
   maps: "https://www.google.fr/maps/place/EuraTechnologies/"
+ccindf:
+  id: "ccindf"
+  name: "CCI Nord de France"
+  adress: "299 Boulevard de Leeds"
+  city: Lille
+  zip: 59000
+  lat: 50.6407523
+  lng: 3.0746989
+  maps: "https://www.google.fr/maps/place/299+Boulevard+de+Leeds,+59800+Lille/@50.6407523,3.0746989,17z/data=!3m1!4b1!4m2!3m1!1s0x47c32a753a79362d:0x1336b1a6bc9d7ed"
 mutualab:
   id: "mutualab"
   name: "Mutualāb"
