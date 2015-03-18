@@ -35,7 +35,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
               <a href="articles"> Plus d'articles </a>
             </div>
             <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
-              <img src="src/img/illustration_blog.png" alt="Retrouvez les différents articles">
+              <a href="/articles"> <img src="src/img/illustration_blog.png" alt="Retrouvez les différents articles"> </a>
             </div>
           </div>
         </div>
@@ -49,14 +49,16 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
           <h2>Événements</h2>
           <div class="row">
             <div class="col-md-4 hidden-xs hidden-sm">
-              <img src="src/img/illustration_events.png" alt="Retrouvez les différents articles">
+              <a href="/evenements"> <img src="src/img/illustration_events.png" alt="Retrouvez les différents articles"> </a>
             </div>
             <div class="col-md-7 col-md-offset-1">
               {% for event in site.data.events limit:6 %}
+                {% assign placeID = event[1].location %}
+                {% assign place = site.data.places.[placeID] %}
                 <article class="col-md-4 col-sm-6">
                   <h3><a class="post-link" href="{{ event[1].link | prepend: site.baseurl }}">{{event[1].name}}</a></h3>
-                  <h5>{{event[1].date}}</h5>
-                  <a href="https://www.google.fr/maps/place/{{ event[1].location }}" class="date" target="_blank" class="location"> {{ event[1].location }} </a>
+                  <h5>{{ event[1].date.start | date: "%-d %B %Y  "}}</h5>
+                  <a href="{{place.maps}}" class="date" target="_blank" class="location">{{ place.name }}</a>
                 </article>
               {% endfor %}
               <a class="col-md-12" href="evenements"> Plus d'événements </a>
