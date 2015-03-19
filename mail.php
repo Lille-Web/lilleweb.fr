@@ -2,8 +2,7 @@
 	if(isset($_POST['g-recaptcha-response'])){
     $captcha=$_POST['g-recaptcha-response'];
   }
-  $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
-  if($response.success==true){
+  $responseCaptcha=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
 	 	if($_GET['source'] == 'contact'){
 			if (get_magic_quotes_gpc())
 			{
@@ -51,12 +50,9 @@
 			$msg .= 'Lien : '.$content."\r\n";
 		}
 
-
-
-
 		$headers = 'From: '.$name.' <'.$mail.'>'."\r\n\r\n";
-
-		mail($to, $object, $msg, $headers);
-	}
+		if($responseCaptcha.success==true || $_GET['source'] == 'articleShareExtern'){
+			mail($to, $object, $msg, $headers);
+		}
 	header('Location: '.$_SERVER['HTTP_REFERER']);
 ?>
