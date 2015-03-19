@@ -11,6 +11,9 @@
   h3 {
     margin-top : 0px;
   }
+  #contact-form{
+    padding-bottom: 80px;
+  }
 
   .contactContent {
     padding: 30px;
@@ -19,6 +22,14 @@
     top: 50px;
     animation: slideTop .4s ease;
     -webkit-animation: slideTop .4s ease;
+  }
+  .g-recaptcha{
+    float: left;
+    margin-right: 50px;
+  }
+  .btn-event{
+    height: 78px;
+    float: right;
   }
 }
 
