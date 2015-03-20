@@ -1,92 +1,112 @@
 salonIdemm15:
   name: "Salon Idemm"
-  date: "25 mars 2015"
-  time: "9h à 16h30"
+  date:
+    start: 1427270400
+    end: 1427304600
   location: "euratechnologie"
   organisateur: "idemm"
   link: "/event/2015/02/11/salon-idemm-2015/"
+forumTelmi15:
+  name: "Telmi 2015"
+  date:
+    start: 1427184000
+    end: 1427216400
+  location: "ccindf"
+  organisateur: "telmi"
+  link: "http://forum-telmi.fr/"
 livr1:
   name: "LIVR #1"
-  date: "19 mars 2015"
-  time: "19h"
+  date:
+    start: 1426788000
+    end: 1426798800
   location: "imaginarium"
   organisateur: "LIVR"
   link: "http://www.meetup.com/LIVR-Lille-Virtual-Reality/events/220969291/"
-
 chtijs11:
   name: "ChtiJS #11"
-  date: "19 mars 2015"
-  time: "19h"
+  date:
+    start: 1426788000
+    end: 1426798800
   location: "mutualab"
   organisateur: "ChtiJS"
   link: "http://www.meetup.com/FranceJS/events/220879447/"
 gdgMars2015:
   name: "Cardboard & Chromecast"
-  date: "10 mars 2015"
-  time: "19h à 21h30"
+  date:
+    start: 1426010400
+    end: 1426019400
   location: "imaginarium"
   organisateur: "GDG Lille"
   link: "http://www.meetup.com/GDG-Lille/events/220409345/"
 chtijs10:
   name: "ChtiJS #10"
-  date: "5 février 2014"
-  time: "19h"
+  date:
+    start: 1423159200
+    end: 1423170000
   location: "mutualab"
   organisateur: "ChtiJS"
   link: "http://www.meetup.com/FranceJS/events/219801991/"
 takeOffTalkjanvier2015:
   name: "TakeOff Talk Janvier"
-  date: "27 janvier 2015"
-  time: "19h"
+  date:
+    start: 1422381600
+    end: 1422392400
   location: "hybride"
   organisateur: "TakeOff"
   link: "http://www.meetup.com/takeoff/events/219877171/"
 welshdesignjanvier2015:
   name: "Welsh Design"
-  date: "15 janvier 2015"
-  time: "19h00"
+  date:
+    start: 1421344800
+    end: 1421355600
   location: "mutualab"
   organisateur: "WelshDesign"
   link: "http://www.meetup.com/WelshDesign/events/218764025/"
 gdlg1:
   name: "2 projets Neo4j"
-  date: "11 décembre 2014"
-  time: "19h30"
+  date:
+    start: 1418322600
+    end: 1418331600
   location: "euratechnologie"
   organisateur: "Graph Database Lille"
   link: "http://www.meetup.com/graphdb-lille/events/185374082/"
 gdg1:
   name: "Firebase et Web component"
-  date: "11 décembre 2014"
-  time: "19h"
+  date:
+    start: 1418322600
+    end: 1418331600
   location: "mutualab"
   organisateur: "GDG Lille"
   link: "http://www.meetup.com/GDG-Lille/events/218753106/"
 chtijug1:
   name: "Ch'ti Jug : Ch'tools in action"
-  date: "25 novembre 2014"
-  time: "18h30"
+  date:
+    start: 1416936600
+    end: 1416945600
   location: "lille1"
   organisateur: "Ch'ti Jug"
   link: "http://www.eventbrite.com/e/inscription-soiree-chtools-in-action-git-iot-et-web-component-14415048799?utm_campaign=event_reminder&ref=eemaileventremind&utm_medium=email&utm_source=eb_email&utm_term=eventname"
 dotcss:
   name: "dotCSS 2014"
-  date: "14 novembre 2014"
-  time: "après-midi"
+  date:
+    start: 1415970000
+    end: 1415984400
   location: "theatreVariete"
   organisateur: "dotConférences"
   link: "/event/2014/11/21/bilan-dotcss-2014/"
 takeOffTalkOctobre:
   name: "TakeOff Talk Octobre"
-  date: "28 octobre 2014"
-  time: "19h"
+  date:
+    start: 1414519200
+    end: 1414530000
   location: "hybride"
   organisateur: "TakeOff"
   link: "/event/2014/10/22/take-off-talks-octobre/"
 chtijs9:
   name: "ChtiJS #9"
-  date: "9 octobre 2014"
-  time: "19h"
+  date:
+    start: 1412874000
+    end: 1412884800
   location: "mutualab"
   organisateur: "ChtiJS"
   link: "/event/2014/09/30/ChtiJS-9-browserify-ibeacon/"

@@ -23,9 +23,24 @@ title: "Événements"
 <script type="text/javascript" src="/js/nanoajax.js"></script>
 <script type="text/javascript" src="maps.js"></script>
 <link rel="stylesheet" href="maps.css">
-
+<script type="text/javascript" src="https://addthisevent.com/libs/1.5.8/ate.min.js"></script>
+<script type="text/javascript">
+addthisevent.settings({
+    license   : "aao8iuet5zp9iqw5sm9z",
+    mouse     : false,
+    css       : true,
+    outlook   : {show:true, text:"Outlook Calendar"},
+    google    : {show:true, text:"Google Calendar"},
+    yahoo     : {show:true, text:"Yahoo Calendar"},
+    hotmail   : {show:true, text:"Hotmail Calendar"},
+    ical      : {show:true, text:"iCal Calendar"},
+    facebook  : {show:true, text:"Facebook Event"},
+    dropdown  : {order:"google,outlook,ical"},
+    callback  : ""
+});
+</script>
 <div id="contents" ng-app="contentsApp">
-  <div id="listContent" class="col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
+  <div id="listContent" class="col-md-11 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
     <div id="events">
         <div class="row">
           <div class="col-xs-2 visible-xs-inline-block open-nav">
@@ -38,11 +53,24 @@ title: "Événements"
       {% for event in site.data.events %}
         {% assign placeID = event[1].location %}
         {% assign place = site.data.places.[placeID] %}
-        <article class="col-md-3 col-md-offset-1">
+        <article class="event">
           <h2> {{ event[1].name }} </h2>
-          <span class="info"> {{ event[1].date}} - {{ event[1].time }} </span>
+          <span class="info"> le {{ event[1].date.start | date: "%-d %B %Y  "}} de {{ event[1].date.start | date: "%H:%M"}} à {{ event[1].date.end | date: "%H:%M"}} </span>
           <a class="openMarker" href="#{{placeID}}" > {{ place.name }}</a>
           <span> par {{ event[1].organisateur }} </span>
+          </br>
+          <div class="addThisEventContainer">
+            <a href="http://example.com/link-to-your-event" title="Ajouter au calendrier" class="addthisevent">
+                Ajouter au calendrier
+                <span class="_start">{{ event[1].date.start | date: "%F %H:%M:%S"}}</span>
+                <span class="_end">{{ event[1].date.end | date: "%F %H:%M:%S"}}</span>
+                <span class="_zonecode">40</span>
+                <span class="_summary">{{ event[1].name }}</span>
+                <span class="_location">{{ place.name }}</span>
+                <span class="_organizer">{{ event[1].organisateur }}</span>
+                <span class="_date_format">DD/MM/YYYY</span>
+            </a>
+          </div>
           <a href="{{ event[1].link }}" class="btn-red">En savoir plus</a>
         </article>
       {% endfor %}
