@@ -8,7 +8,7 @@ author: john
 description : "A la recherche d'une solutin efficace pour directement ajouter des entrées dans un calendrier dans la page événements, je suis tombé sur addThisEvent qui m'a fait gagner beaucoup de temps !"
 ---
 
-A la recherche d'une solutin efficace pour directement ajouter des entrées dans un calendrier dans la page événements, je suis tombé sur addThisEvent qui m'a fait gagner beaucoup de temps !
+A la recherche d'une solution efficace pour directement ajouter des entrées dans un calendrier dans la page événements, je suis tombé sur addThisEvent qui m'a fait gagner beaucoup de temps !
 
 A la base, je voulais travailler avec l'API Google Calendar, qui m'aurait permit d'ajouter un petit bouton d'ajout au calendrier, qui aurait directement rentrer dans l'utilisateurs une demande a accepter/refuser. Un peu comme ce que fait [Ticketmaster](http://www.ticketmaster.fr/) quand vous commandez des places.
 

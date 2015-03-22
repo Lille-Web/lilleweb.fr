@@ -10,7 +10,7 @@ description : "Suite à l'article sur Babel, j'ai décidé de vous présentez ce
 
 L'article écrit il y a peu <a href="http://www.lilleweb.fr/js/2015/03/17/utilisez-maintenant-es2015/">sur Babel</a> m'a donné envie de vous présenter en différentes parties certaines fonctionnalités de ECMAScript 2015.
 
-Si vous n'avez pas envie de passer par un module, ou autre, vous pouvez tester directement en ligne sur <a href="http://jsbin.com/yotucu/1/embed?js,output">ce JSBin</a> (il faut juste retirer le code déjà présent).
+Si vous n'avez pas envie de passer par un module, où autre, vous pouvez tester directement en ligne sur <a href="http://jsbin.com/yotucu/1/embed?js,output">ce JSBin</a> (il faut juste retirer le code déjà présent).
 
 #### Au revar et bonjour let !
 
