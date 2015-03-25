@@ -139,6 +139,14 @@ a:hover {
             height: 30px;
             background-size: 100%;
           }
+          &.YOUTUBE{
+            background: url("/src/img/pictos/youtube.png") no-repeat;
+            font-size: 0px;
+            width: 47px;
+            height: 30px;
+            background-size: 34px;
+            background-position: 50% 0px;
+          }
         }
 
         p.date{
