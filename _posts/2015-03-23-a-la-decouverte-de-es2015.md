@@ -73,6 +73,21 @@ numbers.forEach((element) => { console.log(element) });
 Ouch, un peu rude comme changement au premier coup d'oeil. L'idée est principalement d'améliorer la lisibilité et de favoriser l'inline (tant que ça reste court et conçis).
 J'aime bien utiliser la fat arrow mais je pense que c'est comme le CoffeeScript, évitons d'en mettre partout sinon cela va au contraire casser la lisibilité.
 
+**Un changement de contexte**
+Lorsque nous utilisons la fat arrow en ES2015, cela revient à appliquer un `bind(this)` à notre fonction. Vous aurez accès au scope parent dans votre fonction, exemple :
+
+{% highlight js %}
+function Person(){
+  this.age = 0;
+
+  setInterval(() => {
+    this.age++;
+  }, 1000);
+}
+{% endhighlight %}
+
+Dans cet exemple, nous pouvons utiliser `this` sans problème, pas besoin de passer par une variable intermédiaire ou de binder la fonction. 
+
 #### Un système de template pour les ${string}
 
 Je pense que c'est un point sur lequel nous sommes tous d'accord, la concaténation de variable est une chose horrible s'ils ont n'utilisent pas de système de template.
