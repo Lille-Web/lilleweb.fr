@@ -23,7 +23,8 @@ title: "Événements"
 <script type="text/javascript" src="/js/nanoajax.js"></script>
 <script type="text/javascript" src="maps.js"></script>
 <link rel="stylesheet" href="maps.css">
-<script type="text/javascript" src="https://addthisevent.com/libs/1.5.8/ate.min.js"></script>
+<!-- AddThisEvent -->
+<script type="text/javascript" src="https://addthisevent.com/libs/1.6.0/ate.min.js"></script>
 <script type="text/javascript">
 addthisevent.settings({
     license   : "aao8iuet5zp9iqw5sm9z",
@@ -62,13 +63,13 @@ addthisevent.settings({
           <div class="addThisEventContainer">
             <a href="http://example.com/link-to-your-event" title="Ajouter au calendrier" class="addthisevent">
                 Ajouter au calendrier
-                <span class="_start">{{ event[1].date.start | date: "%F %H:%M:%S"}}</span>
-                <span class="_end">{{ event[1].date.end | date: "%F %H:%M:%S"}}</span>
-                <span class="_zonecode">40</span>
-                <span class="_summary">{{ event[1].name }}</span>
-                <span class="_location">{{ place.name }}</span>
-                <span class="_organizer">{{ event[1].organisateur }}</span>
-                <span class="_date_format">DD/MM/YYYY</span>
+                <span class="start">{{ event[1].date.start | date: "%F %H:%M:%S"}}</span>
+                <span class="end">{{ event[1].date.end | date: "%F %H:%M:%S"}}</span>
+                <span class="zonecode">Europe/Paris</span>
+                <span class="summary">{{ event[1].name }}</span>
+                <span class="location">{{ place.name }}</span>
+                <span class="organizer">{{ event[1].organisateur }}</span>
+                <span class="date_format">DD/MM/YYYY</span>
             </a>
           </div>
           <a href="{{ event[1].link }}" class="btn-red">En savoir plus</a>
