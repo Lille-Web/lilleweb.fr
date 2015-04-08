@@ -4,6 +4,7 @@ email: contact@lille-web.fr
 description: "Retrouvez les dernières tendances du web : articles, conférences, formations, tout ce dont vous avez besoin, pour et par des passionnés ! Retrouvez nous sur twitter : @lille_web "
 baseurl: ""
 url: "http://www.lilleweb.fr"
+youtube: "https://www.youtube.com/channel/UC7OVjzAqpBYqo5-pFC8At7g"
 twitter_username: lille_web
 github_username:  jekyll
 paginate: 5

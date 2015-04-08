@@ -1,0 +1,38 @@
+<div id="navbar-right">
+  <div id="relatif">
+    <h3> En vrac </h3>
+    <script>
+       var posts = [];
+       {% for post in site.posts %}
+          posts.push(["{{ post.title }}","{{ post.url }}"]);
+       {% endfor %}
+       var randomArticles = [(posts[Math.floor(Math.random() * posts.length)]), (posts[Math.floor(Math.random() * posts.length)]), (posts[Math.floor(Math.random() * posts.length)])];
+       var randomArticlesUl = "<ul>";
+       for(var i = 0; i < randomArticles.length; i++){
+          randomArticlesUl += "<li><a href='"+randomArticles[i][1]+"'>"+ randomArticles[i][0]+" </a></li>";
+       }
+       randomArticlesUl += "</ul>";
+       console.log(randomArticlesUl);
+       $('#relatif h3').after(randomArticlesUl);
+    </script>
+  </div>
+  <div id="help">
+    <h3> Nous soutenir </h3>
+    <div class="adsense">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Lille Web -->
+      <ins class="adsbygoogle"
+      style="display:inline-block;width:300px;height:250px"
+      data-ad-client="ca-pub-9748430346616705"
+      data-ad-slot="2857311650"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+  <div id="findUs">
+    <h3> Suivez-nous </h3>
+    <a href="https://twitter.com/{{site.twitter_username}}"><img src="/src/img/pictos/twitter-round.png" alt="lille_web">@lille_web</a>
+    <a href="{{site.youtube}}"><img src="/src/img/pictos/youtube-round.png" alt="lille web youtube">Chaîne Youtube Lille Web</a>
+  </div>
+</div>

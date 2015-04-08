@@ -52,42 +52,46 @@ layout: default
         </article>
         {% include disqus.html %}
     </div>
-    <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
-      <button id="toggleZen" class="btn btn-block btn-event hidden-xs"> Lecture Zen </button>
-      <div id="share">
-        <h3> Partager </h3>
-          <a href="https://twitter.com/share"
-              data-url="{{ post.url | prepend: site.baseurl }}"
-              class="twitter-share-button"
-              data-text="{{page.title}} by {{author.name}}"
-              data-via="Lille_web"
-              data-related="JohnathanSUP: The author"
-              data-count="horizontal"
-              data-size="large"
-              data-lang="en">Tweet</a>
-      </div>
-      <div id="relatedArticles">
-        <h3> Articles relatifs </h3>
-        <ul>
-          {% assign cat = page.category | downcase %}
-
-          {% for post  in site.categories.[cat] %}
-            {% if post.title != page.title and forloop.index0 < 4 %}
-              <li>
-                <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      {% assign navigationMenu = page.navigationMenu | downcase %}
-      {% if navigationMenu == 'true' %}
-        <div id="navigationMenu">
-          <h3> Sommaire </h3>
-          <div class="navigationMenuEntries"><script>createNavigationMenu();</script></div>
+    <div class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0 right" style="padding:0px;">
+      <div id="option">
+        <button id="toggleZen" class="btn btn-block btn-event hidden-xs"> Lecture Zen </button>
+        <div id="share">
+          <h3> Partager </h3>
+            <a href="https://twitter.com/share"
+                data-url="{{ post.url | prepend: site.baseurl }}"
+                class="twitter-share-button"
+                data-text="{{page.title}} by {{author.name}}"
+                data-via="Lille_web"
+                data-related="JohnathanSUP: The author"
+                data-count="horizontal"
+                data-size="large"
+                data-lang="en">Tweet</a>
         </div>
-      {% endif %}
+        <div id="relatedArticles">
+          <h3> Articles relatifs </h3>
+          <ul>
+            {% assign cat = page.category | downcase %}
+
+            {% for post  in site.categories.[cat] %}
+              {% if post.title != page.title and forloop.index0 < 4 %}
+                <li>
+                  <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        {% assign navigationMenu = page.navigationMenu | downcase %}
+        {% if navigationMenu == 'true' %}
+          <div id="navigationMenu">
+            <h3> Sommaire </h3>
+            <div class="navigationMenuEntries"><script>createNavigationMenu();</script></div>
+          </div>
+        {% endif %}
+      </div>
+      {% include navbar-right.html %}
     </div>
+
 </div>
 
 <script src="{{ "/js/zen.js" | prepend: site.baseurl }}"></script>

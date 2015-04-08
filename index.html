@@ -74,9 +74,12 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
         <div class="col-md-5 col-md-offset-2">
           <h3> Lille </h3>
           <h4> Lille est connue pour sa convivialité et sa joie de vivre. Au-delà de ça, Lille est également une ville pour l'informatique et surtout pour le web !</h4>
-          <!-- <a href="/lille"><button class="btn btn-white">
-            Découvrir Lille
-          </button></a> -->
+          <h4> Nous nous rendons souvent à des événements à Lille et ses alentours </h4>
+          <p>
+          {% for place in site.data.places %}
+            {{ place[1].name }} -
+          {% endfor %}
+          <p>
         </div>
       </div>
     </div>
