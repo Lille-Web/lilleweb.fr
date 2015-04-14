@@ -246,6 +246,10 @@ header.side {
     margin: 10px auto;
     text-align: center;
     position: relative;
+
+    @media screen and (max-width: 480px) {
+      width: auto;
+    }
   }
   .cross {
     position: absolute;
@@ -254,5 +258,10 @@ header.side {
     opacity: 1;
     cursor: pointer;
     font-weight: bold;
+
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      right: 10px;
+    }
   }
 }
