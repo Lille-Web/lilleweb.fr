@@ -1,3 +1,12 @@
+livr2:
+  name: "Bring your hands into VR experience"
+  date:
+    start: 1429203600
+    end: 1429212600
+  location: "imaginarium"
+  organisateur: "LIVR"
+  link: "http://www.meetup.com/LIVR-Lille-Virtual-Reality/events/221350057/"
+
 salonIdemm15:
   name: "Salon Idemm"
   date:

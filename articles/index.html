@@ -93,28 +93,26 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
     {% endif %}
 
   </div>
-  <div id="option" class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0">
-    <a href="/articles/proposer"><button class="btn btn-event"> Proposer un article </button></a>
-    <h3> Recherche </h3>
-    <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
-    <!-- <<div id="categories">
-      <h3> Catégories </h3>
-      <span class="categorie"> JS </span> <span class="categorie"> CSS </span> <span class="categorie"> HTML </span> <span class="categorie"> DESIGN </span> <span class="categorie"> UX </span> <span class="categorie"> UI </span> <span class="categorie"> OPTIM </span>
+  <div class="col-md-2 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0 right" style="padding:0px;">
+    <div id="option">
+      <a href="/articles/proposer"><button class="btn btn-event"> Proposer un article </button></a>
+      <div id="search">
+      <h3> Recherche </h3>
+      <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
+      </div>
+      <div id="authors">
+        <h3> Auteurs </h3>
+        <ul>
+        {% for member in site.data.members %}
+          <li>
+            <a href="/team"><img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
     </div>
-    <div id="tags">
-      <h3> Tags </h3>
-      <a href="#" class="tag"> Javascript </a><a href="#" class="tag"> CSS </a><a href="#" class="tag"> HTML5 </a><a href="#" class="tag"> API </a><a href="#" class="tag"> Rest </a><a href="#" class="tag"> Light </a><a href="#" class="tag"> SVG </a>
-    </div> -->
-    <div id="authors">
-      <h3> Auteurs </h3>
-      <ul>
-      {% for member in site.data.members %}
-        <li>
-          <a href="/team"><img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </div>
+    {% include navbar-right.html %}
   </div>
+
 </div>
 <script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>
