@@ -3,8 +3,8 @@ googleioextended2015:
   date:
     start:1432828800
     end:1432846800
-  location:"epitechLille"
-  organisateur:"GDG Lille & LIVR & Développeur Mobile Lillois"
+  location: "epitechLille"
+  organisateur: "GDG Lille & LIVR & Développeur Mobile Lillois"
   link: "http://www.meetup.com/LIVR-Lille-Virtual-Reality/events/222271955/"
 takeOffTalkMai2015:
   name: "TakeOff Talk Mai"
