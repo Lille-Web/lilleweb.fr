@@ -5,7 +5,7 @@ date:   2015-05-18
 category: JS
 tags : nodejs, application, production, pm2, reverse proxy
 author: john
-description : ""
+description : "Découvrez comment mettre en production et monitorer une application node.js très facilement !"
 ---
 
 La mise en prod' d'applications node.js ne doit pas vous effrayer. La démarche est différente de ce que vous pouvez avoir l'habitude si vous développez en PHP par exemple mais elle reste simple et rapide.
