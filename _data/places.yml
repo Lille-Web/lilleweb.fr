@@ -1,3 +1,12 @@
+epitechLille:
+  id: "epitechLille"
+  name: "Epitech Lille"
+  adress: "9 Rue du Palais Rihour"
+  city: Lille
+  zip: 59000
+  lat: 50.6349476
+  lng: 3.0616969
+  maps: "https://www.google.fr/maps/place/9+Rue+du+Palais+Rihour,+59800+Lille"
 euratechnologie:
   id: "euratechnologie"
   name: "Euratechnologie"
