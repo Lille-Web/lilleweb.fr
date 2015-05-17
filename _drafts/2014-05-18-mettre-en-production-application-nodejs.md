@@ -10,6 +10,8 @@ description : ""
 
 La mise en prod' d'application node.js ne doit pas vous effrayer. La démarche est différente de ce que vous pouvez avoir l'habitude si vous développer en PHP mais elle reste simple et rapide.
 
+![nodejs](/src/articles/pm2/nodejs.png)
+
 Elle se déroule en deux étapes.
 
 ## PM2 : démarrer et gérer votre application
@@ -18,13 +20,17 @@ Dans un premier temps vous devez bien évidemment lancer votre application. Si v
 
 Il faut donc faire en sorte que votre application soit persistente, et qu'elle puisse se relancer toute seule si vous redémarrez votre serveur.
 
-Pour ce faire on va utiliser [PM2](https://github.com/Unitech/pm2) qui est présenté comme un gestionnaire de process pour la mise en production node.js (hum). Derrière cette explication barbare se cache un objectif très simple. **PM2 vous permet de laisser en vie votre application node.js et de la relancer automatiquement au reboot du serveur !**
+![nodejs](/src/articles/pm2/pm2.png)
+
+Pour ce faire on va utiliser [PM2](https://github.com/Unitech/pm2) qui est présenté comme un gestionnaire de process pour la mise en production node.js (hum). Derrière cette appelation barbare se cache un objectif très simple. **PM2 vous permet de laisser en vie votre application node.js et de la relancer automatiquement au reboot du serveur !**
 
 Le meilleur dans tout ça ? PM2 est extrêmement simple à mettre en place !
 
 ### Installation
 
-Rien de plus simple, si vous lancez une application node.js sur votre serveur c'est que note.js est déjà installé (captain obvious !), vous pouvez donc utiliser `npm`pour installer pm2 !
+Rien de plus simple, si vous lancez une application node.js sur votre serveur c'est que node.js est déjà installé (captain obvious !), vous pouvez donc utiliser `npm` pour installer pm2 !
+
+![npm](/src/articles/pm2/npm.png)
 
 {% highlight bash %}
 npm install pm2 -g
@@ -52,7 +58,7 @@ Vous trouverez plus d'info directement sur le [github de PM2](https://github.com
 
 Après l'avoir mise en prod avec PM2, vous vous rendez bien compte qu'elle n'est pas disponible sur l'URI comme vous le pensiez. Vous devez pour le moment tapez le port pour y accéder. Par exemple si vous aviez exécutez votre application sur le port 3000 vous devrez taper `votrenomdedomaine.com:3000`. C'est évidemment inconcevable de devoir taper également le port pour accéder à votre application / site web.
 
-J'ai mis en place cette technique basé sur un reverse proxy sur le site [#JeSuisPizza](http://jesuispizza.fr). Voici la configuration de son vhost :
+J'ai mis en place cette technique basée sur un reverse proxy sur le site [#JeSuisPizza](http://jesuispizza.fr). Voici la configuration de son vhost :
 
 {% highlight bash %}
 
@@ -90,3 +96,9 @@ a2enmod proxy_http
 {% endhighlight %}
 
 Vous devez maintenant redémarrer votre serveur apache.
+
+## Conclusion
+
+Vous savez désormais démarrer votre application node.js en production et la rendre disponible sur votre nom de domaine !
+
+Si vous avez des questions, des doutes ou que vous avez une autre technique, n'hésitez pas à nous le dire dans les commentaires !
