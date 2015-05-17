@@ -8,7 +8,7 @@ author: john
 description : ""
 ---
 
-La mise en prod' d'application node.js ne doit pas vous effrayer. La démarche est différente de ce que vous pouvez avoir l'habitude si vous développer en PHP mais elle reste simple et rapide.
+La mise en prod' d'applications node.js ne doit pas vous effrayer. La démarche est différente de ce que vous pouvez avoir l'habitude si vous développez en PHP par exemple mais elle reste simple et rapide.
 
 ![nodejs](/src/articles/pm2/nodejs.png)
 
@@ -16,15 +16,15 @@ Elle se déroule en deux étapes.
 
 ## PM2 : démarrer et gérer votre application
 
-Dans un premier temps vous devez bien évidemment lancer votre application. Si vous faîtes comme d'habitude avec un `node app.js` votre application sera executé jusqu'à ce que vous fermez votre terminal ou que vous coupez votre connexion ssh.
+Dans un premier temps, vous devez bien évidemment lancer votre application. Si vous faîtes comme d'habitude avec un `node app.js` votre application sera executée jusqu'à ce que vous fermiez votre terminal ou que vous coupiez votre connexion ssh.
 
 Il faut donc faire en sorte que votre application soit persistente, et qu'elle puisse se relancer toute seule si vous redémarrez votre serveur.
 
 ![nodejs](/src/articles/pm2/pm2.png)
 
-Pour ce faire on va utiliser [PM2](https://github.com/Unitech/pm2) qui est présenté comme un gestionnaire de process pour la mise en production node.js (hum). Derrière cette appelation barbare se cache un objectif très simple. **PM2 vous permet de laisser en vie votre application node.js et de la relancer automatiquement au reboot du serveur !**
+Pour ce faire on va utiliser [PM2](https://github.com/Unitech/pm2) qui est présenté comme un gestionnaire de process pour la mise en production d'applications node.js (hum). Derrière cette appelation barbare se cache un objectif très simple. **PM2 vous permet de laisser en vie votre application node.js et de la relancer automatiquement au reboot du serveur !**
 
-Le meilleur dans tout ça ? PM2 est extrêmement simple à mettre en place !
+Le meilleur dans tout ça ? PM2 est extrêmement simple à mettre en place et à utiliser !
 
 ### Installation
 
@@ -46,17 +46,17 @@ pm2 start app.js
 
 `app.js` doit correspondre au chemin de votre fichier d'application node.js.
 
-Votre application est maintenant lancée et monitorable. Elle ne s'arrêtera pas si vous coupez votre connexion ssh. J'avais pas dits que c'était facile ?
+Votre application est maintenant lancée et monitorable. Elle ne s'arrêtera pas si vous coupez votre connexion ssh. J'avais pas dit que c'était facile ?
 
-`pm2 <stop|restart|delete> <app_name|id|all>` sont égalements disponibles et vous permettent d'arrêter, redémarrer et supprimer votre application. Pourquoi la supprimer et pas juste l'arrêter ? Car vous pouvez bien évidemment monitorer tout les process lancées avec pm2 grâce à la commande `list`.
+`pm2 <stop|restart|delete> <app_name|id|all>` sont également disponibles et vous permettent d'arrêter, redémarrer et supprimer votre application. Pourquoi la supprimer et pas juste l'arrêter ? Car vous pouvez bien évidemment monitorer tous les process lancés avec pm2 grâce à la commande `list`.
 
 ![pm2 list all nodejs process production](https://github.com/unitech/pm2/raw/master/pres/pm2-list.png)
 
-Vous trouverez plus d'info directement sur le [github de PM2](https://github.com/Unitech/pm2). Vous en savez déjà assez pour mettre votre application en production !
+Vous trouverez plus d'infos directement sur le [github de PM2](https://github.com/Unitech/pm2). Vous en savez déjà assez pour mettre votre application en production !
 
 ## Reverse proxy : la rendre disponible sur le bon port avec apache
 
-Après l'avoir mise en prod avec PM2, vous vous rendez bien compte qu'elle n'est pas disponible sur l'URI comme vous le pensiez. Vous devez pour le moment tapez le port pour y accéder. Par exemple si vous aviez exécutez votre application sur le port 3000 vous devrez taper `votrenomdedomaine.com:3000`. C'est évidemment inconcevable de devoir taper également le port pour accéder à votre application / site web.
+Après l'avoir mise en prod avec PM2, vous vous rendez bien compte qu'elle n'est pas disponible sur l'URI comme vous le pensiez. Vous devez pour le moment taper le port pour y accéder. Par exemple si vous aviez exécuté votre application sur le port 3000 vous devriez taper `votrenomdedomaine.com:3000`. C'est évidemment inconcevable de devoir taper également le port pour accéder à votre application / site web.
 
 J'ai mis en place cette technique basée sur un reverse proxy sur le site [#JeSuisPizza](http://jesuispizza.fr). Voici la configuration de son vhost :
 
