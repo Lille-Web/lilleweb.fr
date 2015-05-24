@@ -165,4 +165,4 @@ import { add as addition } from './addition.js';
 ### La suite au prochain épisode
 
 Dans le prochain article, nous allons voir ensemble les promesses sans librairies, et quelques petites fonctionnalités qui vont changer votre 
-façon de développer en JavaScript !
+façon de développer en JavaScript ! N'oubliez pas de partager vos avis en commentaires !
