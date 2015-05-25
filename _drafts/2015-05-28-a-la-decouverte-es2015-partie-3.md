@@ -9,7 +9,7 @@ description : "Dans la suite de cette série, nous allons voir ensemble les prom
 ---
 
 <div class="bs-callout bs-callout-info">
-  Cet article fait partie d'une série consacré à ES2015 : <a href="http://www.lilleweb.fr/js/2015/03/17/utilisez-maintenant-es2015/">comment utiliser ES2015</a>.
+  Cet article fait partie d'une série consacrée à ES2015 : <a href="http://www.lilleweb.fr/js/2015/03/17/utilisez-maintenant-es2015/">comment utiliser ES2015</a>.
   <br />
   <a href="http://www.lilleweb.fr/js/2015/03/23/a-la-decouverte-de-es2015/">Partie 1 : let, fat arrow, String template</a>
   <br />
@@ -19,7 +19,7 @@ description : "Dans la suite de cette série, nous allons voir ensemble les prom
 ## Promesse tenue
 L'arrivée des promesses en JavaScript natif est très attendue, en effet, nous pouvons oublier le callback hell et garder
 un code plus propre et lisible.
-En plus d'éviter de télécharger une librairie et de devoir supporter une API pas toujours évidente, les promesses natives ont l'avantages d'être très simple à mettre en place. Voici un exemple :
+En plus d'éviter de télécharger une librairie et de devoir supporter une API pas toujours évidente, les promesses natives ont l'avantage d'être très simples à mettre en place. Voici un exemple :
 
 {% highlight js %}
 function findUser(id) {
@@ -49,14 +49,14 @@ Lorsque vous créez une nouvelle instance, vous devez fournir un callback dans l
 - resolve
 - reject
 
-Ces arguments sont des fonctions permettant d'être appelé une fois vos requêtes finis, resolve doit être appelé lorsque tout s'est bien passé alors que reject
+Ces arguments sont des fonctions permettant d'être appelées une fois vos requêtes finis, resolve doit être appelé lorsque tout s'est bien passé alors que reject
 fait trigger la méthode catch de votre promesse.
 
 
 ## Assignation destructurée
 
 J'en avais parlé très rapidement dans l'article précédent, l'assignation destructurée est un nouveau système d'assignation.
-Cela touche principalement les objets et les tableaux. Voici un cas, qui je pense, tous le monde a déjà rencontré :
+Cela touche principalement les objets et les tableaux. Voici un cas que, je pense, tout le monde a déjà rencontré :
 
 {% highlight js %}
 var unTableau = [1,2,3];
@@ -100,7 +100,7 @@ Plus besoin d'effectuer une condition dans votre foncton, encore un gain de temp
 
 ## Opérateur de décomposition (spread operator)
 
-Ce nom un peu barbare cache une nouvelle fonctionnalité très intéressante permettant (encore) de gagner du temps.
+Ce nom, un peu barbare, cache une nouvelle fonctionnalité très intéressante permettant (encore) de gagner du temps.
 Lorsque vous appelez une fonction avec plusieurs arguments, vous devez placer chaque variable à la suite, ce qui pouvait donner ce genre de cas :
 
 {% highlight js %}
@@ -137,4 +137,4 @@ var corps = ['têtes', ...articulations, 'bras', 'pieds'];
 
 ## La suite au prochain épisode
 
-Dans le prochain article, nous allons voir ensemble les générateurs et les rest parameters ! N'oubliez pas de partager vos avis en commentaires !
+Dans le prochain article, nous allons voir ensemble les générateurs et les rest parameters ! N'oubliez pas de partager vos avis en commentaire !
