@@ -1,3 +1,19 @@
+welshdesign6:
+  name: "Welsh Design #6"
+  date:
+    start: 1436461200
+    end: 1436472000
+  location: "mutualab"
+  organisateur: "WelshDesign"
+  link: "http://www.meetup.com/fr/WelshDesign/events/223335369/"
+chtijs11:
+  name: "ChtiJS #13"
+  date:
+    start: 1435856400
+    end: 1435867200
+  location: "mutualab"
+  organisateur: "ChtiJS"
+  link: "http://www.meetup.com/fr/FranceJS/events/223329634/"
 googleioextended2015:
   name: "Google I/O Extended"
   date:
