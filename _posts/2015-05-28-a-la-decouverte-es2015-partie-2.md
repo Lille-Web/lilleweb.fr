@@ -3,7 +3,7 @@ layout: post
 title:  "À la découverte de ES2015 - Partie 2"
 category: JS
 tags : javascript ecmascript es6 es2015 class module
-date: 2015-05-26
+date: 2015-05-28
 author: dck
 description : "Dans la suite de cette série, nous allons voir ensemble les modules et les classes en ES2015 !"
 ---

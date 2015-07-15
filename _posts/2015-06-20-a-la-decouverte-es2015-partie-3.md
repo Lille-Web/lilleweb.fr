@@ -3,7 +3,7 @@ layout: post
 title:  "À la découverte de ES2015 - Partie 3"
 category: JS
 tags : javascript ecmascript es6 es2015 promise destructuring
-date: 2015-05-28
+date: 2015-06-20
 author: dck
 description : "Dans la suite de cette série, nous allons voir ensemble les promesses et quelques petites nouveautées !"
 ---
