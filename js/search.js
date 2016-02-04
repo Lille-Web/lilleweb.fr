@@ -21,7 +21,6 @@ document.querySelector('#contents #searchResults article .closeSearch').addEvent
     document.getElementById('searchBox').value = "";
 });
 
-
 var contentsApp = angular.module('contentsApp', []);
 contentsApp.config(['$interpolateProvider', function ($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
