@@ -7,6 +7,15 @@ epitechLille:
   lat: 50.6349476
   lng: 3.0616969
   maps: "https://www.google.fr/maps/place/9+Rue+du+Palais+Rihour,+59800+Lille"
+altimaRbx:
+  id: "altimaRbx"
+  name: "altima° Roubaix"
+  adress: "33 rue Dupleix"
+  city: Roubaix
+  zip: 59100
+  lat: 50.6874929
+  lng: 3.1758428
+  maps: "https://www.google.fr/maps/place/altima°,+33+Rue+Dupleix,+59100+Roubaix/@50.6874929,3.1758428,17z"
 euratechnologie:
   id: "euratechnologie"
   name: "Euratechnologie"
