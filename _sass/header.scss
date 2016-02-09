@@ -1,6 +1,6 @@
 header.hd-index{
   color : $white;
-  background-image: url(../../src/img/lille-grand-place.png);
+  background-image: url(../../src/img/lille-grand-placeNEW.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,16 +32,19 @@ header.hd-index{
     }
   }
   .header-content {
-    margin: 90px 0px;
+    margin: 0px 0px;
 
     h1 {
       font-size: 36px;
     }
 
-    h2 {
-      font-size: 24px;
+    h2, h3 {
+      font-size: 28px;
+      font-family: 'Roboto';
     }
-
+    h3{
+      font-weight: lighter;
+    }
     button {
       background: none;
       border: 1px solid $white !important;

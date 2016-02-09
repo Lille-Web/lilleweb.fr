@@ -1,19 +1,24 @@
 <header class="hd-index">
   <div class="container">
-    <a href="/"><img src="/src/img/Logo/Large/large-sans-fond-white.png" alt="Lille Web"></a>
+    <h1> 
+      <a href="/">
+        <img src="/src/img/Logo/Large/large-sans-fond-whiteNEW.png" alt="Lille Web - Conseils, articles, conférences, formations, ...">
+      </a>
+    </h1>
     <div class="row header-content">
       <div class="col-md-12">
-        <h1> {% if page.header_title %}
+        <h2> {% if page.header_title %}
                 {{ page.header_title }}
               {% else %}
                 La communauté du web lillois
               {% endif %}
-        </h1>
-        <h2> {% if page.header_titleSub %}
+        </h2>
+        <h3> {% if page.header_titleSub %}
                 {{ page.header_titleSub }}
               {% else %}
-                Articles, conférences, formations, ...
-              {% endif %} </h2>
+                Conseils, articles, conférences, ...
+              {% endif %} 
+        </h3>
       </div>
     </div>
     <nav class="navbar navbar-default" role="navigation">
@@ -30,8 +35,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="/articles">Articles</a></li>
-            <!-- <li><a href="/evenements">Événements</a></li> -->
-            <li><a href="/ressources">Ressources</a></li>
+            <li><a href="/evenements">Événements</a></li>
+            <!-- <li><a href="/ressources">Ressources</a></li>
             <!-- <li><a href="/lille">Lille</a></li> -->
             <li><a href="/team">L'équipe</a></li>
             <li class="toggleContact"><a href="#contact">Contact</a></li>
@@ -47,16 +52,22 @@
   header {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   }
-  header .container > a{
-    width: 50%;
-    display: block;
-    margin: 20px auto;
+  header .container h1{
+    margin: 70px auto;
   }
-  header .container > a img{
-    width: 100%;
+  header .container h1 > a{
+    width: 50%;
+    min-width: 300px;
+    display: block;
+    margin: 20px auto 0px auto;
+    text-align: center;
+  }
+  header .container h1 > a img{
+    width: 80%;
   }
   header .col-md-12{
     text-align: center;
+    margin-bottom: 30px;
   }
   header.hd-index .header-content{
     margin : 0px;
