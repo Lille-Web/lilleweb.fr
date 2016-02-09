@@ -8,14 +8,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
 <div id="contents" ng-app="contentsApp" ng-controller="searchController">
   <div id="listContent" class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
     <div id="articles">
-      <div class="row">
-        <div class="col-xs-2 visible-xs-inline-block open-nav">
-          <img src="/src/img/pictos/hamburger.jpg" style="width: 40px;margin-top: 20px;">
-        </div>
-        <div class="col-xs-9">
-          <h1> {{ page.title }} </h1>
-        </div>
-      </div>
+      {% include headerContentBeforeContents.html %}
       {% for post in paginator.posts %}
         <article>
           <span class="categorie {{post.category}}">{{post.category}}</span>

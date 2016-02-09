@@ -166,9 +166,13 @@
       text-align: center;
     }
     #option, #navbar-right{
+      > a{
+        margin-top: 24px;
+        display: inline-block;
+      }
       > div{
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 31px;
         background: white;
         border: 1px solid #ddd;
         padding-top: 0px;
@@ -270,6 +274,20 @@
 
 
 #articles {
+  > h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    img{
+      width: 50%;
+      min-width: 300px;
+    }
+    span{
+      vertical-align: bottom;
+      margin-bottom: -5px;
+      display: inline-block;
+    }
+  }
   h2.title {
     display: inline-block;
     position: relative;
