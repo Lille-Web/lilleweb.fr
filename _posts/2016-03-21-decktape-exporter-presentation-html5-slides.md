@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Decktape : exporter vos présentations en HTML5"
-date:   2016-03-17
+date:   2016-03-21
 category: OUTILS
 tags : decktape revealjs slides powerpoint keynote
 author: john
