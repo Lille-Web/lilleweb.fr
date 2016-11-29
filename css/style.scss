@@ -379,3 +379,10 @@ ul.specialFloat li {
     }
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  #content #lille{
+    background-image: url(../../src/img/lille-vieux-lille-mobile.jpg);
+  }
+}

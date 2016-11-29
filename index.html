@@ -7,8 +7,6 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
 {% include head.html %}
 
 {% include headerPage3.html %}
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
 <div id="content">
   <div id="blog">
@@ -93,7 +91,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
             <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1" style="margin-bottom : 20px;">
               {% assign team = site.data.members['john'] %}
               <div class="row">
-                <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Jonhathan Meunier">
+                <img src="{{team.image}}" class="lazyload col-md-6 img-circle col-xs-4 col-sm-4" alt="Jonhathan Meunier">
                 <div class="caption col-md-6 col-xs-5">
                   <h4>{{team.name}}</h4>
                   <h5><em>{{team.poste}}</em></h5>
@@ -104,7 +102,7 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
             <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
               {% assign team = site.data.members['dck'] %}
               <div class="row">
-                <img src="{{team.image}}" class="col-md-6 img-circle col-xs-4 col-sm-4" alt="Thomas Deconinck">
+                <img src="{{team.image}}" class="lazyload col-md-6 img-circle col-xs-4 col-sm-4" alt="Thomas Deconinck">
                 <div class="caption col-md-6 col-xs-5">
                   <h4>{{team.name}}</h4>
                   <h5><em>{{team.poste}}</em></h5>
@@ -120,6 +118,11 @@ description: "Articles, conférences, formations, retrouvez tout ce dont vous av
 </div>
 
 {% include footerPage.html %}
+
+<script defer src="js/jquery.min.js"></script>
+<script defer src="js/bootstrap.min.js"></script>
+<script defer src="js/lazysizes.min.js"></script>
+
 
 </body>
 </html>

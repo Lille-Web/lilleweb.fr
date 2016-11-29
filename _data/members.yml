@@ -1,6 +1,6 @@
 john:
   name: Johnathan MEUNIER
-  image: "/src/img/members/john.png"
+  image: "/src/img/members/john.jpg"
   poste: Fondateur
   site: johnathan.fr
   description: "Développeur front-end à altima° dans le pôle optimisation et offres innovantes, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
@@ -8,7 +8,7 @@ john:
   github: johnathanSUP
 dck:
   name: Thomas DECONINCK
-  image: "/src/img/members/dck.png"
+  image: "/src/img/members/dck.jpg"
   poste: Fondateur
   site: thomasdeconinck.fr
   description: "Développeur front-end à altima°, Thomas est un grand passionné de JavaScript mais également de nouvelles technologies ! Il aime participer à des débats sensibles comme la supériorité d'Ember face à Angular ou encore l'indentation avec des espaces plutôt que des tabulations. <br> C'est également un grand fan de manga qui n'hésitera pas à vous parler de ses dernières découvertes ! "
