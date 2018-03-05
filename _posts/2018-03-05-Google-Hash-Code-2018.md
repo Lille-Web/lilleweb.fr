@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Google Hash Code 2018 chez Sfeir"
-date:   2018-03-02
+date:   2018-03-05
 category: EVENT
 tags : js javascript google algo hashcode event
 author: john
