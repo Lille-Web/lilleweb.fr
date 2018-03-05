@@ -1,30 +1,35 @@
---- layout: default title: "Articles" description: "Découvrez les dernières tendances du web ainsi que de nombreux conseils,
-astuces et tutoriels !" ---
+---
+layout: default
+title: "Articles"
+description: "Découvrez les dernières tendances du web ainsi que de nombreux conseils, astuces et tutoriels !"
+---
 
 
 <div id="contents" ng-app="contentsApp" ng-controller="searchController">
   <div id="listContent" class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12">
     <div id="articles">
-      {% include headerContentBeforeContents.html %} {% for post in paginator.posts %}
-      <article class="{{post.category}}">
-        <span class="categorie {{post.category}}">{{post.category}}</span>
-        <h2 class="title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <div class="info">
-          {% if site.data.members[post.author].name %} par
-          <span class="author"> {{ site.data.members[post.author].name }} </span> - {% endif %}
-          <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
-        </div>
-        <p class="desc">{{post.description}}</p>
-        <div class="tags">
-          {% for tag in post.tags %}
-          <a class="tag" ng-click="searchTag('{{ tag }}')">
-            {{ tag }}
-          </a>
-          {% endfor %}
-        </div>
-      </article>
+      {% include headerContentBeforeContents.html %}
+      {% for post in paginator.posts %}
+        <article class="{{post.category}}">
+          <span class="categorie {{post.category}}">{{post.category}}</span>
+          <h2 class="title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <div class="info">
+            {% if site.data.members[post.author].name %}
+              par <span class="author"> {{ site.data.members[post.author].name }} </span> -
+            {% endif %}
+            <span class="date"> {{ post.date | date: "%-d %B %Y" }} </span>
+          </div>
+          <p class="desc">{{post.description}}</p>
+          <div class="tags">
+            {% for tag in post.tags %}
+              <a class="tag" ng-click="searchTag('{{ tag }}')">
+                {{ tag }}
+              </a>
+            {% endfor %}
+          </div>
+        </article>
       {% endfor %}
     </div>
     <div id="searchResults">
@@ -50,55 +55,52 @@ astuces et tutoriels !" ---
             <a href="#">[[result.name]]</a>
           </li>
         </ul>
-        </articles>
+      </articles>
     </div>
 
 
     {% if paginator.total_pages > 1 %}
-    <ul class="pagination">
-      {% if paginator.previous_page %}
-      <li>
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Précédent</a>
-      </li>
-      {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
-      <li class="active">
-        <a href="#">{{ page }}</a>
-      </li>
-      {% elsif page == 1 %}
-      <li>
-        <a href="/articles/">{{ page }}</a>
-      </li>
-      {% else %}
-      <li>
-        <a href="/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
-      </li>
-      {% endif %} {% endfor %} {% if paginator.next_page %}
-      <li>
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Suivant &raquo;</a>
-      </li>
-      {% endif %}
-    </ul>
+      <ul class="pagination">
+        {% if paginator.previous_page %}
+          <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Précédent</a>
+          </li>
+        {% endif %}
+
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <li class="active"><a href="#">{{ page }}</a></li>
+            {% elsif page == 1 %}
+              <li><a href="/articles/">{{ page }}</a></li>
+            {% else %}
+              <li><a href="/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+            {% endif %}
+          {% endfor %}
+
+        {% if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Suivant &raquo;</a>
+        </li>
+        {% endif %}
+      </ul>
     {% endif %}
 
   </div>
   <div class="col-md-3 col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-0 right" style="padding:0px;">
     <div id="option">
-      <a href="/articles/proposer">
-        <button class="btn btn-event"> Proposer un article </button>
-      </a>
+      <a href="/articles/proposer"><button class="btn btn-event"> Proposer un article </button></a>
       <div id="search">
-        <h3> Recherche </h3>
-        <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
+      <h3> Recherche </h3>
+      <input id="searchBox" ng-model="searchValue" type="text" class="form-control search" placeholder="Recherche" onInput="inputChange();">
       </div>
       <div id="authors">
         <h3> Auteurs </h3>
         <ul>
-          {% for member in site.data.members %}
+        {% for member in site.data.members %}
           <li>
-            <a href="/team">
-              <img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}</a>
+            <a href="/team"><img src="{{ member[1].image }}" class="img-circle">{{member[1].name}}</a>
           </li>
-          {% endfor %}
+        {% endfor %}
         </ul>
       </div>
     </div>
@@ -109,5 +111,5 @@ astuces et tutoriels !" ---
 
 </div>
 
-<script src="{{ " /js/angular.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ " /js/search.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/angular.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>

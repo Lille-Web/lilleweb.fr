@@ -23,22 +23,22 @@
             border: 1px solid #ddd;
             border-bottom: 3px solid;
             &.Ruby {
-                border-color: #e74c3c;
+                border-bottom-color: #e74c3c;
             }
             &.JS {
-                border-color: #f1bf26;
+                border-bottom-color: #f1bf26;
             }
             &.CSS {
-                border-color: #2aa9e0;
+                border-bottom-color: #2aa9e0;
             }
             &.HTML {
-                border-color: #f1652a;
+                border-bottom-color: #f1652a;
             }
             &.EVENT {
-                border-color: $red;
+                border-bottom-color: $red;
             }
             &.OUTILS {
-                border-color: #795548;
+                border-bottom-color: #795548;
             }
             .categorie {
                 color: #fff;

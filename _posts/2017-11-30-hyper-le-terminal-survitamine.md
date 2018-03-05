@@ -1,124 +1,32 @@
 ---
 layout: post
-title:  "Hyper, le terminal survitaminé"
-date:   2017-11-25
-category: JS
-tags : javascript tools hyper
-author: dck
-description : "Hyper, un terminal multi-environnement codé en JavaScript"
+title:  "Google Hash Code 2018 chez Sfeir"
+date:   2018-03-02
+category: EVENT
+tags : js javascript google algo hashcode event
+author: john
+description : "Team up to solve an engineering problem from Google. Are you up for the challenge?"
 ---
 
-<img src="/src/articles/hyperterm/logo.svg" width="200" class="pull-left" alt="Hyperterm logo" />
-Dans la catégorie logiciel développé en JavaScript, nous avions déjà pas mal de beaux spécimens,  Atom et VS Code en IDE,
-  Slack pour l'IRC, Nylas N1 les mails, le navigateur Brave et j'en passe.
+Jeudi 1er mars se tenait l'édition 2018 du [Google Hash Code](https://hashcode.withgoogle.com/). Ce challenge, organisé chaque année depuis 2014, propose à n'importe quel développeur à travers le monde de se plonger durant 3h sur un sujet d'algorythmie relativement précis. 37 000 personnes travaillaient cette année en même temps sur l'optimisation des trajets de véhicules autonomes.
 
-Aujourd'hui, mon regard s'est porté sur [Hyper](https://hyper.is/), un terminal entièrement développé en JavaScript via Electron qui nous offre de belles perspectives de customisation.
+Nous avons été 3 courageux cette année à oser se frotter à ce défi : Thomas, Samuel et moi. 
 
-**Note :** À l'heure où j'écris cet article, Hyper n'est disponible que sur Mac et Linux car [il semble y avoir encore pas mal de boulots sur Windows](https://github.com/zeit/hyper/issues?utf8=%E2%9C%93&q=Windows).
+[SFEIR](https://www.sfeir.com/) Lille était cette année un Hub Google Hash Code. C'est à dire qu'ils proposaient d'héberger des équipes dans leurs locaux. On peut dire que nous avons été très bien reçu : pizza, bière, soft, et bonne humeur ! Un grand merci à eux !
 
-## Un terminal 100% JavaScript
+<blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Fin du Google <a href="https://twitter.com/hashtag/HashCode?src=hash&amp;ref_src=twsrc%5Etfw">#HashCode</a> à l&#39;année prochaine ! <a href="https://twitter.com/DCK__?ref_src=twsrc%5Etfw">@DCK__</a> <a href="https://twitter.com/gamuez?ref_src=twsrc%5Etfw">@gamuez</a> <a href="https://twitter.com/an0rak_dev?ref_src=twsrc%5Etfw">@an0rak_dev</a> <a href="https://twitter.com/dolez_v?ref_src=twsrc%5Etfw">@dolez_v</a> <a href="https://twitter.com/remygardette?ref_src=twsrc%5Etfw">@remygardette</a> <a href="https://twitter.com/SfeirLille?ref_src=twsrc%5Etfw">@SfeirLille</a> <a href="https://t.co/HkENn8zGwM">pic.twitter.com/HkENn8zGwM</a></p>&mdash; Johnathan MEUNIER (@JohnathanSUP) <a href="https://twitter.com/JohnathanSUP/status/969325341339717637?ref_src=twsrc%5Etfw">1 mars 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Comme je le disais plus haut, ce terminal est développé à partir de [l'excellent framework Electron](electron.atom.io). Framework qui vous permet de développer des applications desktop très facilement grâce au moteur de Chromium.
+Thomas, Samuel et moi ne sommes pas habitués à répondre à ce genre de problème. Nous avons utilisé le language où nous sommes le plus à l'aise : le Javascript. Nous nous sommes rapidement rendu compte que ce langage n'est pas adapté à ce genre de problématique, nous avons été confronté à de nombreux problèmes : 
+- typage faible 
+- référence des tableaux 
+- manipulation des tableaux
+- performances (pas de multi threadé notamment)
 
-De ce fait, votre application peut facilement être compatible sur **Windows, Linux ou encore Mac OS** !
+Prochain projet ? Apprendre ou approfondir un autre langage (RasonML ? Go ?) et retenter de répondre de nouveaux aux besoins de cette édition 2018 !
 
-L'intérêt principal ici est la **customisation** ! Et bien oui, étant donné que c'est codé en HTML, CSS et JavaScript, c'est tout de suite bien plus accessible.
+## Un meetup Lille Web
 
-## Un joli terminal
+Pour notre retour, nous avons également un nouveau projet en tête ! Organiser régulièrement (sous la forme de Meetup ?) des soirées publiques où nous nous retrouverions en équipe pour développer un algorithme qui répond à un problème dévoillé au dernier moment. A l'issue d'un certain temps de développement, nous mettrions en commun nos avancés, nos choix de langage, notre logique, etc. Nous travaillons sur cette idée en ce moment et allons commencer à chercher des lieux, des sponsors, un nom, etc. 
 
-Avec Hyper, vous avez la possibilité d'installer des thèmes ou de créer le votre avec un peu de CSS ! Parmi les différents thèmes, voilà celui que j'utilise : `hyper-snazzy`
-
-<img src="/src/articles/hyperterm/screen.png" title="Thème hyper-snazzy" alt="Thème hyper-snazzy"/>
-
-## Customiser Hyper
-
-Pour customiser Hyper, rien de plus simple, il vous suffit d'éditer le fichier `~/.hyper.js` qui se trouve dans votre répertoire utilisateur. Vous pouvez modifier rapidement les caractéristiques de base comme la taille/type de police, les différentes couleurs utilisées.
-Petite note, Hyper supporte le hot-reload, cela signifie que vous pouvez modifier les paramètres sans avoir à fermer le logiciel.
-
-Pour les plugins, vous n'avez qu'à ajouter le nom du plugins dans le tableau `plugins` du fichier de config et Hyper fera l'installation de son coté ! Sinon, il existe un plugin permettant de rechercher et d'installer un plugin Hyper très facilement : **[hpm-cli](https://www.npmjs.com/package/hpm-cli)**.
-
-Il vous suffit de l'installer via npm : `npm install -g hpm-cli`, et ainsi vous aurez accès à la commande `hpm` vous pourrez alors :
-
-* Chercher un package pour vérifier son existence : `hpm search power`
-* Insaller un package : `hpm install hyperpower`
-
-Voici mon fichier de configuration avec mes plugins utilisés :
-{% highlight js %}
-module.exports = {
-config: {
-// default font size in pixels for all tabs
-fontSize: 14,
-
-    // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
-
-    // terminal cursor background color (hex)
-    cursorColor: '#FF9800',
-
-    // color of the text
-    foregroundColor: '#fff',
-
-    // terminal background color
-    backgroundColor: '#000',
-
-    // border color (window, tabs)
-    borderColor: '#333',
-
-    // custom css to embed in the main window
-    css: '',
-
-    // custom css to embed in the terminal window
-    termCSS: '',
-
-    // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
-
-    // some color overrides. see http://bit.ly/29k1iU2 for
-    // the full list
-    colors: [
-      '#000000',
-      '#ff0000',
-      '#33ff00',
-      '#ffff00',
-      '#0066ff',
-      '#cc00ff',
-      '#00ffff',
-      '#d0d0d0',
-      '#808080',
-      '#ff0000',
-      '#33ff00',
-      '#ffff00',
-      '#0066ff',
-      '#cc00ff',
-      '#00ffff',
-      '#ffffff'
-    ]
-
-},
-
-// a list of plugins to fetch and install from npm
-// format: [@org/]project[#version]
-// examples:
-// `hyperpower`
-// `@company/project`
-// `project#1.0.1`
-plugins: [
-"hypertheme",
-"hyperterm-blink", // Clignotement du curseur
-"hyperlinks", // Rends les URL cliquables
-"hyper-snazzy", // Thème
-"hyperterm-tab-icons" // Ajoute une icone pour chaque onglet
-],
-
-// in development, you can create a directory under
-// `~/.hyperterm_plugins/local/` and include it here
-// to load it and avoid it being `npm install`ed
-localPlugins: []
-};
-{% endhighlight %}
-
-## Conclusion
-
-Si vous aimez customiser vos logiciels, je vous recommande Hyper ! Je l'utilise quotidiennement sur Mac et je ne regrette iTerm pour rien au monde !
-
-Vous pouvez retrouver la liste des différents plugins existant [sur Github](https://github.com/bnb/awesome-hyper) !
+Nous reviendrons rapidement vers vous pour communiquer davantage sur ces événements, nous allons d'abord l'essayer en très petit comité. 
