@@ -5,7 +5,7 @@ date:   2018-03-02
 category: EVENT
 tags : js javascript google algo hashcode event
 author: john
-description : "Team up to solve an engineering problem from Google. Are you up for the challenge?"
+description : "Retour sur la soirée Google Hash 2018 chez Sfeir et teasing d'un nouveau type d'événements Lille Web."
 ---
 
 Jeudi 1er mars se tenait l'édition 2018 du [Google Hash Code](https://hashcode.withgoogle.com/). Ce challenge, organisé chaque année depuis 2014, propose à n'importe quel développeur à travers le monde de se plonger durant 3h sur un sujet d'algorythmie relativement précis. 37 000 personnes travaillaient cette année en même temps sur l'optimisation des trajets de véhicules autonomes.
