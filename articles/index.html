@@ -10,7 +10,7 @@ description: "Découvrez les dernières tendances du web ainsi que de nombreux c
     <div id="articles">
       {% include headerContentBeforeContents.html %}
       {% for post in paginator.posts %}
-        <article>
+        <article class="{{post.category}}">
           <span class="categorie {{post.category}}">{{post.category}}</span>
           <h2 class="title">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Hyper, le terminal survitaminé"
-date:   2016-11-25
+date:   2017-11-25
 category: JS
 tags : javascript tools hyper
 author: dck
-description : "Lille Web est partenaire du salon IDEMM' 15 : Évolutions et Tendances du Web"
+description : "Hyper, un terminal multi-environnement codé en JavaScript"
 ---
 
 <img src="/src/articles/hyperterm/logo.svg" width="200" class="pull-left" alt="Hyperterm logo" />
@@ -38,15 +38,16 @@ Petite note, Hyper supporte le hot-reload, cela signifie que vous pouvez modifie
 Pour les plugins, vous n'avez qu'à ajouter le nom du plugins dans le tableau `plugins` du fichier de config et Hyper fera l'installation de son coté ! Sinon, il existe un plugin permettant de rechercher et d'installer un plugin Hyper très facilement : **[hpm-cli](https://www.npmjs.com/package/hpm-cli)**.
 
 Il vous suffit de l'installer via npm : `npm install -g hpm-cli`, et ainsi vous aurez accès à la commande `hpm` vous pourrez alors :
-- Chercher un package pour vérifier son existence : `hpm search power`
-- Insaller un package : `hpm install hyperpower`
+
+* Chercher un package pour vérifier son existence : `hpm search power`
+* Insaller un package : `hpm install hyperpower`
 
 Voici mon fichier de configuration avec mes plugins utilisés :
 {% highlight js %}
 module.exports = {
-  config: {
-    // default font size in pixels for all tabs
-    fontSize: 14,
+config: {
+// default font size in pixels for all tabs
+fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: 'Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
@@ -92,31 +93,32 @@ module.exports = {
       '#00ffff',
       '#ffffff'
     ]
-  },
 
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
-  plugins: [
-    "hypertheme",
-    "hyperterm-blink", // Clignotement du curseur
-    "hyperlinks", // Rends les URL cliquables
-    "hyper-snazzy", // Thème
-    "hyperterm-tab-icons" // Ajoute une icone pour chaque onglet
-  ],
+},
 
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
-  localPlugins: []
+// a list of plugins to fetch and install from npm
+// format: [@org/]project[#version]
+// examples:
+// `hyperpower`
+// `@company/project`
+// `project#1.0.1`
+plugins: [
+"hypertheme",
+"hyperterm-blink", // Clignotement du curseur
+"hyperlinks", // Rends les URL cliquables
+"hyper-snazzy", // Thème
+"hyperterm-tab-icons" // Ajoute une icone pour chaque onglet
+],
+
+// in development, you can create a directory under
+// `~/.hyperterm_plugins/local/` and include it here
+// to load it and avoid it being `npm install`ed
+localPlugins: []
 };
 {% endhighlight %}
 
-
 ## Conclusion
+
 Si vous aimez customiser vos logiciels, je vous recommande Hyper ! Je l'utilise quotidiennement sur Mac et je ne regrette iTerm pour rien au monde !
 
 Vous pouvez retrouver la liste des différents plugins existant [sur Github](https://github.com/bnb/awesome-hyper) !
