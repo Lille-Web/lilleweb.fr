@@ -37,6 +37,9 @@
             &.EVENT {
                 border-bottom-color: $red;
             }
+            &.PROG {
+                border-bottom-color: #3b9c3d;
+              }
             &.OUTILS {
                 border-bottom-color: #795548;
             }
@@ -62,6 +65,9 @@
                 &.HTML {
                     background-color: #f1652a;
                 }
+                &.PROG {
+                    background-color: #3b9c3d;
+                  }
                 &.COFFEE {
                     background: url("/src/img/pictos/icon_coffee.png") no-repeat;
                     font-size: 0px;
