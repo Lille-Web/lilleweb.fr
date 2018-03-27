@@ -10,8 +10,8 @@ description : "Afin qu'une fonction soit pure, elle doit respecter ces deux cond
 
 Afin qu'une fonction soit pure, elle doit respecter ces deux conditions :
 
-*   elle ne doit pas avoir d'effets de bords
-*   son résultat ne doit dépendre que de ses paramètres
+* elle ne doit pas avoir d'effets de bords
+* son résultat ne doit dépendre que de ses paramètres
 
 ## Effets de bords
 
@@ -34,7 +34,7 @@ Cette méthode n'est pas pure car elle intéragit avec la console et a donc des 
 
 ## Dépendance aux paramètres
 
-Une fonction pure doit dépendre seulement de ces paramètres. Plus simplement, une fonction pure appelée deux fois avec les mêmes paramètres doit renvoyer le même résultat. Ca reste logique même s'il faut penser parfois certains choses différemment.
+Une fonction pure doit dépendre seulement de ces paramètres. Plus simplement, une fonction pure appelée deux fois avec les mêmes paramètres doit renvoyer le même résultat. Ca reste logique même s'il faut penser parfois certaines choses différemment.
 
 ### Example 1
 
