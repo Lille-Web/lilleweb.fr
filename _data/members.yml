@@ -3,7 +3,7 @@ john:
   image: "/src/img/members/john.jpg"
   poste: Fondateur
   site: johnathan.fr
-  description: "Développeur front-end à altima° dans le pôle optimisation et offres innovantes, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
+  description: "Ingénieur logiciel Full Stack JS chez AXA, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
   twitter: johnathanSUP
   github: johnathanSUP
 dck:
