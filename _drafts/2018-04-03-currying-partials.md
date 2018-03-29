@@ -13,7 +13,7 @@ description : "L'idée est de réduire à un le nombre de paramètre d'une méth
 
 > There is a way to reduce functions of more than one argument to functions of one argument, a way called currying after Haskell B. Curry*
 
-L'idée est de réduire à un le nombre de paramètre d'une méthode en nécessitant normalement plus. 
+L'idée est de réduire à un le nombre de paramètre d'une méthode en nécessitant normalement plus et ainsi favoriser la composition.
 
 ## Example 
 
