@@ -11,11 +11,11 @@ description : "L'idée est de réduire à un le nombre de paramètre d'une méth
 
 ## Currying
 
-> There is a way to reduce functions of more than one argument to functions of one argument, a way called currying after Haskell B. Curry*
+> There is a way to reduce functions of more than one argument to functions of one argument, a way called currying - Haskell B. Curry*
 
 L'idée est de réduire à un le nombre de paramètre d'une méthode en nécessitant normalement plus et ainsi favoriser la composition.
 
-## Example 
+## Exemple 
 
 On va essayer de créer une fonction très simple d'addition : 
 
@@ -24,7 +24,7 @@ add = (n, m) => (n + m)
 ```
 `add(39,3)` vaudrait 42.
 
-Maintenant que notre fonction d'addition fonctionne bien, on va créer une méthode d'addition qui prend un seul paramètre et qui renvoit une fonction de degré un.
+Maintenant que notre fonction d'addition fonctionne bien, on va créer une méthode d'addition qui prend un seul paramètre et qui renvoie une fonction de degré un.
 
 ```javascript
 curryedAdd = (n) => ( (m) => add(n, m) )
@@ -33,7 +33,7 @@ Notre fonction intermédiaire nous permet maintenant de créer une méthode perm
 ```javascript
 addSeven = curryedAdd(7)
 ```
-`addSeven` renvoit une méthode qui demande un paramètre et renvoit une copie augmenté de sept.
+`addSeven` renvoie une méthode qui demande un paramètre et renvoie une copie augmentée de sept.
 
 ```javascript
 addSeven(35) // 42
@@ -52,7 +52,7 @@ addSeven(35) // 42
 
 ## Partial
 
-Dans le même principe, une application partial (Partial ???) signifique que vous allez appliquer un pré-traitement à votre méthode : 
+Dans le même principe, une application partielle (partial application) signifique que vous allez appliquer un pré-traitement à votre méthode : 
 
 ```javascript
 add = (n, m) => (n + m)
@@ -68,7 +68,7 @@ Une méthode à un seul paramètre qui possède une partie de sa logique déport
 
 ### Simplifier les méthodes à callback ???
 
-La méthode addOne, ne prenant qu'un seul paramètre, peut être utilisé comme callback pour des méthodes comme map, filter, reduce, etc. 
+La méthode addOne, ne prenant qu'un seul paramètre, peut être utilisée très facilement comme callback pour des méthodes comme map, filter, reduce, etc. 
 
 ```javascript
 add = (n, m) => n + m
