@@ -66,7 +66,7 @@ addSeven(35) // 42
 
 Une méthode à un seul paramètre qui possède une partie de sa logique déportée dans une autre méthode est beaucoup plus facile à tester.
 
-### Simplifier les méthodes à callback ???
+### Simplifier les méthodes à callback
 
 La méthode addOne, ne prenant qu'un seul paramètre, peut être utilisée très facilement comme callback pour des méthodes comme map, filter, reduce, etc. 
 
