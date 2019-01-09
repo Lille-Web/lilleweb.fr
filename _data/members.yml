@@ -4,8 +4,8 @@ john:
   poste: Fondateur
   site: johnathan.fr
   description: "Ingénieur logiciel Full Stack JS chez AXA, Johnathan est passionné de web depuis plusieurs années. Spécialisé en JavaScript, il est ouvert à toutes les technos tant qu'elles apportent un plus à la communauté. <br> Il vous donnera aussi son avis sur l'actu High-Tech."
-  twitter: johnathanSUP
-  github: johnathanSUP
+  twitter: j7n__
+  github: johnmeunier
 dck:
   name: Thomas DECONINCK
   image: "/src/img/members/dck.jpg"
